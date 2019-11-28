@@ -6,8 +6,10 @@
     <title>Portfolio Home page</title>
     <link rel="stylesheet" href="dist/css/index.css" media="screen">
     <!--FAVICON CODE-->
-    <!--TODO-->
-
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/imgs/optimized/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/imgs/optimized/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/imgs/optimized/favicon-16x16.png">
+    <link rel="manifest" href="dist/imgs/optimized/site.webmanifest">
 </head>
 <body>
 <div class="navContainer">
@@ -66,67 +68,48 @@
     </div><!--wrapper-->
     <div class="headerSection">
         <div class="wrapper">
-            <div class="bigPicSection">
+            <div class="homeSection" id="home">
                 <canvas id="text" width="700" height="200"></canvas>
                 <div id="html-text" class="text">
                     WELCOME TO MY WEBPAGE
                 </div><!--text-->
-            </div><!--Big Pic Section-->
+            </div><!--home Section-->
         </div><!--wrapper-->
     </div><!--Header Section-->
 
     <div class="wrapper">
         <main>
-
+            <div class="aboutMe">
+                <div>
+                    <p class="intro"></p>
+                </div><!--intro-->
+                <div class="aboutMeSection" id="aboutMe">
+                    <img src="dist/imgs/optimized/myPic.png">
+                </div><!--aboutMeSection-->
+                <div>
+                    <p class="intro"></p>
+                </div><!--intro-->
+            </div><!--aboutMe-->
         </main>
     </div><!--/wrapper-->
 
-
     <footer class="wrapper">
         <div class="rowSiteMapSocial">
-            <div class="colSiteMapSocialM">
-                <div class="colSiteMap">
-                    <p class="txtSM">Sitemap</p>
-                    <nav id="nav2" class="links">
-                        <ul>
-                            <li class="linkSpace"><a class="linkSiteMap" href="#" >Home</a></li>
-                            <li class="linkSpace"><a class="linkSiteMap" href="#">About Me</a></li>
-                            <li class="linkSpace"><a class="linkSiteMap" href="#">Recipes</a></li>
-                            <li class="linkSpace"><a class="linkSiteMap" href="#">Consultancy</a></li>
-                        </ul>
-                    </nav><!--sitemap firs t column-->
-                </div><!--colSitemap-->
-
-                <div class="colSocialMedia">
-                    <div class="topSocial">
-                        <div class="goToTop">
-                            <a href="#top" class="linkTop" >Go to top</a>
-                        </div><!--go to top-->
-                        <div class="socialM">
-                            <h3 class="txtSM">Find me here:</h3>
-                            <a href="#">
-                                <picture>
-                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/twitter-50x50.png" >
-                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/twitter-50x50.png" >
-                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/twitter-50x50.png">
-                                    <img src="dist/imgs/home/optimized/twitter-50x50.png" title="Find us on Twitter" alt="Twitter" class="socialMediaIcons">
-                                </picture>
-                            </a>
-                            <a href="#">
-                                <picture>
-                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/facebook-50x50.png" >
-                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/facebook-50x50.png" >
-                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/facebook-50x50.png">
-                                    <img src="dist/imgs/home/optimized/facebook-50x50.png" title="Find us on Facebook" alt="Facebook" class="socialMediaIcons">
-                                </picture>
-
-                            </a>
-                        </div><!--Social media icons-->
-                    </div><!--Social media icons and go to top-->
-                </div><!--Social media icons and go to top border-->
-            </div><!--colSiteMapSocialM-->
+            <div class="colSiteMap">
+                <p class="txtSM">Sitemap</p>
+                <nav id="nav2" class="links">
+                    <ul>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#" >Home</a></li>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#aboutMe">About Me</a></li>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#mySkills">My skills</a></li>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#myWork">My work</a></li>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#blog">Blog</a></li>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#contactForm">Contact Form</a></li>
+                    </ul>
+                </nav><!--sitemap firs t column-->
+            </div><!--colSitemap-->
         </div><!-- rowSiteMapSocial-->
-        <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
+        <div class="base">Cambridge, UK</div><!--Copyright-->
     </footer>
 </div><!--Container for Navigation - position:sticky-->
 
