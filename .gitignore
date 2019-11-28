@@ -1,1 +1,4 @@
-/node-modules
+# ignoring log files
+*.log
+#ignoring node-modules folder
+node-modules/

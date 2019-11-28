@@ -6,26 +6,72 @@
     <title>Portfolio Home page</title>
     <link rel="stylesheet" href="dist/css/index.css" media="screen">
     <!--FAVICON CODE-->
+    <!--TODO-->
 
 </head>
 <body>
 <div class="navContainer">
     <header id="top">
         <div class="wrapper">
-
+            <div class="logoAndHam" >
+                <div>
+                    <span class="hamburger" id="openNav">&#9776;</span>
+                </div><!--Hamburger Icon-->
+                <div  class="logoName">
+                    <a href="index.html" class="showHome">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="dist/imgs/optimized/logo.png">
+                            <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/logo.png">
+                            <img class="logo" src="dist/imgs/optimized/logo.png" alt="logo">
+                        </picture>
+                    </a>
+                </div><!--LogoName-->
+            </div><!--Logo and hamburger icon-->
         </div><!--wrapper, Logo-->
     </header><!--header-->
 
-    <nav id="nav1" class="topNav">
-        <div class="wrapper">
-
-        </div><!--wrapper-->
-    </nav>
-
-
+    <div class="wrapper">
+        <nav class="topNav">
+            <div class="navItemHome">
+                <a href="#" class="">
+                    <p class="txtNav">Home</p>
+                </a>
+            </div><!--navItemHome-->
+            <div class="navItemAboutMe">
+                <a href="#" class="">
+                    <p class="txtNav">About Me</p>
+                </a>
+            </div><!--navItemAboutMe-->
+            <div class="navItemMySkills">
+                <a href="#" class="">
+                    <p class="txtNav">My skills</p>
+                </a>
+            </div><!--navItemMySkills-->
+            <div class="navItemMyWork">
+                <a href="#" class="">
+                    <p class="txtNav">My work</p>
+                </a>
+            </div><!--navItemMyWork-->
+            <div class="navItemBlog">
+                <a href="#" class="">
+                    <p class="txtNav">Blog</p>
+                </a>
+            </div><!--navItemBlog-->
+            <div class="navItemContactForm">
+                <a href="#" class="">
+                    <p class="txtNav">Contact Form</p>
+                </a>
+            </div><!--navItemContactForm-->
+        </nav>
+    </div><!--wrapper-->
     <div class="headerSection">
         <div class="wrapper">
-
+            <div class="bigPicSection">
+                <canvas id="text" width="700" height="200"></canvas>
+                <div id="html-text" class="text">
+                    WELCOME TO MY WEBPAGE
+                </div><!--text-->
+            </div><!--Big Pic Section-->
         </div><!--wrapper-->
     </div><!--Header Section-->
 
@@ -83,7 +129,7 @@
         <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
     </footer>
 </div><!--Container for Navigation - position:sticky-->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
 <script src="dist/js/script.js"></script>
 </body>
 </html>
