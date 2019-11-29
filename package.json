@@ -1,0 +1,28 @@
+{
+  "name": "portfoliopage",
+  "version": "1.0.0",
+  "description": "This is the home page of my portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startServer": "browser-sync start --directory --server --files '*.js, *.html,*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppriyadarshini123/PortfolioPage.git"
+  },
+  "keywords": [
+    "My",
+    "portfolio",
+    "page"
+  ],
+  "author": "Payal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppriyadarshini123/PortfolioPage/issues"
+  },
+  "homepage": "https://github.com/ppriyadarshini123/PortfolioPage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
