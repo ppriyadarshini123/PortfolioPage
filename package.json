@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/ppriyadarshini123/PortfolioPage#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "2.26.7"
+  },
+  "dependencies": {
+    "pixi.js": "5.2.0",
+    "requestanimationframe": "0.0.23"
   }
 }

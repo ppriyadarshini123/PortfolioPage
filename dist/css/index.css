@@ -106,7 +106,6 @@ body {
         z-index: 5;
         padding-top: .5vw;
         padding-bottom: .5vw;
-        align: right;
         display: flex;
         justify-content: space-around;
         width:50%;
@@ -128,8 +127,56 @@ body {
         background-color: #197780;
         padding: 1vw;
     }
+    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemBlog:hover, .navItemContactForm:hover
+    {
+        border-bottom: white 1px solid;
+        cursor: pointer;
+    }
     .removeUnderscore
     {
         text-decoration: none;
     }
+
+    /*HEADER SECTION*/
+
+    .headerSection
+    {
+        margin-top: 3.4vw;
+    }
+    canvas
+    {
+        position: absolute;
+        left: 0;
+    }
+
+    .homeSection
+    {
+        cursor: pointer;
+    }
+    #text
+    {
+        display: none;
+        z-index: 200;
+    }
+
+    .text {
+        text-align: center;
+        z-index: 10;
+        /*   text-shadow:
+                   -5px -5px 0 #1a1a1a,
+                   5px -5px 0 #1a1a1a,
+                   -5px 5px 0 #1a1a1a,
+                   5px 5px 0 #1a1a1a;*/
+        width:100%;
+        /*height: 37vw;*/
+        color: #ffffff;
+        font-size: 7vw;
+        background-color: #197780;
+        /*padding-top: 11.5vw;
+        box-sizing: border-box;*/
+        /*line-height: 13vw;*/
+    }
+
+
+
 }/* >1200px - Desktop*/
