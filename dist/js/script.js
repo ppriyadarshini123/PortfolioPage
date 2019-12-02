@@ -3,7 +3,9 @@
 (function(){
 
     let stage = new PIXI.Container();
-    let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {transparent: true});
+    /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {canvas: document.getElementById("text")}, {transparent: false}, {backgroundColor: #197780}, {clearBeforeRender: true});*/
+
+    let renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight, {backgroundColor:197780}, {transparent: true}, {view: document.getElementsByTagName("canvas")[0]});
     let _stars = [], _glows = [];
     let _mouseX = window.innerWidth*0.5, _mouseY = window.innerHeight*0.5, _starInterval;
     let _nextStar = 0, _nextGlow = 0;
@@ -12,9 +14,11 @@
     let htmlText = document.getElementById("html-text");
 
     let percent = 0;
-    document.body.appendChild(renderer.view);
-
-
+    /*black one below*/
+   /* renderer.backgroundColor = 197780;
+    renderer.view = document.getElementsByTagName("canvas")[0];*/
+    /*document.body.appendChild(renderer.view);*/
+    renderer.render(stage);
 
     let textures = [
         PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-blue.png"),
@@ -23,7 +27,6 @@
         PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-green.png"),
         PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-purple.png")
     ]
-
 
     function createStar(text) {
         let star = new PIXI.Sprite(text);
@@ -125,21 +128,40 @@
     function initCanvas() {
         textCanvas = document.getElementById('text');
         textCtx = textCanvas.getContext('2d');
+
     }
 
     function sampleCanvas() {
-        textCanvas.style.width = width + 'px';
+        /*textCanvas.style.width = width + 'px';
         textCanvas.style.height = fontSize + 'px';
         textCanvas.style.marginTop = -(fontSize/2) + 'px';
         textCanvas.style.backgroundColor = '#197780';
         textCanvas.width = width;
-        textCanvas.height = fontSize;
-        textCtx.textAlign = 'center';
+        textCanvas.height = fontSize;*/
+
+       /* textCanvas.style.backgroundColor = '#197780';
+        textCanvas.style.width = '100%';
+        textCanvas.style.height = 'calc(100vh-20%)';*/
+
+        /*textCtx.textAlign = 'center';
         textCtx.textBaseline = 'top';
         textCtx.font = fontSize + 'px "Luckiest Guy"';
-        textCtx.fillStyle = '#197780';
-        textCtx.clearRect(0, 0, width, fontSize);
-        textCtx.fillText('Welcome to my Webpage', 0, 0);
+        textCtx.fillStyle = '#197780';*/
+        /*textCtx.clearRect(0, 0, width, fontSize);
+        textCtx.fillText('Welcome to my Webpage', 0, 0);*/
+
+        //green one on top, canvas
+        textCtx.fillStyle = "#197780";
+        textCtx.rect(0,0, window.innerWidth, window.innerHeight);
+        textCtx.fillText('Welcome to my Webpage', 400, 400);
+        textCtx.fill();
+
+        stage.render(renderer);
+        stage.render(textCanvas);
+        //tried
+        /*renderer.view(textCtx);*/
+        /*textCanvas = renderer.view;
+        textCtx = renderer.context;*/
 
         let pix = textCtx.getImageData(0, 0, width, fontSize).data;
         textPixels = [];
