@@ -154,7 +154,7 @@ body {
         cursor: pointer;
     }
     /*canvas*/
-    #text
+    #dispCnv
     {
         /*display: none;*/
         z-index: 200;
@@ -181,6 +181,9 @@ body {
         line-height: 13vw;
     }
 */
+    .text
+    {
 
+    }
 
 }/* >1200px - Desktop*/

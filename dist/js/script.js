@@ -3,9 +3,9 @@
 (function(){
 
     let stage = new PIXI.Container();
-    /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {canvas: document.getElementById("text")}, {transparent: false}, {backgroundColor: #197780}, {clearBeforeRender: true});*/
+    /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: #197780}, {clearBeforeRender: true});*/
 
-    let renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight, {backgroundColor:197780}, {transparent: true}, {view: document.getElementsByTagName("canvas")[0]});
+    let renderer = PIXI.autoDetectRenderer(document.getElementsByTagName("canvas").width, document.getElementsByTagName("canvas").height, {transparent: true});
     let _stars = [], _glows = [];
     let _mouseX = window.innerWidth*0.5, _mouseY = window.innerHeight*0.5, _starInterval;
     let _nextStar = 0, _nextGlow = 0;
@@ -17,8 +17,11 @@
     /*black one below*/
    /* renderer.backgroundColor = 197780;
     renderer.view = document.getElementsByTagName("canvas")[0];*/
-    /*document.body.appendChild(renderer.view);*/
-    renderer.render(stage);
+    console.log(renderer.view);
+    document.body.getElementsByTagName('canvas')[0].append(renderer.view);
+    /*renderer.render(stage);*/
+
+
 
     let textures = [
         PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-blue.png"),
@@ -126,8 +129,11 @@
 
 // canvas
     function initCanvas() {
-        textCanvas = document.getElementById('text');
+        textCanvas = document.getElementById('dispCnv');
+        /*textCanvas.append(renderer.view);*/
         textCtx = textCanvas.getContext('2d');
+        /*textCtx = renderer.context;*/
+       // /* console.log(textCtx);*/
 
     }
 
@@ -150,60 +156,83 @@
         /*textCtx.clearRect(0, 0, width, fontSize);
         textCtx.fillText('Welcome to my Webpage', 0, 0);*/
 
-        //green one on top, canvas
-        textCtx.fillStyle = "#197780";
-        textCtx.rect(0,0, window.innerWidth, window.innerHeight);
-        textCtx.fillText('Welcome to my Webpage', 400, 400);
-        textCtx.fill();
 
-        stage.render(renderer);
-        stage.render(textCanvas);
+
+        //green one on top, canvas
+        //green rectangle behind
+        /*Getting imagedata from Canvas: checked code from developer.mozilla.org*/
+        textCtx.fillStyle = "#197780";
+        textCtx.rect(0,0, textCanvas.width, textCanvas.height);
+        textCtx.fill();
+        //text infront
+        textCtx.font = fontSize + 'vw "Luckiest Guy"';
+        console.log(fontSize);
+        textCtx.fillStyle = "#ffffff";
+        textCtx.fillText("Welcome to my Webpage", textCanvas.width/2 - 400, 500);
+
+        /*stage.render(renderer);
+        stage.render(textCanvas);*/
         //tried
         /*renderer.view(textCtx);*/
         /*textCanvas = renderer.view;
         textCtx = renderer.context;*/
 
-        let pix = textCtx.getImageData(0, 0, width, fontSize).data;
+        /* The following code gets the pixels to create the hairy text*/
+        let pix = textCtx.getImageData(0, 0, textCanvas.width, textCanvas.height).data;
         textPixels = [];
         for (let i = pix.length; i >= 0; i -= 4) {
+            /*we are checking every alpha pixel in the array, if it isn't zero that means it is one of the text pixels*/
             if (pix[i] != 0) {
-                let x = (i / 4) % width;
-                let y = Math.floor(Math.floor(i / width) / 4);
+                /*get the x position*/
+                let x = (i / 4) % textCanvas.width;
+                /*get the y position*/
+                let y = Math.floor(Math.floor(i / textCanvas.width) / 4);
+
+                /*we don't want every pixel for this visualization, we'll just get every 4th pixel in the x and y direction */
                 if ((x && x % 6 == 0) && (y && y % 6 == 0)) textPixels.push({
                     x: x,
                     y: y
                 });
             }
         }
+        /*document.body.appendChild(textCtx);*/
+        /*textCtx.fill(renderer.view);*/
+        /*console.log(renderer.view);*/
+        /*renderer.render(pix);*/
+        /*textCtx = renderer.context;*/
     }
 
+    /*This gives an extra "Welcome to my Webpage display, therefore comeenting*/
   /*  function resizeText() {
         htmlText.style.fontSize = fontSize+'px';
         htmlText.style.height = fontSize+'px';
         htmlText.style.color = '#ffffff';
         htmlText.style.marginTop = -(fontSize/2)+'px';
-    }*/
-
+    }
+*/
 
 
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        fontSize = width*0.14;
-        if (fontSize > 100) fontSize = 100;
+        /*fontSize = width*0.14;*/
+        /*For desktop size, fontSize should be 3.9vw*/
+        fontSize = 3.9;
+        /*if (fontSize > 100) fontSize = 100;*/
         yOffset = height*0.6 - (fontSize/2);
         renderer.resize(width, height);
-       /* resizeText();*/
+        /*resizeText();*/
         sampleCanvas();
     }
     function begin() {
         resize();
         requestAnimationFrame( animate );
     }
+
     function init(){
         initCanvas();
         begin();
-       /* window.addEventListener('resize', resize);*/
+        window.addEventListener('resize', resize);
         //create stars
         for (let i = 0; i < 600; i++) {
             createStar(textures[i%5]);
@@ -218,6 +247,17 @@
                 launchGlow();
             }, 10);
         }
+
+
+        /*stage.addChild(renderer.view);*/
+        /*textCtx.fill(renderer.view);*/
+
+        /*renderer.addChild(textCtx);*/
+        /*textCtx.fill(renderer.view);*/
+        /*renderer.render(textPixels);*/
+        /*stage.render(renderer.view);*/
+        /*console.log(renderer.view);*/
+       /* document.body.getElementsByTagName('canvas')[0].appendChild(renderer.view);*/
 
 
     }
