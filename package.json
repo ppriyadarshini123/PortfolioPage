@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "pixi.js": "5.2.0",
-    "requestanimationframe": "0.0.23"
+    "requestanimationframe": "0.0.23",
+    "require.js": "^1.0.0",
+    "webfontloader": "^1.6.28"
   }
 }

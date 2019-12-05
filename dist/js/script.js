@@ -6,9 +6,14 @@
 
 let stage = new PIXI.Container();
 /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: #197780}, {clearBeforeRender: true});*/
-let h = window.innerHeight - (1/5*window.innerHeight);
-let renderer = PIXI.autoDetectRenderer(window.innerWidth, h,{transparent: true});
-renderer.view.
+let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
+
+/*dont touch, all working*/
+let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false});
+/*renderer.backgroundColor = 0x197780;*/
+
+/* var webGLcanvas = renderer.view;
+*  var ctx = renderer.context; */
 
 let _stars = [], _glows = [];
 let _mouseX = window.innerWidth*0.5, _mouseY = window.innerHeight*0.5, _starInterval;
@@ -21,14 +26,25 @@ let percent = 0;
 
 /*Append renderer to the canvas element*/
 /*document.body.getElementsByTagName("canvas")[0].appendChild(renderer.view);*/
-document.querySelector('#home').appendChild(renderer.view);
-/*document.body.appendChild(renderer.view);*/
-initCanvas();
+/*document.querySelector('#home').appendChild(renderer.view);*/
+document.body.appendChild(renderer.view);
+/*document.querySelector('#home').appendChild(renderer.view);*/
+/*document.querySelector('#home').appendChild(renderer.view);*/
+
+/*initCanvas();*/
 
 function begin() {
     resize();
     requestAnimationFrame( animate );
+    console.log("animate"+ animate);
 }
+
+/*let render = function() {
+    renderer.render(stage);
+    /!*requestAnimationFrame(render);*!/
+}
+
+render();*/
 
 let textures = [
     PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-blue.png"),
@@ -132,6 +148,7 @@ function animate() {
     /*webGlCtx.render(stage);*/
     // render the stage
     renderer.render(stage);
+    /*render();*/
 }
 // canvas
 /*Creates one more canvas*/
@@ -170,22 +187,19 @@ function animate() {
     }
 }*/
 
-/*This gives an extra "Welcome to my Webpage display, therefore comenting, No resizing needed in my project therefore, not needed*/
-/*function resizeText() {
+/*We need this text display "Welcome to my Webpage display, Resizing will be needed depending on the viewport size*/
+function resizeText() {
     htmlText.style.fontSize = fontSize+'px';
     htmlText.style.height = fontSize+'px';
     htmlText.style.color = '#ffffff';
-    htmlText.style.marginTop = -(fontSize/2)+'px';
-}*/
+    htmlText.style.marginTop = '25%';
+}
 
-
-/*window.addEventListener('resize', resize);*/
+/*don't comment, need this to call resize(), depending on the viewport size*/
+window.addEventListener('resize', resize);
 function resize() {
-    /*width = window.innerWidth;
-    height = 932;*/
     width = window.innerWidth;
     height = h;
-
     /*Simply scale the font-size with a factor. Lets say your canvas default size is 1000 pixels and the font size is 80 pixels. That will create a relationship of:ratio = 80 / 1000 = 0.08. That will create a relationship of:
 ratio = 80 / 1000 = 0.08*/
     fontSize = width*0.14;
@@ -193,18 +207,13 @@ ratio = 80 / 1000 = 0.08*/
     if (fontSize > 100) fontSize = 100;
     yOffset = height*0.6 - (fontSize/2);
 
-    /*position the webGL canvas*/
-    renderer.backgroundColor = 197780;
-    /*renderer.style.width = "100%";*/
-    /*renderer.view.style.position = "absolute";*/
-    /*renderer.view.style.display = "block";*/
-
     /*rendering the canvas with specified width and height*/
     renderer.resize(width, height);
 
-   /* resizeText();
-    sampleCanvas();*/
+    resizeText();
+    /*sampleCanvas();*/
 }
+
 WebFont.load({
     google: {
         families: ['Luckiest Guy']
