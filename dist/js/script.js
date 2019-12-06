@@ -10,7 +10,7 @@ let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for 
 
 /*dont touch, all working*/
 let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false});
-/*renderer.backgroundColor = 0x197780;*/
+renderer.backgroundColor = 0x197780;
 
 /* var webGLcanvas = renderer.view;
 *  var ctx = renderer.context; */
@@ -19,24 +19,21 @@ let _stars = [], _glows = [];
 let _mouseX = window.innerWidth*0.5, _mouseY = window.innerHeight*0.5, _starInterval;
 let _nextStar = 0, _nextGlow = 0;
 let width, height, fontSize, textPixels, yOffset;
-let textCanvas, webGlCtx;
+let textCanvas, textCtx;
 let htmlText = document.getElementById("html-text");
 
 let percent = 0;
 
 /*Append renderer to the canvas element*/
 /*document.body.getElementsByTagName("canvas")[0].appendChild(renderer.view);*/
-/*document.querySelector('#home').appendChild(renderer.view);*/
-document.body.appendChild(renderer.view);
-/*document.querySelector('#home').appendChild(renderer.view);*/
-/*document.querySelector('#home').appendChild(renderer.view);*/
+document.querySelector('#home').appendChild(renderer.view);
+/*document.body.appendChild(renderer.view);*/
 
-/*initCanvas();*/
+initCanvas();
 
 function begin() {
     resize();
     requestAnimationFrame( animate );
-    console.log("animate"+ animate);
 }
 
 /*let render = function() {
@@ -53,6 +50,21 @@ let textures = [
     PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-green.png"),
     PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-purple.png")
 ]
+
+//create stars
+for (let i = 0; i < 600; i++) {
+    createStar(textures[i%5]);
+}
+
+for (let i = 0; i < 100; i++) {
+    createGlow();
+}
+
+for (let i = 0; i < 100; i++) {
+    setTimeout(function() {
+        launchGlow();
+    }, 10);
+}
 
 function createStar(text) {
     let star = new PIXI.Sprite(text);
@@ -86,9 +98,9 @@ function launchStar() {
     _nextStar = _nextStar == _stars.length-1 ? 0 : _nextStar + 1;
     star.launched = true;
     star.alpha = 1;
-    let pos = textPixels[Math.floor(Math.random()*textPixels.length)];
-    star.position.x = pos.x;
-    star.position.y = yOffset + pos.y;
+   /*  let pos = textPixels[Math.floor(Math.random()*textPixels.length)];
+     star.position.x = pos.x;
+     star.position.y = yOffset + pos.y;*/
 
     star.vx = 1 + Math.random()*1;
     star.vy = -1 + Math.random()*-1;
@@ -152,40 +164,73 @@ function animate() {
 }
 // canvas
 /*Creates one more canvas*/
-/*function initCanvas() {
-    textCanvas = document.getElementById("dispCnv");
-    webGlCtx = textCanvas.getContext("webgl");
+function initCanvas() {
+    /* textCanvas = document.getElementById("dispCnv");
+     textCtx = textCanvas.getContext("2d");*/
 
-}*/
+    textCanvas = renderer.view;
+    console.log(renderer.view);
+    textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');
+    console.log(textCtx);
+   /* console.log(textCtx.drawingBufferWidth);
+    console.log(textCtx.drawingBufferHeight);*/
+}
 
-/*function sampleCanvas() {
-    textCanvas.style.width = width + 'px';
+function sampleCanvas() {
+    /*textCanvas.style.width = width + 'px';
     textCanvas.style.height = fontSize + 'px';
-    textCanvas.style.marginTop = -(fontSize/2) + 'px';
+    textCanvas.style.marginTop = -(fontSize / 2) + 'px';
     textCanvas.width = width;
     textCanvas.height = fontSize;
     textCtx.textAlign = 'center';
     textCtx.textBaseline = "top";
-    textCtx.font = fontSize+'px "Luckiest Guy"';
+    textCtx.font = fontSize + 'px "Luckiest Guy"';
     textCtx.fillStyle = '#eee';
-    textCtx.clearRect(0, 0, width, fontSize);
+    textCtx.fillRect(0, 0, width, fontSize);
+    */
 
-    textCtx.fillText('IT DEPENDS', width / 2, 0);
+    /*  textCtx.fillStyle = renderer.backgroundColor;
+      textCtx.fillRect(0, 0, renderer.width, renderer.height);*/
 
-    var pix = textCtx.getImageData(0, 0, width, fontSize).data;
+    /*textCtx.fillText('WELCOME TO MY WEBPAGE', width / 2, 0);*/
+
+    /* let pix = textCtx.getImageData(0, 0, width, fontSize).data;*/
     textPixels = [];
-    for (var i = pix.length; i >= 0; i -= 4) {
+    let imageData = new Uint8Array(textCtx.width * textCtx.height * 4);/*length is 4 , to store 4 values of red, green, blue, alpha*/
+    /*for (let i = pix.length; i >= 0; i -= 4) {
         if (pix[i] != 0) {
-            var x = (i / 4) % width;
-            var y = Math.floor(Math.floor(i / width) / 4);
+            let x = (i / 4) % width;
+            let y = Math.floor(Math.floor(i / width) / 4);
 
-            if ((x && x % 6 == 0) && (y && y % 6 == 0)) textPixels.push({
+            if ((x && x % 6 == 0) && (y && y % 6 == 0))
+            textPixels.push({
                 x: x,
                 y: y
             });
         }
+    }*/
+    /*creating a rectangle and then reading its pixels*/
+    /*textCtx.fillStyle = renderer.backgroundColor;
+    textCtx.viewport(0, 0, textCtx.width, textCtx.height);*/
+
+
+    textCtx.readPixels(0, 841, textCtx.width, textCtx.height, textCtx.RGBA, textCtx.UNSIGNED_BYTE, imageData);
+    console.log(imageData);
+
+    for (let i = imageData.length; i >= 0; i -= 4) {
+        if (imageData[i] != 0) {
+            let x = (i / 4) % textCtx.width;
+            let y = Math.floor(Math.floor(i / textCtx.width) / 4);
+
+            if ((x && x % 6 == 0) && (y && y % 6 == 0))
+                textPixels.push({
+                    x: x,
+                    y: y
+                });
+
+        }console.log(textPixels);
     }
-}*/
+}
 
 /*We need this text display "Welcome to my Webpage display, Resizing will be needed depending on the viewport size*/
 function resizeText() {
@@ -211,15 +256,19 @@ ratio = 80 / 1000 = 0.08*/
     renderer.resize(width, height);
 
     resizeText();
-    /*sampleCanvas();*/
+    sampleCanvas();
 }
 
-WebFont.load({
+/*WebFont.load({
     google: {
-        families: ['Luckiest Guy']
+        families: ['Luckiest Guy'],
+        urls: [
+            'https://fonts.googleapis.com/css?family=Luckiest+Guy'
+        ]
     },
     active: begin
-});
+});*/
+begin();
 // /*window.addEventListener('load', init);*/
 /*})();//close iffy*/
 

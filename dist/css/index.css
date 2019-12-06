@@ -39,6 +39,14 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Laclede_CAT';
+    src: url('../fonts/laclede_cat/Laclede_CAT.ttf') format('ttf'),
+    url('../fonts/laclede_cat/Laclede_CAT.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* MEDIA QUERIES*/
 /* <360px Mobile */
 @media screen and (max-width: 360px)
@@ -179,14 +187,15 @@ body {
         text-align: center;
         z-index: 201;
         text-shadow:
-                -5px -5px 0 #1a1a1a,
-                5px -5px 0 #1a1a1a,
-                -5px 5px 0 #1a1a1a,
-                5px 5px 0 #1a1a1a;
+                5px 0px 0 #1a1a1a,
+                5px 0px 0 #1a1a1a,
+                5px 0px 0 #1a1a1a,
+                5px 0px 0 #1a1a1a;
         margin-top: 25%;
         font-size: 5vw;
         color: #ffffff;
         position: absolute;/*z-index only applies to top positioned elements, so position text absolutely and canvas relatively for z-index to work.*/
+        font-family: Laclede_CAT serif;
     }
 
     /*ABOUT ME SECTION*/
