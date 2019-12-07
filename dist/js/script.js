@@ -5,7 +5,7 @@
 */
 
 let stage = new PIXI.Container();
-/*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: #197780}, {clearBeforeRender: true});*/
+/*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
 let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
 
 /*dont touch, all working*/
@@ -98,9 +98,12 @@ function launchStar() {
     _nextStar = _nextStar == _stars.length-1 ? 0 : _nextStar + 1;
     star.launched = true;
     star.alpha = 1;
-   /*  let pos = textPixels[Math.floor(Math.random()*textPixels.length)];
-     star.position.x = pos.x;
-     star.position.y = yOffset + pos.y;*/
+    let pos = textPixels[Math.floor(Math.random()*textPixels.length)];
+    /*console.log(pos);
+    console.log(Math.floor(Math.random()*textPixels.length));
+    console.log(Math.random()*textPixels.length);*/
+    star.position.x = pos.x;
+    star.position.y = yOffset + pos.y;
 
     star.vx = 1 + Math.random()*1;
     star.vy = -1 + Math.random()*-1;
@@ -169,11 +172,13 @@ function initCanvas() {
      textCtx = textCanvas.getContext("2d");*/
 
     textCanvas = renderer.view;
+
     console.log(renderer.view);
-    textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');
+    /*textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');*/
+    textCtx = textCanvas.getContext('2d');
     console.log(textCtx);
-   /* console.log(textCtx.drawingBufferWidth);
-    console.log(textCtx.drawingBufferHeight);*/
+    /* console.log(textCtx.drawingBufferWidth);
+     console.log(textCtx.drawingBufferHeight);*/
 }
 
 function sampleCanvas() {
@@ -189,47 +194,55 @@ function sampleCanvas() {
     textCtx.fillRect(0, 0, width, fontSize);
     */
 
-    /*  textCtx.fillStyle = renderer.backgroundColor;
-      textCtx.fillRect(0, 0, renderer.width, renderer.height);*/
+   /* textCtx.clearRect(0, 0, renderer.width, fontSize);*//*sets the pixels in a rectangular area to transparent black. The rectangle's corner is at (x,y).
+    This code snippet erases part of the canvas. This is commonly required at the start of each frame in an animation.*/
 
     /*textCtx.fillText('WELCOME TO MY WEBPAGE', width / 2, 0);*/
 
-    /* let pix = textCtx.getImageData(0, 0, width, fontSize).data;*/
+    textCtx.fillStyle = "#197780";/*the green background color*/
+    textCtx.fillRect(window.innerWidth/4,0, window.innerWidth/2, window.innerHeight);/*This rectangle contains the stars*/
+    let pix = textCtx.getImageData(0,0, window.innerWidth, fontSize).data;/*returns an ImageData object representing the underlying pixel data for a specified portion of the canvas. RGBA color value is specified with RGBA. The alpha parameter is a number between 0 (fully transparent) and 255(fully opaque)*/
+    /*textCtx.putImageData(pix, 0, -100);*/
     textPixels = [];
-    let imageData = new Uint8Array(textCtx.width * textCtx.height * 4);/*length is 4 , to store 4 values of red, green, blue, alpha*/
-    /*for (let i = pix.length; i >= 0; i -= 4) {
+    console.log(pix);
+    /*let imageData = new Uint8Array(textCtx.width * fontSize * 4);/!*length is 4 , to store 4 values of red, green, blue, alpha*!/*/
+    console.log(pix.length);
+    for (let i = pix.length; i >= 0; i -= 4) {
+        /*console.log(pix[i] != 0);*/
         if (pix[i] != 0) {
-            let x = (i / 4) % width;
-            let y = Math.floor(Math.floor(i / width) / 4);
-
-            if ((x && x % 6 == 0) && (y && y % 6 == 0))
-            textPixels.push({
-                x: x,
-                y: y
-            });
-        }
-    }*/
-    /*creating a rectangle and then reading its pixels*/
-    /*textCtx.fillStyle = renderer.backgroundColor;
-    textCtx.viewport(0, 0, textCtx.width, textCtx.height);*/
-
-
-    textCtx.readPixels(0, 841, textCtx.width, textCtx.height, textCtx.RGBA, textCtx.UNSIGNED_BYTE, imageData);
-    console.log(imageData);
-
-    for (let i = imageData.length; i >= 0; i -= 4) {
-        if (imageData[i] != 0) {
-            let x = (i / 4) % textCtx.width;
-            let y = Math.floor(Math.floor(i / textCtx.width) / 4);
-
-            if ((x && x % 6 == 0) && (y && y % 6 == 0))
+            let x = (i / 4) % window.innerWidth;
+            let y = Math.floor(Math.floor(i / window.innerWidth) / 4);
+           /* console.log(y);*/
+            if ((x && x % 6 == 0) && (y && y % 6 == 0)) {
                 textPixels.push({
                     x: x,
                     y: y
                 });
-
-        }console.log(textPixels);
+                console.log(textPixels.length);
+            }
+        }
     }
+    /*creating a rectangle and then reading its pixels*/
+    /*textCtx.fillStyle = renderer.backgroundColor;*/
+    /*console.log(textCtx.backgroundColor);*/
+    /*textCtx.viewport(0, 0, textCtx.width, textCtx.height);*/
+
+    /*textCtx.readPixels(0, 0, textCtx.width, fontSize, textCtx.RGBA, textCtx.UNSIGNED_BYTE, imageData);*/
+    /*console.log(imageData);*/
+
+    /* for (let i = imageData.length; i >= 0; i -= 4) {
+         if (imageData[i] != 0) {
+             let x = (i / 4) % textCtx.width;
+             let y = Math.floor(Math.floor(i / textCtx.width) / 4);
+
+             if ((x && x % 6 == 0) && (y && y % 6 == 0))
+                 textPixels.push({
+                     x: x,
+                     y: y
+                 });
+
+         }console.log(textPixels);
+     }*/
 }
 
 /*We need this text display "Welcome to my Webpage display, Resizing will be needed depending on the viewport size*/
