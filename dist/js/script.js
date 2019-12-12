@@ -168,12 +168,14 @@ function animate() {
 // canvas
 /*Creates one more canvas*/
 function initCanvas() {
-    /* textCanvas = document.getElementById("dispCnv");
-     textCtx = textCanvas.getContext("2d");*/
+     /*textCanvas = document.getElementById("dispCnv");*/
+     textCtx = textCanvas.getContext("2d");
 
+     /*commented new*/
     textCanvas = renderer.view;
 
     console.log(renderer.view);
+
     /*textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');*/
     textCtx = textCanvas.getContext('2d');
     console.log(textCtx);
