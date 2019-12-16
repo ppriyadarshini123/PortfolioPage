@@ -18,7 +18,6 @@
         <div class="wrapper">
             <div class="logoAndHam" >
                 <span class="hamburger" id="openNav">&#9776;</span><!--Hamburger Icon-->
-
                 <div class="logoName">
                     <a href="index.html" class="showHome">
                         <picture>
@@ -82,13 +81,17 @@
         <main>
             <div class="aboutMe" id="aboutMe">
                 <p class="title">About Me</p>
+                <div class="upperStars">
+                    <img src="dist/imgs/unoptimized/neon-star-lightblue.png" alt="Neon Star Blue" class="upperBlueStar">
+                    <img src="dist/imgs/unoptimized/neon-star-brown.png" alt="Neon Star Orange" class="upperOrangeStar">
+                    <img src="dist/imgs/unoptimized/neon-star-lightpink.png" alt="Neon Star Green" class="upperGreenStar">
+                </div><!--upperStars-->
                 <div class="textPic">
                     <div class="flexWidth">
                         <p class="intro">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi at consectetur error eveniet exercitationem facilis id incidunt minima minus nobis placeat praesentium quia repellendus rerum saepe similique tempore, veniam.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi at consectetur error eveniet exercitationem facilis id incidunt minima minus nobis placeat praesentium quia repellendus rerum saepe similique tempore, veniam.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi at consectetur error eveniet exercitationem facilis id incidunt minima minus nobis placeat praesentium quia repellendus rerum saepe similique tempore, veniam.
-
                         </p>
                     </div><!--intro-->
                     <div class="aboutMeSection">
@@ -99,28 +102,58 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos ex labore perferendis quam, ut voluptatem. Beatae, culpa dolorum eligendi eum laboriosam minima, odit officia quam recusandae rerum similique, totam!
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
-
                         <div class="btn">
-                            <input type="submit" name="Submit" class="submitBtn">
+                            <input name="Download My CV" value="Download My CV" class="downloadBtn" type="submit">
                         </div><!--btn-->
                         <div class="icons">
-                            <img src="dist/imgs/unoptimized/github.png" width="100">
-                            <img src="dist/imgs/unoptimized/linkedin.png" width="100">
+                            <div>
+                                <a href="#" class="link">
+                                    <img src="dist/imgs/unoptimized/github.png" width="100" class="icon" alt="My GitHub repository">
+                                    <p class="subTitle">My GitHub repository</p>
+                                </a>
+                            </div><!--GitHub icon-->
+                            <div>
+                                <a href="#" class="link">
+                                    <img src="dist/imgs/unoptimized/linked.jpg" width="100" class="icon" alt="My Linkedin Profile">
+                                    <p class="subTitle">My Linkedin Profile</p>
+                                </a>
+                            </div><!--Linkedin icon-->
                         </div><!--icons-->
-                    </div><!--intro-->
-                </div>
+                        <div class="lowerStars">
+                            <img src="dist/imgs/unoptimized/neon-star-lightblue.png" alt="Neon Star Blue" class="lowerBlueStar">
+                            <img src="dist/imgs/unoptimized/neon-star-brown.png" alt="Neon Star Orange" class="lowerOrangeStar">
+                            <img src="dist/imgs/unoptimized/neon-star-lightpink.png" alt="Neon Star Green" class="lowerGreenStar">
+                        </div><!--lowerStars-->
+                    </div><!--flexWidth-->
+                </div><!--textPic-->
             </div><!--aboutMe-->
         </main>
     </div><!--/wrapper-->
-
     <div class="wrapper">
         <main>
             <div class="mySkills" id="mySkills">
-
+                <p class="title">My Skills</p>
+                <div class="jcarousel">
+                    <ul class="alignHorizontal">
+                        <li><img src="dist/imgs/unoptimized/bootstrap.jpg" alt="bootstrap" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/css.png" alt="css" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/git.png" alt="git" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/github.png" alt="git" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/html.png" alt="html" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/Illustrator.png" alt="illustrator" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/indesign.jpg" alt="indesign" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/Javascript.jpg" alt="javascript" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/jquery.jpg" alt="jquery" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/mySQL.png" alt="mysql" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/Photoshop.png" alt="photoshop" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/PHP.png" alt="PHP" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/responsive-website-design2.png" alt="reeponsive website" class="skills"></li>
+                        <li><img src="dist/imgs/unoptimized/sass.png" alt="sass" class="skills"></li>
+                    </ul>
+                </div>
             </div><!--mySkills-->
         </main>
     </div><!--/wrapper-->
-
     <div class="wrapper">
         <main>
             <div class="myProjects" id="myProjects">
@@ -135,8 +168,6 @@
             </div><!--blog-->
         </main>
     </div><!--/wrapper-->
-
-
     <div class="wrapper">
         <main>
             <div class="contactForm" id="contactForm">
@@ -144,7 +175,6 @@
             </div><!--contactForm-->
         </main>
     </div><!--/wrapper-->
-
     <footer class="wrapper">
         <div class="rowSiteMapSocial">
             <div class="colSiteMap">

@@ -4,6 +4,24 @@
 (function(){
 */
 
+$('.jcarousel')
+    .on('jcarousel:create jcarousel:reload', function() {
+        var element = $(this),
+            width = element.innerWidth();
+
+        if (width > 900) {
+            width = width / 3;
+        } else if (width > 600) {
+            width = width / 2;
+        }
+
+        element.jcarousel('items').css('width', width + 'px');
+    })
+    .jcarousel({
+        // Your configurations options
+    });
+
+
 let stage = new PIXI.Container();
 /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
 let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
@@ -44,11 +62,13 @@ function begin() {
 render();*/
 
 let textures = [
-    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-blue.png"),
-    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-orange.png"),
+    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-lightblue.png"),
+    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-brown.png"),
+    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-lightpink.png"),
+ /*   PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-orange.png"),
     PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-pink.png"),
     PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-green.png"),
-    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-purple.png")
+    PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-purple.png")*/
 ]
 
 //create stars
