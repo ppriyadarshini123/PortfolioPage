@@ -4,26 +4,8 @@
 (function(){
 */
 
-$('.jcarousel')
-    .on('jcarousel:create jcarousel:reload', function() {
-        var element = $(this),
-            width = element.innerWidth();
-
-        if (width > 900) {
-            width = width / 3;
-        } else if (width > 600) {
-            width = width / 2;
-        }
-
-        element.jcarousel('items').css('width', width + 'px');
-    })
-    .jcarousel({
-        // Your configurations options
-    });
-
-
 let stage = new PIXI.Container();
-/*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
+/*let rend erer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
 let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
 
 /*dont touch, all working*/
