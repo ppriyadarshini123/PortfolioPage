@@ -16,7 +16,7 @@
 <div class="navContainer">
     <header id="top">
         <div class="wrapper">
-            <div class="logoAndHam" >
+            <div class="logoAndHam">
                 <span class="hamburger" id="openNav">&#9776;</span><!--Hamburger Icon-->
                 <div class="logoName">
                     <a href="index.html" class="showHome">
@@ -102,7 +102,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos ex labore perferendis quam, ut voluptatem. Beatae, culpa dolorum eligendi eum laboriosam minima, odit officia quam recusandae rerum similique, totam!
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
-                        <div class="btn">-->
+                        <div class="btn">
                             <input name="Download My CV" value="Download My CV" class="downloadBtn" type="submit">
                         </div>
                         <div class="icons">
@@ -270,7 +270,41 @@
     <div class="wrapper">
         <main>
             <div class="contactForm" id="contactForm">
-
+                <div class="titleMap">Contact Form
+                </div><!--titleMap-->
+                <div class="upperCStars">
+                    <img src="dist/imgs/unoptimized/neon-star-lightblue.png" alt="Neon Star Blue" class="upperCBlueStar">
+                    <img src="dist/imgs/unoptimized/neon-star-brown.png" alt="Neon Star Orange" class="upperCBrownStar">
+                    <img src="dist/imgs/unoptimized/neon-star-lightpink.png" alt="Neon Star Green" class="upperCGreenStar">
+                </div><!--upperStars-->
+                <div class="contactFormArea">
+                    <div class="rowCF">
+                        <p class="labels">Name
+                        </p>
+                        <input name="name"  type="text" pattern="[a-zA-Z]" class="txtBox" placeholder="Your Name.."  required >
+                        <p class="formMessage"></p>
+                    </div><!--name area-->
+                    <div class="rowCF">
+                        <p class="labels">Email
+                        </p><!--Email label-->
+                        <input type="email" name="textbox" pattern = "^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your Email.." class="txtBox" required>
+                        <p class="formMessage"></p>
+                    </div><!--email area-->
+                    <div class="rowCF">
+                        <p class="labels">Message
+                        </p><!--message label-->
+                        <textarea name="message" rows="4"  cols="23" class="txtBox" placeholder="Your Message.." required></textarea>
+                        <p class="formMessage"></p>
+                    </div><!--message textarea-->
+                </div><!--contact form area-->
+                <div class="btn">
+                    <input type="submit" name="Submit" class="submitBtn">
+                </div><!--btn-->
+                <div class="lowerCStars">
+                    <img src="dist/imgs/unoptimized/neon-star-lightblue.png" alt="Neon Star Blue" class="lowerCBlueStar">
+                    <img src="dist/imgs/unoptimized/neon-star-brown.png" alt="Neon Star Orange" class="lowerCBrownStar">
+                    <img src="dist/imgs/unoptimized/neon-star-lightpink.png" alt="Neon Star Green" class="lowerCPinkStar">
+                </div><!--lowerStars-->
             </div><!--contactForm-->
         </main>
     </div><!--/wrapper-->
@@ -282,9 +316,8 @@
                     <ul>
                         <li class="linkSpace"><a class="linkSiteMap" href="#" >Home</a></li>
                         <li class="linkSpace"><a class="linkSiteMap" href="#aboutMe">About Me</a></li>
-                        <li class="linkSpace"><a class="linkSiteMap" href="#mySkills">My skills</a></li>
+                        <li class="linkSpace"><a class="linkSiteMap" href="#mySkills">My Skills</a></li>
                         <li class="linkSpace"><a class="linkSiteMap" href="#myProjects">My Projects</a></li>
-                        <li class="linkSpace"><a class="linkSiteMap" href="#blog">Blog</a></li>
                         <li class="linkSpace"><a class="linkSiteMap" href="#contactForm">Contact Form</a></li>
                     </ul>
                 </nav><!--sitemap first column-->
@@ -307,5 +340,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script src="node_modules/webfontloader/webfontloader.js"></script>-->
 <script src="dist/js/pixi.js"></script>
+<script src="dist/js/script.js"></script>
 </body>
 </html>

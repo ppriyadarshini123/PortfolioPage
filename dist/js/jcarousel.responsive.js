@@ -6,7 +6,6 @@
             .on('jcarousel:reload jcarousel:create', function () {
                 var carousel = $(this),
                     width = carousel.innerWidth();
-                console.log(width);
                 if (width >= 600) {
                     width = width / 9;
                 } else if (width >= 350) {
@@ -14,7 +13,7 @@
                 }
 
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-                console.log(Math.ceil(width));
+
             })
             .jcarousel({
                 wrap: 'circular'

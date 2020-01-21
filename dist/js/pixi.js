@@ -10,6 +10,7 @@ let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for 
 
 /*dont touch, all working*/
 let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false});
+
 renderer.backgroundColor = 0x197780;
 
 /* var webGLcanvas = renderer.view;
@@ -171,16 +172,14 @@ function animate() {
 /*Creates one more canvas*/
 function initCanvas() {
      /*textCanvas = document.getElementById("dispCnv");*/
-     textCtx = textCanvas.getContext("2d");
+     //new textCtx = textCanvas.getContext("2d");
 
      /*commented new*/
     textCanvas = renderer.view;
 
-    console.log(renderer.view);
-
-    /*textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');*/
+    //textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');
     textCtx = textCanvas.getContext('2d');
-    console.log(textCtx);
+
     /* console.log(textCtx.drawingBufferWidth);
      console.log(textCtx.drawingBufferHeight);*/
 }
@@ -208,9 +207,9 @@ function sampleCanvas() {
     let pix = textCtx.getImageData(0,0, window.innerWidth, fontSize).data;/*returns an ImageData object representing the underlying pixel data for a specified portion of the canvas. RGBA color value is specified with RGBA. The alpha parameter is a number between 0 (fully transparent) and 255(fully opaque)*/
     /*textCtx.putImageData(pix, 0, -100);*/
     textPixels = [];
-    console.log(pix);
+
     /*let imageData = new Uint8Array(textCtx.width * fontSize * 4);/!*length is 4 , to store 4 values of red, green, blue, alpha*!/*/
-    console.log(pix.length);
+
     for (let i = pix.length; i >= 0; i -= 4) {
         /*console.log(pix[i] != 0);*/
         if (pix[i] != 0) {
@@ -222,7 +221,7 @@ function sampleCanvas() {
                     x: x,
                     y: y
                 });
-                console.log(textPixels.length);
+
             }
         }
     }
