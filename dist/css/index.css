@@ -373,16 +373,16 @@ body {
     }
     .jcarousel li
     {
-        padding-right: 1vw;
+        /*padding-right: 1vw;*/
         margin: 1vw;
     }
 
     .skills
     {
         display: block;
-        width: 100%;
+        width: 58%;
         max-width: 100%;
-        height: 12vw;
+        height: 7vw;
     }
 
     /*Carousel Controls*/
