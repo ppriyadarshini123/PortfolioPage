@@ -2,9 +2,18 @@
 (function(){
 
     const submit = document.getElementsByClassName("submitBtn");
-
+    const contactForm = document.getElementsByClassName("contactFormArea");
     const $menuIcon = $('#openNav');
 
+  /*  /!**
+     * @name formSubmission
+     * @desc After submission, send email to Payal
+      *!/
+    function formSubmission()
+    {
+        console.log("the form was submitted");
+    }//formSubmission
+*/
     /**
      * @name validation
      * @desc CONTACT FORM SUBMIT BUTTON VALIDATION - validation for name, phone and email
@@ -39,17 +48,27 @@
                         {
                             document.getElementsByClassName("formMessage")[2].innerHTML = "";
                         }/*else*/
+
+                        /* Submit the form*/
+                        document.contactForm.submit();
+
+                        console.log("hurray");
+
                     }/*submit.addEventListener*/
                 )/*submit.addEventListener*/
             }/*For tabName*/
         }/*if*/
     }//validation
 
+
     /**
      * @name bindBtns
      * @desc this will bind all the elements to their events
      */
     function bindBtns() {
+        document.contactForm.addEventListener("submit", function(){
+            console.log("the form was submitted");
+        });
         validation();
     }//bindBtns
 

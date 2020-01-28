@@ -6,13 +6,13 @@
     /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
     let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
 
-    /*console.log(window.innerWidth);
-    console.log(h);*/
+    console.log(window.innerWidth);
+    console.log(h);
     /*This helper function will automatically detect which renderer you should be using.
     WebGL is the preferred renderer as it is a lot faster. If WebGL is not supported by the browser then
     this function will return a canvas renderer*/
     let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
-    /*console.log(renderer);*/
+    console.log(renderer);
     renderer.backgroundColor = 0x197780;
 
     /* var webGLcanvas = renderer.view;
@@ -29,13 +29,13 @@
 
     /*Append renderer to the canvas element*/
     /*document.body.getElementsByTagName("canvas")[0].appendChild(renderer.view);*/
-    /*document.querySelector('#home').appendChild(renderer.view);*/
+    document.querySelector('#home').appendChild(renderer.view);
     /*document.body.appendChild(renderer.view);*/
 
     /*initCanvas();*/
 
     function begin() {
-       /* console.log("begin");*/
+        console.log("begin");
         resize();
         requestAnimationFrame( animate );
     }
@@ -68,7 +68,7 @@
         star.alpha = 0;
         star.launched = false;
         _stars.push(star);
-        /*console.log("createStar");*/
+        console.log("createStar");
     }
 
     function createGlow() {
@@ -83,7 +83,7 @@
         glow.alpha = 0;
         glow.launched = false;
         _glows.push(glow);
-        /*console.log("createGlow");*/
+        console.log("createGlow");
     }
 
     function launchStar() {
@@ -102,7 +102,7 @@
         star.vy = -1 + Math.random()*-1;
         star.vr = -0.2 + Math.random()*0.4;
         star.p = 0;
-        /*console.log("launchStar");*/
+        console.log("launchStar");
     }
 
     function launchGlow(i) {
@@ -115,12 +115,12 @@
 
         glow.vx = 0.5 + Math.random()*0.5;
         glow.vy = -0.5 + Math.random()*-0.5;
-        /*console.log("launchGlow");*/
+        console.log("launchGlow");
     }
 
     function launchStarBatch() {
         for (let i = 0; i < 6; i++) {
-           /* console.log("launchStarBatch");*/
+            console.log("launchStarBatch");
             launchStar();
         }
     }
@@ -159,7 +159,7 @@
         /*webGlCtx.render(stage);*/
         // render the stage
         renderer.render(stage);
-        /*console.log("animate");*/
+        console.log("animate");
         /*render();*/
     }
 // canvas
@@ -170,27 +170,26 @@
 
         /*commented new*/
         textCanvas = renderer.view;
-        /*console.log(renderer.view);
+        console.log(renderer.view);
         console.log(textCanvas.getContext('webgl'));
-        console.log(textCanvas.getContext('webgl2'));*/
+        console.log(textCanvas.getContext('webgl2'));
         //textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');
         /*contextId '2d' is not always supported in browser*/
         
         if(textCanvas.getContext('webgl')||textCanvas.getContext('webgl2'))
         {
-            /*console.log("in webgl disable");*/
+            console.log("in webgl disable");
             if(textCanvas.getContext('webgl'))
                 textCanvas.getContext('webgl').disable(textCanvas.getContext('webgl').DITHER);
             if(textCanvas.getContext('webgl2'))
             textCanvas.getContext('webgl2').disable(textCanvas.getContext('webgl2').RENDERBUFFER_ALPHA_SIZE);
         }
-       /* console.log(textCanvas.getContext('webgl'));
-        console.log(textCanvas.getContext('webgl2'));*/
+        console.log(textCanvas.getContext('webgl'));
+        console.log(textCanvas.getContext('webgl2'));
 
         textCtx = textCanvas.getContext("2d");
-       /* console.log(textCanvas.getContext('2d'));
-        console.log("initCanvas");*/
-        document.querySelector('#home').appendChild(renderer.view);
+        console.log(textCanvas.getContext('2d'));
+        console.log("initCanvas");
         /* console.log(textCtx.drawingBufferWidth);
          console.log(textCtx.drawingBufferHeight);*/
     }
@@ -212,13 +211,13 @@
     This code snippet erases part of the canvas. This is commonly required at the start of each frame in an animation.*/
 
         /*textCtx.fillText('WELCOME TO MY WEBPAGE', width / 2, 0);*/
-       /* console.log("sampleCanvas");*/
+        console.log("sampleCanvas");
         textCtx.fillStyle = "#197780";/*the green background color*/
         textCtx.fillRect(window.innerWidth/4,0, window.innerWidth/2, window.innerHeight);/*This rectangle contains the stars*/
         let pix = textCtx.getImageData(0,0, window.innerWidth, fontSize).data;/*returns an ImageData object representing the underlying pixel data for a specified portion of the canvas. RGBA color value is specified with RGBA. The alpha parameter is a number between 0 (fully transparent) and 255(fully opaque)*/
         /*textCtx.putImageData(pix, 0, -100);*/
         textPixels = [];
-        /*console.log(pix.length);*/
+        console.log(pix.length);
         /*let imageData = new Uint8Array(textCtx.width * fontSize * 4);/!*length is 4 , to store 4 values of red, green, blue, alpha*!/*/
 
         for (let i = pix.length; i >= 0; i -= 4) {
@@ -265,7 +264,7 @@
         htmlText.style.height = fontSize+'px';
         htmlText.style.color = '#ffffff';
         htmlText.style.marginTop = '25%';
-        /*console.log("resizeText");*/
+        console.log("resizeText");
     }
 
 
@@ -285,7 +284,7 @@
 
         resizeText();
         sampleCanvas();
-        /*console.log("resize");*/
+        console.log("resize");
     }
 
     function bindBtns()
@@ -298,18 +297,18 @@
         //create stars
         for (let i = 0; i < 600; i++) {
             createStar(textures[i%5]);
-            /*console.log("create stars");*/
+            console.log("create stars");
         }
 
         for (let i = 0; i < 100; i++) {
             createGlow();
-            /*console.log("createGlow");*/
+            console.log("createGlow");
         }
 
         for (let i = 0; i < 100; i++) {
             setTimeout(function() {
                 launchGlow();
-                /*console.log("launchGlow");*/
+                console.log("launchGlow");
             }, 10);
         }
 
