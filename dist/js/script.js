@@ -5,15 +5,6 @@
     const contactForm = document.getElementsByClassName("contactFormArea");
     const $menuIcon = $('#openNav');
 
-  /*  /!**
-     * @name formSubmission
-     * @desc After submission, send email to Payal
-      *!/
-    function formSubmission()
-    {
-        console.log("the form was submitted");
-    }//formSubmission
-*/
     /**
      * @name validation
      * @desc CONTACT FORM SUBMIT BUTTON VALIDATION - validation for name, phone and email
@@ -50,10 +41,12 @@
                         }/*else*/
 
                         /* Submit the form*/
-                        document.contactForm.submit();
+                        /*TODO Using PHP send email about form submission. I need PHPStorm subsciption.*/
+                        /*Display message after form submission*/
+                        /*console.log(document.getElementsByClassName("submitMessage"));*/
+                        document.getElementsByClassName("submitMessage")[0].innerHTML = "Sorry, this feature is not yet implemented. Please send an email to Payal at payal.priyadarshini@gmail.com";
 
-                        console.log("hurray");
-
+                       /* document.contactForm.submit();*/
                     }/*submit.addEventListener*/
                 )/*submit.addEventListener*/
             }/*For tabName*/
@@ -66,9 +59,6 @@
      * @desc this will bind all the elements to their events
      */
     function bindBtns() {
-        document.contactForm.addEventListener("submit", function(){
-            console.log("the form was submitted");
-        });
         validation();
     }//bindBtns
 
