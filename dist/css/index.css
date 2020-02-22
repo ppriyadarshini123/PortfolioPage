@@ -2060,6 +2060,7 @@ body {
         justify-content: space-between;
         top: 46%;
         left: 50%;
+        height: 3.5vw;
     }
 
     /*   .tours:hover .imgProject
@@ -2086,6 +2087,7 @@ body {
         letter-spacing: .05vw;
         box-sizing: border-box;
         color: white;
+
     }
     .myJourney:hover, .projectName:hover
     {
@@ -2856,6 +2858,7 @@ body {
         letter-spacing: .05vw;
         box-sizing: border-box;
         color: white;
+        line-height: 1.1vw;
     }
     .myJourney:hover, .projectName:hover
     {
@@ -2880,9 +2883,27 @@ body {
         left: 50%
     }
     /* TESTIMONIALS*/
+    .test
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        line-height: 1vw;
+        padding-bottom: 1.5vw;
+    }
+    .name
+    {
+        text-align: center;
+        padding-bottom: .3vw;
+    }
+    .boldName
+    {
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: .3vw;
+    }
     .displayTestimonials
     {
-        height: 5vw;
+        display: flex;
     }
     .testimonial
     {
@@ -2892,6 +2913,7 @@ body {
         flex-direction: column;
         box-sizing: border-box;
         background-color: #ffffff;
+        border-bottom: #197780 solid .1vw;
     }
     /* CONTACT FORM*/
     .upperCStars
