@@ -32,6 +32,7 @@
     "popper.js": "^1.16.0",
     "requestanimationframe": "0.0.23",
     "require.js": "1.0.0",
-    "webfontloader": "1.6.28"
+    "webfontloader": "1.6.28",
+    "enquire.js": "latest"
   }
 }

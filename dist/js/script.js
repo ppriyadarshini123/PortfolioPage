@@ -6,6 +6,23 @@
     const $menuIcon = $('#openNav');
 
     /**
+     * @name mobile
+     * @desc code for the changing picture when the tabs are clicked, for the mobile viewport
+     */
+  /*  function mobile()
+    {
+        enquire.register("screen and (max-width:360px)", {
+            match: function(){
+
+
+            },/!*match*!/
+            unmatch: function(){
+
+            }/!*unmatch*!/
+        });/!*enquire.register*!/
+    }//mobile*/
+
+    /**
      * @name validation
      * @desc CONTACT FORM SUBMIT BUTTON VALIDATION - validation for name, phone and email
      */

@@ -1,10 +1,22 @@
 /*import * as PIXI from 'pixi.js';*/
 
+
 (function(){
 
     let stage = new PIXI.Container();
     /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
-    let h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
+    let h;
+
+    enquire.register("screen and (max-width:360px)", {
+        match: function(){
+            h = window.innerHeight - (65/100*window.innerHeight);/*Keep top space for Menu*/
+            let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
+        },/*match*/
+        unmatch: function(){
+            h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
+        }/*unmatch*/
+    });/*enquire.register*/
+
 
     /*console.log(window.innerWidth);
     console.log(h);*/
@@ -266,6 +278,17 @@
         htmlText.style.color = '#ffffff';
         htmlText.style.marginTop = '25%';
         /*console.log("resizeText");*/
+
+        /*For mobile*/
+        enquire.register("screen and (max-width:360px)", {
+            match: function () {
+                htmlText.style.marginTop = '72%';
+                htmlText.style.textAlign = 'center';
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
     }
 
 
@@ -276,6 +299,18 @@
         /*Simply scale the font-size with a factor. Lets say your canvas default size is 1000 pixels and the font size is 80 pixels. That will create a relationship of:ratio = 80 / 1000 = 0.08. That will create a relationship of:
     ratio = 80 / 1000 = 0.08*/
         fontSize = width*0.14;
+
+        /*For mobile*/
+        enquire.register("screen and (max-width:360px)", {
+            match: function () {
+                fontSize = 25;
+
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+
 
         if (fontSize > 100) fontSize = 100;
         yOffset = height*0.6 - (fontSize/2);
