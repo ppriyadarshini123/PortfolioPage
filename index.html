@@ -82,9 +82,25 @@
             <div class="aboutMe" id="aboutMe">
                 <p class="title">About Me</p>
                 <div class="upperStars">
-                    <img src="dist/imgs/unoptimized/neon-star-lightblue.png" alt="Neon Star Blue" class="upperBlueStar">
-                    <img src="dist/imgs/unoptimized/neon-star-brown.png" alt="Neon Star Brown" class="upperBrownStar">
-                    <img src="dist/imgs/unoptimized/neon-star-lightpink.png" alt="Neon Star Pink" class="upperPinkStar">
+                    <picture>
+                        <source media="(max-width: 360px)" srcset="dist/imgs/unoptimized/neon-star-lightblue.png">
+                        <source media="(max-width: 768px)" srcset="dist/imgs/unoptimized/neon-star-lightblue.png">
+                        <source media="(min-width: 1200px)" srcset="dist/imgs/unoptimized/neon-star-lightblue.png">
+                        <img src="dist/imgs/unoptimized/neon-star-lightblue.png" alt="Neon Star Blue" class="upperBlueStar">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 360px)" srcset="dist/imgs/unoptimized/neon-star-brown.png">
+                        <source media="(max-width: 768px)" srcset="dist/imgs/unoptimized/neon-star-brown.png">
+                        <source media="(min-width: 1200px)" srcset="dist/imgs/unoptimized/neon-star-brown.png">
+                        <img src="dist/imgs/unoptimized/neon-star-brown.png" alt="Neon Star Brown" class="upperBrownStar">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 360px)" srcset="dist/imgs/unoptimized/neon-star-lightpink.png">
+                        <source media="(max-width: 768px)" srcset="dist/imgs/unoptimized/neon-star-lightpink.png">
+                        <source media="(min-width: 1200px)" srcset="dist/imgs/unoptimized/neon-star-lightpink.png">
+                        <img src="dist/imgs/unoptimized/neon-star-lightpink.png" alt="Neon Star Pink" class="upperPinkStar">
+                    </picture>
+
                 </div><!--upperStars-->
                 <div class="textPic">
                     <div class="flexWidth">
@@ -94,12 +110,15 @@
                         </p>
                     </div><!--intro-->
                     <div class="aboutMeSection">
-                        <img src="dist/imgs/optimized/myPic.png">
+                        <picture>
+                            <source media="(max-width: 360px)" srcset="dist/imgs/optimized/myPic.png">
+                            <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/myPic.png">
+                            <img src="dist/imgs/optimized/myPic.png" alt="Payal Pic" class="imgProject">
+                        </picture>
                         <div class="btn">
                             <input name="Download My CV" value="Download My CV" class="downloadBtn" type="submit">
                         </div>
                         <div class="icons">
-
                                 <a href="https://github.com/ppriyadarshini123" class="link">
                                     <img src="dist/imgs/unoptimized/github-icon.png" width="100" class="icon" alt="My GitHub repository">
                                     <p class="subTitle">My GitHub repository</p>

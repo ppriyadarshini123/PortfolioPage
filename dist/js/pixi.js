@@ -282,8 +282,9 @@
         /*For mobile*/
         enquire.register("screen and (max-width:360px)", {
             match: function () {
-                htmlText.style.marginTop = '72%';
+                htmlText.style.marginTop = '82%';
                 htmlText.style.textAlign = 'center';
+                htmlText.style.marginLeft = '108px';
             },/*match*/
             unmatch: function () {
 
