@@ -1,4 +1,4 @@
-/*import * as PIXI from 'pixi.js';*/
+
 
 
 (function(){
@@ -282,7 +282,7 @@
         /*For mobile*/
         enquire.register("screen and (max-width:360px)", {
             match: function () {
-                htmlText.style.marginTop = '82%';
+                htmlText.style.marginTop = '91%';
                 htmlText.style.textAlign = 'center';
                 htmlText.style.marginLeft = '108px';
             },/*match*/
