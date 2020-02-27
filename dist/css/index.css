@@ -93,14 +93,16 @@ body {
     .logo
     {
         max-width: 100%;
-        width: 20vw;
-
+        width: 46vw;
     }
+
     .hamburger
     {
         display: block;
         font-size: 17vw;
-        margin-right: 50vw;
+        margin-right: 42vw;
+        padding-top: 16vw;
+        padding-left: 4vw;
     }
     /*  NAVIGATION SECTION */
     .topNav
@@ -240,8 +242,7 @@ body {
         font-size: 5vw;
         font-family: Laclede_CAT, sans-serif;
         font-weight: bold;
-        margin-left: 2.5vw;
-        margin-right: 1.5vw;
+        text-align: center;
         z-index: 5;
     }
     .flexWidth
@@ -315,15 +316,15 @@ body {
     .upperBlueStar
     {
         position: absolute;
-        top: 5%;
-        left: 2%;
+        top: 3%;
+        left: 4%;
         z-index: 1;
     }
     .upperBrownStar
     {
         position: absolute;
-        top: 15%;
-        left: 1%;
+        bottom: 21%;
+        left: 6%;
         z-index: 1;
     }
     .upperPinkStar
@@ -341,19 +342,19 @@ body {
     .lowerBlueStar
     {
         position: absolute;
-        top: -3%;
+        bottom: 5%;
         left: 36%;
     }
     .lowerBrownStar
     {
         position: absolute;
-        top: -1%;
-        left: 49%;
+        bottom: 13%;
+        left: 60%;
     }
-    .lowerGreenStar
+    .lowerPinkStar
     {
         position: absolute;
-        top: 85%;
+        bottom: 29%;
         left: 18%;
     }
 
@@ -395,7 +396,7 @@ body {
         margin-left: 44.5vw;
         margin-right: 3.5vw;
         /*width: 90%;*/
-        padding-top: 2vw;
+        padding-top: 10vw;
         padding-bottom: 10vw;
     }
 
