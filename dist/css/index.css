@@ -1732,13 +1732,13 @@ body {
         letter-spacing: .1vw;
     }
 
-    .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemBlog, .navItemContactForm
+    .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemTestimonials, .navItemContactForm
     {
         text-align: center;
         background-color: #197780;
         padding: 1vw;
     }
-    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemBlog:hover, .navItemContactForm:hover
+    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemTestimonials:hover, .navItemContactForm:hover
     {
         border-bottom: white 1px solid;
         cursor: pointer;
@@ -2504,13 +2504,13 @@ body {
         letter-spacing: .1vw;
     }
 
-    .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemBlog, .navItemContactForm
+    .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemTestimonials, .navItemContactForm
     {
         text-align: center;
         background-color: #197780;
         padding: 1vw;
     }
-    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemBlog:hover, .navItemContactForm:hover
+    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemTestimonials:hover, .navItemContactForm:hover
     {
         border-bottom: white 1px solid;
         cursor: pointer;
