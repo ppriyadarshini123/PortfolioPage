@@ -1,31 +1,45 @@
-
+/*import * as PIXI from 'pixi.js';*/
 
 
 (function(){
 
     let stage = new PIXI.Container();
     /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
+
     let h;
 
     enquire.register("screen and (max-width:360px)", {
         match: function(){
             h = window.innerHeight - (65/100*window.innerHeight);/*Keep top space for Menu*/
-            let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
+
         },/*match*/
         unmatch: function(){
-            h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
+
+
         }/*unmatch*/
     });/*enquire.register*/
 
+
+    enquire.register("screen and (min-width:1200px)", {
+        match: function(){
+            h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
+        },/*match*/
+        unmatch: function(){
+
+        }/*unmatch*/
+    });/*enquire.register*/
+
+    let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
+    renderer.backgroundColor = 0x197780;
 
     /*console.log(window.innerWidth);
     console.log(h);*/
     /*This helper function will automatically detect which renderer you should be using.
     WebGL is the preferred renderer as it is a lot faster. If WebGL is not supported by the browser then
     this function will return a canvas renderer*/
-    let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
+    /*let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});*/
     /*console.log(renderer);*/
-    renderer.backgroundColor = 0x197780;
+    /*renderer.backgroundColor = 0x197780;*/
 
     /* var webGLcanvas = renderer.view;
     *  var ctx = renderer.context; */
@@ -60,14 +74,11 @@
     render();*/
 
     let textures = [
-        PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-lightblue.png"),
-        PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-brown.png"),
-        PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-lightpink.png"),
-        /*   PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-orange.png"),
-           PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-pink.png"),
-           PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-green.png"),
-           PIXI.Texture.from("/dist/imgs/unoptimized/neon-star-purple.png")*/
-    ]
+        PIXI.Texture.from("/dist/imgs/optimized/neon-star-lightblue-100x102.png"),
+        PIXI.Texture.from("/dist/imgs/optimized/neon-star-brown-100x102.png"),
+        PIXI.Texture.from("/dist/imgs/optimized/neon-star-lightpink-100x102.png"),
+
+    ];
 
     function createStar(text) {
         let star = new PIXI.Sprite(text);
@@ -282,9 +293,9 @@
         /*For mobile*/
         enquire.register("screen and (max-width:360px)", {
             match: function () {
-                htmlText.style.marginTop = '91%';
+                htmlText.style.marginTop = '75%';
                 htmlText.style.textAlign = 'center';
-                htmlText.style.marginLeft = '108px';
+                htmlText.style.marginLeft = '0px';
             },/*match*/
             unmatch: function () {
 
