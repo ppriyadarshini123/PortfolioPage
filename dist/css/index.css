@@ -64,7 +64,7 @@ body {
     .wrapper2
     {
         margin: 0 auto;
-        /*max-width: 100%;*/
+        max-width: 100%;
         width: 100%;
     }
 
@@ -427,7 +427,7 @@ body {
         /*padding-right: 1vw;*/
         /*margin: 1vw;*/
         /*width: 80%;*/
-        margin-left: 25.5vw;
+        margin-left: 29.5vw;
         margin-right: 3.5vw;
         /*width: 90%;*/
         padding-top: 10vw;
@@ -437,7 +437,7 @@ body {
     .skills
     {
         display: block;
-        width: 100%;
+        width: 80%;
         max-width: 100%;
         /*height: 30vw;*/
     }
@@ -1672,8 +1672,8 @@ body {
     .wrapper2
     {
         margin: 0 auto;
-        max-width: 1200px;
-        width: 80vw;
+        max-width: 100%;
+        width: 90vw;
     }
 
     .logoAndHam
@@ -1833,6 +1833,23 @@ body {
         z-index: 5;
         position: relative;
     }
+    .hi
+    {
+        letter-spacing: .1vw;
+        font-size: .8vw;
+        font-family: Laclede_CAT, sans-serif;
+        z-index: 5;
+        margin-left: 1.5vw;
+    }
+
+    .myPic
+    {
+        width: 100%;
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
     .email
     {
         letter-spacing: .1vw;
@@ -1873,7 +1890,6 @@ body {
     .downloadBtn:hover
     {
         border: .2vw #B3AB76 solid;
-
     }
     .icons
     {
@@ -1944,7 +1960,7 @@ body {
     .lowerBrownStar
     {
         position: absolute;
-        top: -1%;
+        top: 91%;
         left: 49%;
     }
     .lowerGreenStar
@@ -2130,7 +2146,6 @@ body {
         justify-content: space-between;
         top: 46%;
         left: 50%;
-        height: 3.5vw;
     }
 
     /*   .tours:hover .imgProject
@@ -2151,13 +2166,13 @@ body {
     .myJourney, .projectName, .heading, .queries, .erd
     {
         background-color: #B3AB76;
-        font-size: 12px;
+        font-size: 16px;
         padding: 16px 32px;
         font-weight: bold;
         letter-spacing: .05vw;
         box-sizing: border-box;
         color: white;
-
+        line-height: 1.1vw;
     }
     .myJourney:hover, .projectName:hover
     {
@@ -2182,9 +2197,27 @@ body {
         left: 50%
     }
     /* TESTIMONIALS*/
+    .test
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        line-height: 1vw;
+        padding-bottom: 1.5vw;
+    }
+    .name
+    {
+        text-align: center;
+        padding-bottom: .3vw;
+    }
+    .boldName
+    {
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: .3vw;
+    }
     .displayTestimonials
     {
-        height: 5vw;
+        display: flex;
     }
     .testimonial
     {
@@ -2194,6 +2227,7 @@ body {
         flex-direction: column;
         box-sizing: border-box;
         background-color: #ffffff;
+        border-bottom: #197780 solid .1vw;
     }
     /* CONTACT FORM*/
     .upperCStars
@@ -2605,6 +2639,14 @@ body {
         z-index: 5;
         position: relative;
     }
+    .hi
+    {
+        letter-spacing: .1vw;
+        font-size: .8vw;
+        font-family: Laclede_CAT, sans-serif;
+        z-index: 5;
+        margin-left: 1.5vw;
+    }
 
     .myPic
     {
@@ -2654,7 +2696,6 @@ body {
     .downloadBtn:hover
     {
         border: .2vw #B3AB76 solid;
-
     }
     .icons
     {
