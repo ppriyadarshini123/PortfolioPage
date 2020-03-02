@@ -8,6 +8,7 @@
 
     let h;
 
+    //mobile
     enquire.register("screen and (max-width:360px)", {
         match: function(){
             h = window.innerHeight - (65/100*window.innerHeight);/*Keep top space for Menu*/
@@ -19,7 +20,16 @@
         }/*unmatch*/
     });/*enquire.register*/
 
+    //laptop
+    enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
+        match: function(){
+            h = window.innerHeight - (20/100*window.innerHeight);/*Keep top space for Menu*/
+        },/*match*/
+        unmatch: function(){
+        }/*unmatch*/
+    });/*enquire.register*/
 
+    //desktop
     enquire.register("screen and (min-width:1200px)", {
         match: function(){
             h = window.innerHeight - (29.5/100*window.innerHeight);/*Keep top space for Menu*/
@@ -287,15 +297,39 @@
         htmlText.style.fontSize = fontSize+'px';
         htmlText.style.height = fontSize+'px';
         htmlText.style.color = '#ffffff';
-        htmlText.style.marginTop = '25%';
-        /*console.log("resizeText");*/
+       /* htmlText.style.marginTop = '25%';
+        /!*console.log("resizeText");*!/!*!/*/
 
         /*For mobile*/
         enquire.register("screen and (max-width:360px)", {
             match: function () {
-                htmlText.style.marginTop = '75%';
+                htmlText.style.position = 'absolute';
+                htmlText.style.top = '43%';
                 htmlText.style.textAlign = 'center';
-                htmlText.style.marginLeft = '0px';
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+
+        /*For laptop*/
+        enquire.register("screen and (min-width:769px) and (max-width:1200px)", {
+            match: function () {
+                htmlText.style.position = 'absolute';
+                htmlText.style.top = '49%';
+                htmlText.style.textAlign = 'center';
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+
+        /*For Desktop*/
+        enquire.register("screen and (min-width:1200px)", {
+            match: function () {
+                htmlText.style.position = 'absolute';
+                htmlText.style.top = '30%';
+                htmlText.style.textAlign = 'center';
             },/*match*/
             unmatch: function () {
 
@@ -323,8 +357,28 @@
             }/*unmatch*/
         });/*enquire.register*/
 
+        /*For laptop*/
+        enquire.register("screen and (min-width:769px) and (max-width:1200px)", {
+            match: function () {
+                fontSize = 47;
 
-        if (fontSize > 100) fontSize = 100;
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+
+        /*For desktop*/
+        enquire.register("screen and (min-width:1200px)", {
+            match: function () {
+                fontSize = 100;
+
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+        /*if (fontSize > 100) fontSize = 100;*/
         yOffset = height*0.6 - (fontSize/2);
 
         /*rendering the canvas with specified width and height*/
