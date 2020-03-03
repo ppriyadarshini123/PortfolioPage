@@ -20,6 +20,17 @@
         }/*unmatch*/
     });/*enquire.register*/
 
+    //tablet
+    enquire.register("screen and (min-width:361px) and (max-width: 768px)", {
+        match: function(){
+            h = window.innerHeight - (55/100*window.innerHeight);/*Keep top space for Menu*/
+        },/*match*/
+        unmatch: function(){
+
+
+        }/*unmatch*/
+    });/*enquire.register*/
+
     //laptop
     enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
         match: function(){
@@ -312,11 +323,23 @@
             }/*unmatch*/
         });/*enquire.register*/
 
+        /*For tablet*/
+        enquire.register("screen and (min-width:361px) and (max-width: 768px)", {
+            match: function () {
+                htmlText.style.position = 'absolute';
+                htmlText.style.top = '25%';
+                htmlText.style.textAlign = 'center';
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+
         /*For laptop*/
         enquire.register("screen and (min-width:769px) and (max-width:1200px)", {
             match: function () {
                 htmlText.style.position = 'absolute';
-                htmlText.style.top = '49%';
+                htmlText.style.top = '52%';
                 htmlText.style.textAlign = 'center';
             },/*match*/
             unmatch: function () {
@@ -328,7 +351,7 @@
         enquire.register("screen and (min-width:1200px)", {
             match: function () {
                 htmlText.style.position = 'absolute';
-                htmlText.style.top = '30%';
+                htmlText.style.top = '38%';
                 htmlText.style.textAlign = 'center';
             },/*match*/
             unmatch: function () {
@@ -357,6 +380,17 @@
             }/*unmatch*/
         });/*enquire.register*/
 
+        /*For tablet*/
+        enquire.register("screen and (min-width:361px) and (max-width: 768px)", {
+            match: function () {
+                fontSize = 25;
+
+            },/*match*/
+            unmatch: function () {
+
+            }/*unmatch*/
+        });/*enquire.register*/
+
         /*For laptop*/
         enquire.register("screen and (min-width:769px) and (max-width:1200px)", {
             match: function () {
@@ -371,7 +405,7 @@
         /*For desktop*/
         enquire.register("screen and (min-width:1200px)", {
             match: function () {
-                fontSize = 100;
+                fontSize = 69;
 
             },/*match*/
             unmatch: function () {

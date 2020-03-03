@@ -324,7 +324,7 @@ body {
         text-align: center;
         padding-top: 4vw;
         max-width: 100%;
-        width: 100%;
+        width: 60%;
     }
 
     .icon
@@ -385,7 +385,7 @@ body {
     {
         position: absolute;
         bottom: 5%;
-        left: 36%;
+        left: 41%;
     }
     .lowerBrownStar
     {
@@ -397,7 +397,7 @@ body {
     {
         position: absolute;
         bottom: 29%;
-        left: 18%;
+        left: 23%;
     }
 
     /* MY SKILLS SECTION*/
@@ -445,7 +445,7 @@ body {
     .skills
     {
         display: block;
-        width: 80%;
+        width: 86%;
         max-width: 100%;
         /*height: 30vw;*/
     }
@@ -640,6 +640,7 @@ body {
     {
         text-align: center;
         padding-bottom: .3vw;
+        line-height: 6.4vw;
     }
     .boldName
     {
@@ -670,8 +671,8 @@ body {
     .upperCBlueStar
     {
         position: absolute;
-        top: 8%;
-        left: 2%;
+        top: 7%;
+        left: 0%;
         z-index: 1;
     }
     .upperCBrownStar
@@ -721,7 +722,7 @@ body {
     {
         font-size: 6.5vw;
         padding-bottom: 2vw;
-        padding-top: 2vw;
+        padding-top: 8vw;
         text-align: center;
     }
     .contactForm
@@ -903,15 +904,17 @@ body {
     /* HEADER SECTION*/
     .wrapper
     {
-        width: 100%;
         margin: 0 auto;
+        width: 100%;
+        /*width: 100%;
+        margin: 0 auto;*/
         max-width: 100%;
     }
     .wrapper2
     {
         margin: 0 auto;
-        max-width: 1200px;
-        width: 80vw;
+        max-width: 100%;
+        width: 100%;
     }
 
     .logoAndHam
@@ -920,45 +923,49 @@ body {
         width: 100%;
         cursor: pointer;
         display: flex;
-        justify-content: space-between;
     }
 
     .logoName
     {
-        display: flex;
-        max-width: 100%;
-        width: 11vw;
+
+        /* width: 11vw;*/
         box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+         margin-right: auto;*/
     }
 
     .showHome
     {
-        margin-right: 1vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     .logo
     {
         max-width: 100%;
-        height: auto;
-        width: 12vw;
+        width: 42vw;
     }
+
     .hamburger
     {
-        display: none;
+        display: block;
+        font-size: 17vw;
+        margin-right: 13vw;
+        padding-top: 16vw;
+        padding-left: 4vw;
     }
     /*  NAVIGATION SECTION */
     .topNav
     {
         max-width: 100%;
-        position: sticky;
+        /*position: sticky;*/
         top: 0;
         z-index: 5;
         padding-top: .5vw;
-        display: flex;
-        justify-content: space-around;
-        width:50%;
-        float: right;
+        /*display: flex;*/
+        /*justify-content: space-around;*/
+        width: 100%;
+        /* float: right;*/
+        display: grid;
     }
 
     .txtNav
@@ -966,17 +973,49 @@ body {
         color: #ffffff;
         text-decoration-color: transparent;
         top: 1vw;
-        font-size: 1vw;
-        letter-spacing: .1vw;
+        font-size: 5vw;
+        letter-spacing: .2vw;
+        padding: 4vw;
+        line-height: 7vw;
     }
 
-    .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemBlog, .navItemContactForm
+    .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemTestimonials, .navItemContactForm
     {
         text-align: center;
         background-color: #197780;
         padding: 1vw;
+        margin: 1vw;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemBlog:hover, .navItemContactForm:hover
+
+    .navItemHome
+    {
+        grid-area: 1/1/1/1;
+    }
+
+    .navItemAboutMe
+    {
+        grid-area: 1/2/1/2;
+    }
+    .navItemMySkills
+    {
+        grid-area: 1/3/1/3;
+    }
+    .navItemMyProjects
+    {
+        grid-area: 2/1/2/1;
+    }
+    .navItemTestimonials
+    {
+        grid-area: 2/2/2/2;
+    }
+    .navItemContactForm
+    {
+        grid-area: 2/3/2/3;
+    }
+    .navItemHome:hover, .navItemAboutMe:hover, .navItemMySkills:hover, .navItemMyProjects:hover, .navItemTestimonials:hover, .navItemContactForm:hover
     {
         border-bottom: white 1px solid;
         cursor: pointer;
@@ -1008,7 +1047,7 @@ body {
     }
     #home
     {
-
+        position: relative;
     }
     /*  #dispCnv
       {
@@ -1030,8 +1069,8 @@ body {
                 5px 0 0 #1a1a1a,
                 5px 0 0 #1a1a1a;
         margin-top: 28%;
-        font-size: 5vw;
         color: #ffffff;
+        /*position: relative;*/
         position: absolute;/*z-index only applies to top positioned elements, so position text absolutely and canvas relatively for z-index to work.*/
         /*font-family: Laclede_CAT;*/
     }
@@ -1040,9 +1079,9 @@ body {
     {
         text-align: center;
         font-weight: bold;
-        padding-top: 2vw;
+        padding-top: 8vw;
         padding-bottom: 2vw;
-        font-size: 1.5vw;
+        font-size: 6.5vw;
         color: #197780;
     }
 
@@ -1051,39 +1090,54 @@ body {
     {
         background-color: white;
         position: relative;
-        padding-bottom: 2vw;
+        padding-bottom: 10vw;
+    }
+
+    .hi
+    {
+        letter-spacing: .1vw;
+        font-size: 5vw;
+        font-family: Laclede_CAT, sans-serif;
+        z-index: 5;
+        margin-left: 2.5vw;
     }
 
     .textPic
     {
-        display: flex;
-        justify-content: center;
+        /*display: flex;
+        justify-content: center;*/
+    }
+
+    .myPic
+    {
+        max-width: 100%;
+        width: 100%;
     }
     .intro
     {
-        line-height: 2.2vw;
+        line-height: 9.2vw;
         letter-spacing: .1vw;
-        font-size: .8vw;
+        font-size: 5vw;
         font-family: Laclede_CAT, sans-serif;
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
         margin-bottom: 2vw;
+        padding-top: 2vw;
         z-index: 5;
         position: relative;
     }
     .email
     {
         letter-spacing: .1vw;
-        font-size: .7vw;
+        font-size: 5vw;
         font-family: Laclede_CAT, sans-serif;
         font-weight: bold;
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
+        text-align: center;
         z-index: 5;
     }
     .flexWidth
     {
-        width: 33%;
+        width: 100%;
     }
     /*  .btn
       {
@@ -1096,17 +1150,18 @@ body {
     .aboutMeSection
     {
         text-align: center;
+        width: 100%;
     }
     .downloadBtn
     {
         background-color: #197780;
-        padding: 1vw 2vw;
+        padding: 4vw 13vw;
         color: white;
-        font-size: 1.2vw;
+        font-size: 5vw;
         letter-spacing: .1vw;
         margin-bottom: 1vw;
         margin-left: 1.5vw;
-        height: 4vw;/*This height is added, to avoid an extra space generated because of hover effect*/
+        height: 15vw;/*This height is added, to avoid an extra space generated because of hover effect*/
     }
     .downloadBtn:hover
     {
@@ -1117,18 +1172,21 @@ body {
     {
         display: inline-flex;
         text-align: center;
+        padding-top: 4vw;
+        max-width: 100%;
+        width: 60%;
     }
 
     .icon
     {
-        margin-right: 1vw;
+        margin-right: 2vw;
     }
     .subTitle
     {
-        width: 5vw;
+        width: 31vw;
         text-align: center;
         padding-top: .5vw;
-        line-height: 1vw;
+        line-height: 7vw;
         color: #197780;
         font-weight: bold;
         text-decoration: none;
@@ -1150,22 +1208,22 @@ body {
     .upperBlueStar
     {
         position: absolute;
-        bottom: -35%;
-        left: 2%;
+        top: 3%;
+        left: 4%;
         z-index: 1;
     }
     .upperBrownStar
     {
         position: absolute;
-        top: -51%;
-        left: 1%;
+        bottom: 21%;
+        left: 6%;
         z-index: 1;
     }
     .upperPinkStar
     {
         position: absolute;
-        top: -51%;
-        left: 11%;
+        top: 3%;
+        left: 20%;
         z-index: 1;
     }
 
@@ -1176,20 +1234,20 @@ body {
     .lowerBlueStar
     {
         position: absolute;
-        top: -3%;
-        left: 36%;
+        bottom: 5%;
+        left: 41%;
     }
     .lowerBrownStar
     {
         position: absolute;
-        top: -1%;
-        left: 49%;
+        bottom: 13%;
+        left: 60%;
     }
-    .lowerGreenStar
+    .lowerPinkStar
     {
         position: absolute;
-        top: 85%;
-        left: 18%;
+        bottom: 29%;
+        left: 23%;
     }
 
     /* MY SKILLS SECTION*/
@@ -1202,7 +1260,7 @@ body {
     }
     .alignHorizontal
     {
-        display: flex;
+        display: inline-flex;
     }
 
     /*Carousel*/
@@ -1211,27 +1269,35 @@ body {
         position: relative;
         overflow: hidden;
         width: 100%;
+        padding-top: 2vw;
     }
     .jcarousel ul
     {
-        width: 380vw;
+        /*width: 380vw;*/
         position: relative;
         list-style: none;
         margin: 0;
         padding: 0;
+
     }
     .jcarousel li
     {
         /*padding-right: 1vw;*/
-        margin: 1vw;
+        /*margin: 1vw;*/
+        /*width: 80%;*/
+        margin-left: 29.5vw;
+        margin-right: 3.5vw;
+        /*width: 90%;*/
+        padding-top: 10vw;
+        padding-bottom: 10vw;
     }
 
     .skills
     {
         display: block;
-        width: 90%;
+        width: 86%;
         max-width: 100%;
-        height: 5vw;
+        /*height: 30vw;*/
     }
 
     /*Carousel Controls*/
@@ -1287,15 +1353,11 @@ body {
         height: 10px;
         width: 10px;
         line-height: 10px;
-
         background: #fff;
         color: #4E443C;
         border-radius: 10px;
         text-indent: -9999px;
-
         margin-right: 7px;
-
-
         -webkit-box-shadow: 0 0 2px #4E443C;
         -moz-box-shadow: 0 0 2px #4E443C;
         box-shadow: 0 0 2px #4E443C;
@@ -1305,7 +1367,6 @@ body {
         background: #4E443C;
         color: #fff;
         opacity: 1;
-
         -webkit-box-shadow: 0 0 2px #F0EFE7;
         -moz-box-shadow: 0 0 2px #F0EFE7;
         box-shadow: 0 0 2px #F0EFE7;
@@ -1319,15 +1380,15 @@ body {
     .titleProjects
     {
         color: white;
-        font-size: 1.5vw;
+        font-size: 6.5vw;
         text-align: center;
-        padding-top: 2vw;
+        padding-top: 8vw;
         padding-bottom: 2vw;
     }
     .projectsGrid
     {
         display: grid;
-        grid-template-columns: repeat(2, minmax(50%, 1vw));
+        /*grid-template-columns: repeat(2, minmax(50%, 1vw));*/
         padding-bottom: 2vw;
         position: relative;
         width: 100%;
@@ -1336,7 +1397,7 @@ body {
     .project
     {
         text-align: center;
-        padding: 1vw;
+        padding: 2vw;
         position: relative;
     }
 
@@ -1352,7 +1413,7 @@ body {
     .imgProject
     {
         width: 100%;
-        height: 13vw;
+        /*height: 13vw;*/
         opacity: 1;
         display: block;
         transition: .5s ease;
@@ -1388,12 +1449,13 @@ body {
     .myJourney, .projectName, .heading, .queries, .erd
     {
         background-color: #B3AB76;
-        font-size: 16px;
-        padding: 16px 32px;
+        font-size: 5vw;
+        padding: 6vw 6vw;
         font-weight: bold;
         letter-spacing: .05vw;
         box-sizing: border-box;
         color: white;
+        line-height: 7vw;
     }
     .myJourney:hover, .projectName:hover
     {
@@ -1418,9 +1480,27 @@ body {
         left: 50%
     }
     /* TESTIMONIALS*/
+    /* TESTIMONIALS*/
+    .test
+    {
+        line-height: 6vw;
+        padding: 8vw 2.5vw 1.5vw;
+    }
+    .name
+    {
+        text-align: center;
+        padding-bottom: .3vw;
+        line-height: 6.4vw;
+    }
+    .boldName
+    {
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: .3vw;
+    }
     .displayTestimonials
     {
-        height: 5vw;
+        /*display: flex;*/
     }
     .testimonial
     {
@@ -1430,6 +1510,7 @@ body {
         flex-direction: column;
         box-sizing: border-box;
         background-color: #ffffff;
+        border-bottom: #197780 solid .1vw;
     }
     /* CONTACT FORM*/
     .upperCStars
@@ -1440,8 +1521,8 @@ body {
     .upperCBlueStar
     {
         position: absolute;
-        top: 8%;
-        left: 2%;
+        top: 7%;
+        left: 0%;
         z-index: 1;
     }
     .upperCBrownStar
@@ -1466,8 +1547,8 @@ body {
     .lowerCBlueStar
     {
         position: absolute;
-        bottom: 5%;
-        right: 19%;
+        top: -1%;
+        right: 1%;
     }
     .lowerCBrownStar
     {
@@ -1489,9 +1570,9 @@ body {
     }
     .titleMap
     {
-        font-size: 1.5vw;
+        font-size: 6.5vw;
         padding-bottom: 2vw;
-        padding-top: 2vw;
+        padding-top: 8vw;
         text-align: center;
     }
     .contactForm
@@ -1522,7 +1603,7 @@ body {
         max-width: 100%;
         margin-bottom: .2vw;
         letter-spacing: .1vw;
-        font-size: 1vw;
+        font-size: 5vw;
     }
     .txtBox
     {
@@ -1535,7 +1616,7 @@ body {
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 1vw;
+        font-size: 5vw;
         letter-spacing: .1vw;
         padding: 12px;
         resize: vertical;
@@ -1546,16 +1627,16 @@ body {
     {
         text-align: center;
         letter-spacing: .2vw;
-        font-size: 1vw;
+        font-size: 7vw;
         background-color: #197780;
         color: white;
         display: block;
-        padding: 2vw 1vw;
+        padding: 2vw 14vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
-        height: 5vw;
+        height: 22vw;
     }
 
     .submitBtn:hover
@@ -1611,15 +1692,15 @@ body {
         width: 77%;
         line-height: 2.5vw;
         text-align: left;
-        padding-left: 6vw;
+        padding-left: 2.5vw;
     }
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 1.2vw;
+        font-size: 5vw;
         letter-spacing: .2vw;
         text-decoration: none;
-        line-height: 2vw;
+        line-height: 8vw;
     }
     .linkSiteMap:hover
     {
@@ -1628,12 +1709,12 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 1.5vw;
+        font-size: 5vw;
         letter-spacing: .2vw;
         font-weight: bold;
-        padding-top: 1.5vw;
-        padding-bottom:1vw;
-        padding-left: 6vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-left: 2.5vw;
     }
 
     .goToTop
@@ -1657,14 +1738,13 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
         color: #ffffff;
-        font-size: 1vw;
+        font-size: 6vw;
         letter-spacing: .2vw;
         text-align: center;
     }
-
 }/*>360px and <768px - Tablet*/
 
 /* >768px and < 1200px - Laptop*/
@@ -1697,7 +1777,7 @@ body {
     {
         display: flex;
         max-width: 100%;
-        width: 18vw;
+        width: 30vw;
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
@@ -1710,8 +1790,7 @@ body {
     .logo
     {
         max-width: 100%;
-        height: auto;
-        width: 17vw;
+
     }
     .hamburger
     {
@@ -2139,11 +2218,11 @@ body {
     .imgProject
     {
         width: 100%;
-        height: 30vw;
         opacity: 1;
         display: block;
         transition: .5s ease;
         backface-visibility: hidden;
+        height: 23vw;
     }
     .overlay
     {
@@ -2210,13 +2289,14 @@ body {
     {
         padding-left: 2vw;
         padding-right: 2vw;
-        line-height: 2vw;
+        line-height: 3vw;
         padding-bottom: 1.5vw;
     }
     .name
     {
         text-align: center;
         padding-bottom: .3vw;
+        line-height: 2.5vw;
     }
     .boldName
     {
@@ -2296,7 +2376,7 @@ body {
     }
     .titleMap
     {
-        font-size: 1.5vw;
+        font-size: 2.6vw;
         padding-bottom: 2vw;
         padding-top: 2vw;
         text-align: center;
@@ -2330,7 +2410,7 @@ body {
         max-width: 100%;
         margin-bottom: .2vw;
         letter-spacing: .1vw;
-        font-size: 1vw;
+        font-size: 2vw;
     }
     .txtBox
     {
@@ -2343,7 +2423,7 @@ body {
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 1vw;
+        font-size: 2vw;
         letter-spacing: .1vw;
         padding: 12px;
         resize: vertical;
@@ -2354,7 +2434,7 @@ body {
     {
         text-align: center;
         letter-spacing: .2vw;
-        font-size: 1vw;
+        font-size: 2vw;
         background-color: #197780;
         color: white;
         display: block;
@@ -2363,7 +2443,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
-        height: 5vw;
+        height: 9vw;
     }
 
     .submitBtn:hover
@@ -2424,10 +2504,10 @@ body {
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 1.2vw;
+        font-size: 2vw;
         letter-spacing: .2vw;
         text-decoration: none;
-        line-height: 2vw;
+        line-height: 3vw;
     }
     .linkSiteMap:hover
     {
@@ -2436,7 +2516,7 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 1.5vw;
+        font-size: 2vw;
         letter-spacing: .2vw;
         font-weight: bold;
         padding-top: 1.5vw;
@@ -2468,7 +2548,7 @@ body {
         padding-top: 1vw;
         padding-bottom: 1vw;
         color: #ffffff;
-        font-size: 1vw;
+        font-size: 2vw;
         letter-spacing: .2vw;
         text-align: center;
     }
@@ -2505,7 +2585,6 @@ body {
     {
         display: flex;
         max-width: 100%;
-        width: 11vw;
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
@@ -2518,8 +2597,6 @@ body {
     .logo
     {
         max-width: 100%;
-        height: auto;
-        width: 12vw;
     }
     .hamburger
     {
@@ -2641,7 +2718,7 @@ body {
     {
         line-height: 2.2vw;
         letter-spacing: .1vw;
-        font-size: .8vw;
+        font-size: 1.5vw;
         font-family: Laclede_CAT, sans-serif;
         margin-left: 1.5vw;
         margin-right: 1.5vw;
@@ -2652,7 +2729,7 @@ body {
     .hi
     {
         letter-spacing: .1vw;
-        font-size: .8vw;
+        font-size: 1.5vw;
         font-family: Laclede_CAT, sans-serif;
         z-index: 5;
         margin-left: 1.5vw;
@@ -2669,7 +2746,7 @@ body {
     .email
     {
         letter-spacing: .1vw;
-        font-size: .7vw;
+        font-size: 1.2vw;
         font-family: Laclede_CAT, sans-serif;
         font-weight: bold;
         margin-left: 1.5vw;
@@ -2719,10 +2796,10 @@ body {
     }
     .subTitle
     {
-        width: 5vw;
+        width: 10vw;
         text-align: center;
         padding-top: .5vw;
-        line-height: 1vw;
+        line-height: 2.2vw;
         color: #197780;
         font-weight: bold;
         text-decoration: none;
@@ -2825,7 +2902,7 @@ body {
         display: block;
         width: 90%;
         max-width: 100%;
-        height: 5vw;
+        height: 10vw;
     }
 
     /*Carousel Controls*/
@@ -2946,7 +3023,7 @@ body {
     .imgProject
     {
         width: 100%;
-        height: 13vw;
+        height: 19vw;
         opacity: 1;
         display: block;
         transition: .5s ease;
@@ -3017,7 +3094,7 @@ body {
     {
         padding-left: 2vw;
         padding-right: 2vw;
-        line-height: 1vw;
+        line-height: 1.7vw;
         padding-bottom: 1.5vw;
     }
     .name
@@ -3160,7 +3237,7 @@ body {
     {
         text-align: center;
         letter-spacing: .2vw;
-        font-size: 1vw;
+        font-size: 1.5vw;
         background-color: #197780;
         color: white;
         display: block;
@@ -3169,7 +3246,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
-        height: 5vw;
+        height: 7vw;
     }
 
     .submitBtn:hover
