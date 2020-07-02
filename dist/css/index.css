@@ -607,11 +607,13 @@ body {
         color: white;
         line-height: 7vw;
         height: 5vw;
+        cursor: pointer;
 
     }
     .myJourney:hover, .projectName:hover
     {
         border: .1vw solid #ffffff;
+        cursor: pointer;
     }
     .myJourney
     {
@@ -1489,10 +1491,12 @@ body {
         color: white;
         line-height: 7vw;
         height: 5vw;
+        cursor: pointer;
     }
     .myJourney:hover, .projectName:hover
     {
         border: .1vw solid #ffffff;
+        cursor: pointer;
     }
     .myJourney
     {
@@ -2292,6 +2296,8 @@ body {
         backface-visibility: hidden;
         height: 23vw;
     }
+
+
     .overlay
     {
         transition: .5s ease;
@@ -2330,10 +2336,12 @@ body {
         color: white;
         line-height: 3.1vw;
         height: 5vw;
+        cursor: pointer;
     }
     .myJourney:hover, .projectName:hover
     {
         border: .1vw solid #ffffff;
+        cursor: pointer;
     }
     .myJourney
     {
@@ -3170,11 +3178,13 @@ body {
         color: white;
         line-height: 1.3vw;
         height: 5vw;
+        cursor: pointer;
 
     }
     .myJourney:hover, .projectName:hover
     {
         border: .1vw solid #ffffff;
+        cursor: pointer;
     }
     .myJourney
     {
