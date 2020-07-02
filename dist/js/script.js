@@ -1,27 +1,45 @@
-import enquire from 'enquire.js';
+/*import enquire from 'enquire.js';*/
 
 (function(){
 
     const submit = document.getElementsByClassName("submitBtn");
     const contactForm = document.getElementsByClassName("contactFormArea");
     const $menuIcon = $('#openNav');
+    const $mySql = $('#mysql');
+    const $openWindow = $('#openWindow');
 
     /**
      * @name mobile
      * @desc code for the changing picture when the tabs are clicked, for the mobile viewport
      */
-  /*  function mobile()
-    {
-        enquire.register("screen and (max-width:360px)", {
-            match: function(){
+    /*  function mobile()
+      {
+          enquire.register("screen and (max-width:360px)", {
+              match: function(){
 
 
-            },/!*match*!/
-            unmatch: function(){
+              },/!*match*!/
+              unmatch: function(){
 
-            }/!*unmatch*!/
-        });/!*enquire.register*!/
-    }//mobile*/
+              }/!*unmatch*!/
+          });/!*enquire.register*!/
+      }//mobile*/
+
+    /**
+     * This code is to dislay the .documents block using JQuery
+     */
+/* $(function() {*/
+        $(document).ready(function(){
+            $mySql.click(function() {
+                $openWindow.toggle("fast");
+            });
+        });
+    /*});*/
+
+    /*This is the javascript way of displayingblock*/
+   /* function myFunction() {
+        document.getElementById("openWindow").style.display = "block";
+    }*/
 
     /**
      * @name validation
@@ -64,7 +82,7 @@ import enquire from 'enquire.js';
                         /*console.log(document.getElementsByClassName("submitMessage"));*/
                         document.getElementsByClassName("submitMessage")[0].innerHTML = "Sorry, this feature is not yet implemented. Please send an email to Payal at payal.priyadarshini@gmail.com";
 
-                       /* document.contactForm.submit();*/
+                        /* document.contactForm.submit();*/
                     }/*submit.addEventListener*/
                 )/*submit.addEventListener*/
             }/*For tabName*/
@@ -78,6 +96,7 @@ import enquire from 'enquire.js';
      */
     function bindBtns() {
         validation();
+        myFunction();
     }//bindBtns
 
     /**

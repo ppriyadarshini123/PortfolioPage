@@ -596,7 +596,7 @@ body {
            opacity: 1;
        }*/
 
-    .myJourney, .projectName, .heading, .queries, .erd
+    .myJourney, .projectName, .heading
     {
         background-color: #B3AB76;
         font-size: 5vw;
@@ -606,6 +606,8 @@ body {
         box-sizing: border-box;
         color: white;
         line-height: 7vw;
+        height: 5vw;
+
     }
     .myJourney:hover, .projectName:hover
     {
@@ -617,19 +619,46 @@ body {
     }
     .documents
     {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: -100%;
     }
-    #mysql:hover .documents
+
+    .removeUnderline
+    {
+        text-decoration: none;
+        color: #B3AB76;
+    }
+   /* #mysql:hover #openWindow
     {
         display: block;
-    }
+    }*/
     .queries
     {
-        position: absolute;
-        top: 3%;
-        left: 50%
+        margin-right: .2vw;
+        /*position: absolute;*/
+        /*!*bottom: 100%;*/
+        /*left: 0;*!*/
     }
-    /* TESTIMONIALS*/
+    .queries, .erd
+    {
+        background-color: white;
+        font-size: 1vw;
+        padding: .5vw .5vw;
+        font-weight: bold;
+        letter-spacing: .05vw;
+        box-sizing: border-box;
+        color: #B3AB76;
+        line-height: 3vw;
+        text-decoration: none;
+    }
+
+    .queries:hover, .erd:hover
+    {
+        text-decoration: underline;
+
+    }
+
     /* TESTIMONIALS*/
     .test
     {
@@ -1449,7 +1478,7 @@ body {
            opacity: 1;
        }*/
 
-    .myJourney, .projectName, .heading, .queries, .erd
+    .myJourney, .projectName, .heading
     {
         background-color: #B3AB76;
         font-size: 5vw;
@@ -1459,6 +1488,7 @@ body {
         box-sizing: border-box;
         color: white;
         line-height: 7vw;
+        height: 5vw;
     }
     .myJourney:hover, .projectName:hover
     {
@@ -1470,19 +1500,45 @@ body {
     }
     .documents
     {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: -100%;
     }
-    #mysql:hover .documents
+
+    .removeUnderline
+    {
+        text-decoration: none;
+        color: #B3AB76;
+    }
+  /*  #mysql:hover .documents
     {
         display: block;
-    }
+    }*/
     .queries
     {
-        position: absolute;
-        top: 3%;
-        left: 50%
+        margin-right: .2vw;
+        /*position: absolute;
+        bottom: 100%;
+        left: 0;*/
     }
-    /* TESTIMONIALS*/
+
+    .queries, .erd
+    {
+        background-color: white;
+        font-size: 1vw;
+        padding: .5vw .5vw;
+        font-weight: bold;
+        letter-spacing: .05vw;
+        box-sizing: border-box;
+        color: #B3AB76;
+        line-height: 3vw;
+        text-decoration: none;
+    }
+    .queries:hover, .erd:hover
+    {
+        text-decoration: underline;
+    }
+
     /* TESTIMONIALS*/
     .test
     {
@@ -2263,7 +2319,7 @@ body {
            opacity: 1;
        }*/
 
-    .myJourney, .projectName, .heading, .queries, .erd
+    .myJourney, .projectName, .heading
     {
         background-color: #B3AB76;
         font-size: 16px;
@@ -2273,6 +2329,7 @@ body {
         box-sizing: border-box;
         color: white;
         line-height: 3.1vw;
+        height: 5vw;
     }
     .myJourney:hover, .projectName:hover
     {
@@ -2284,17 +2341,48 @@ body {
     }
     .documents
     {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: -100%;
     }
-    #mysql:hover .documents
+
+    .removeUnderline
+    {
+        text-decoration: none;
+        color: #B3AB76;
+    }
+  /*  #mysql:hover .documents
     {
         display: block;
-    }
+    }*/
     .queries
     {
-        position: absolute;
-        top: 3%;
-        left: 50%
+        margin-right: .2vw;
+        /*position: absolute;
+        bottom: 100%;
+        left: 0;*/
+    }
+    .queries, .erd
+    {
+        background-color: white;
+        font-size: 1vw;
+        padding: .5vw .5vw;
+        font-weight: bold;
+        letter-spacing: .05vw;
+        box-sizing: border-box;
+        color: #B3AB76;
+        line-height: 3vw;
+    }
+
+    .queries:hover, .erd:hover
+    {
+        text-decoration: underline;
+
+    }
+    .removeUnderline
+    {
+        text-decoration: none;
+        color: #B3AB76;
     }
     /* TESTIMONIALS*/
     .test
@@ -3071,7 +3159,7 @@ body {
            opacity: 1;
        }*/
 
-    .myJourney, .projectName, .heading, .queries, .erd
+    .myJourney, .projectName, .heading
     {
         background-color: #B3AB76;
         font-size: 1vw;
@@ -3081,6 +3169,8 @@ body {
         box-sizing: border-box;
         color: white;
         line-height: 1.3vw;
+        height: 5vw;
+
     }
     .myJourney:hover, .projectName:hover
     {
@@ -3092,17 +3182,51 @@ body {
     }
     .documents
     {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: -100%;
     }
-    #mysql:hover .documents
+    .removeUnderline
+    {
+        text-decoration: none;
+        color: #B3AB76;
+    }
+    /*tried CSS way of displaying .documents block but the JQuery way works better*/
+  /*  #mysql:hover .documents
     {
         display: block;
-    }
+    }*/
     .queries
     {
-        position: absolute;
-        top: 3%;
-        left: 50%
+        margin-right: .2vw;
+        /*position: absolute;
+        bottom: 100%;
+        left: 0;*/
+    }
+
+    .queries, .erd
+    {
+        background-color: white;
+        font-size: 1vw;
+        padding: .5vw .5vw;
+        font-weight: bold;
+        letter-spacing: .05vw;
+        box-sizing: border-box;
+        color: #B3AB76;
+        line-height: 3vw;
+
+    }
+
+    .queries:hover, .erd:hover
+    {
+        text-decoration: underline;
+
+    }
+
+    .removeUnderline
+    {
+        text-decoration: none;
+        color: #B3AB76;
     }
     /* TESTIMONIALS*/
     .test
