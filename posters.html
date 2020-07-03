@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Posters</title>
-    <link rel="stylesheet" href="dist/css/index.css" media="screen">
+    <link rel="stylesheet" href="dist/css/posters.css" media="screen">
     <!--FAVICON CODE-->
     <link rel="apple-touch-icon" sizes="180x180" href="dist/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png">
@@ -68,17 +68,29 @@
         </nav>
     </div><!--wrapper-->
 
-    <div class="headerSection">
-        <div class="wrapper">
-
-        </div><!--wrapper-->
-    </div><!--Header Section-->
-
     <div class="wrapper2">
         <main>
+            <div class="posters" id="myPosters">
+                <p class="title">Posters</p>
+                <div class="jcarousel">
+                    <ul class="alignHorizontal">
+                        <li><img src="dist/imgs/optimized/posters/activityClub-1224x644.png" alt="activity club" class="skills"></li>
+                        <li><img src="dist/imgs/optimized/posters/independenceDay-1224x644.png" alt="IndiaDay" class="skills"></li>
+                        <li><img src="dist/imgs/optimized/posters/summerCamp-1224x644.png" alt="SummerCamp" class="skills"></li>
+                        <li><img src="dist/imgs/optimized/posters/HSS-Flyer-3508x2480.png" alt="HSSFlyer" class="skills"></li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
+                <p class="jcarousel-pagination"></p>
+            </div><!--mySkills-->
         </main>
     </div><!--/wrapper-->
 </div><!--navContainer-->
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="dist/js/jquery.carousel.js"></script>
+<script src="dist/js/jcarousel.responsive.js"></script>
 </body>
 </html>
