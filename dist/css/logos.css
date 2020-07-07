@@ -1084,7 +1084,6 @@ body {
         margin-top: 3.2vw;
         background-color: #197780;
         padding-top: 2vw;
-        padding-bottom: 2vw;
     }
     .alignHorizontal
     {
@@ -1104,7 +1103,8 @@ body {
         overflow: hidden;
         width: 100%;
         padding-top: 2vw;
-        text-align: -webkit-center;
+        padding-bottom: 5vw;
+
 
     }
     .jcarousel ul
@@ -1131,24 +1131,41 @@ body {
 
     .logo1
     {
-        margin-left: 550px !important;/*!important overrides the .jcarousel li above */
+        margin-left: 530px !important;/*!important overrides the .jcarousel li above */
         margin-right: 450px !important;/*!important overrides the .jcarousel li above */
         display: block !important;/*!important overrides the .jcarousel li above */
-        padding-top: 3vw;
+        margin-top: 6vw;
     }
 
-    .hssPoster
+    .logo2
     {
-        margin-left: 350px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 400px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-    }
-
-    .yogaDPoster
-    {
-        margin-left: 350px !important;/*!important overrides the .jcarousel li above */
+        margin-left: 500px !important;/*!important overrides the .jcarousel li above */
         margin-right: 450px !important;/*!important overrides the .jcarousel li above */
         display: block !important;/*!important overrides the .jcarousel li above */
+
+    }
+
+    .logo5
+    {
+        margin-left: 570px !important;/*!important overrides the .jcarousel li above */
+        margin-right: 450px !important;/*!important overrides the .jcarousel li above */
+        display: block !important;/*!important overrides the .jcarousel li above */
+        margin-top: 6vw;
+    }
+
+    .logo9
+    {
+        margin-left: 300px !important;/*!important overrides the .jcarousel li above */
+        margin-right: 580px !important;/*!important overrides the .jcarousel li above */
+        display: block !important;/*!important overrides the .jcarousel li above */
+        margin-top: 6vw;
+    }
+    .logo10
+    {
+        margin-left: 330px !important;/*!important overrides the .jcarousel li above */
+        margin-right: 550px !important;/*!important overrides the .jcarousel li above */
+        display: block !important;/*!important overrides the .jcarousel li above */
+
     }
 
     .logoDiv
@@ -1206,7 +1223,7 @@ body {
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -28%;
+        bottom: -24%;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
