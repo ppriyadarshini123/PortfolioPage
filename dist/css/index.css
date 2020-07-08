@@ -312,6 +312,7 @@ body {
         margin-bottom: 1vw;
         margin-left: 1.5vw;
         height: 15vw;/*This height is added, to avoid an extra space generated because of hover effect*/
+        cursor: pointer;
     }
     .downloadBtn:hover
     {
@@ -619,6 +620,8 @@ body {
     {
         margin-right: .3vw;
     }
+
+
     .documents
     {
         display: flex;
@@ -1194,6 +1197,7 @@ body {
         margin-left: 1.5vw;
         height: 15vw;/*This height is added, to avoid an extra space generated because of hover effect*/
         text-decoration: none;
+        cursor: pointer;
     }
     .downloadBtn:hover
     {
@@ -2044,6 +2048,7 @@ body {
         margin-left: 1.5vw;
         height: 9vw;/*This height is added, to avoid an extra space generated because of hover effect*/
         text-decoration: none;
+        cursor: pointer;
     }
     .downloadBtn:hover
     {
@@ -2888,6 +2893,7 @@ body {
         margin-left: 1.5vw;
         /*height: 4vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         text-decoration: none;
+        cursor: pointer;
     }
     .downloadBtn:hover
     {
@@ -3190,6 +3196,8 @@ body {
     {
         margin-right: .3vw;
     }
+
+
     .documents
     {
         display: flex;

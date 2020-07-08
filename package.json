@@ -26,13 +26,14 @@
     "browser-sync": "2.26.7"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
+    "enquire.js": "latest",
     "jquery": "3.4.1",
     "pixi.js": "5.2.0",
     "pixi.js-legacy": "5.2.0",
     "popper.js": "^1.16.0",
     "requestanimationframe": "0.0.23",
     "require.js": "1.0.0",
-    "webfontloader": "1.6.28",
-    "enquire.js": "latest"
+    "webfontloader": "1.6.28"
   }
 }

@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png">
     <link rel="manifest" href="dist/favicon/site.webmanifest">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 <body>
 <div class="navContainer">
@@ -125,15 +127,15 @@
                         </a>
                         <!--</div>-->
                         <div class="icons">
-                                <a href="https://github.com/ppriyadarshini123" class="link">
-                                    <img src="dist/imgs/unoptimized/github-icon.png" width="100" class="icon" alt="My GitHub repository">
-                                    <p class="subTitle">My GitHub repository</p>
-                                </a><!--GitHub icon-->
+                            <a href="https://github.com/ppriyadarshini123" class="link">
+                                <img src="dist/imgs/unoptimized/github-icon.png" width="100" class="icon" alt="My GitHub repository">
+                                <p class="subTitle">My GitHub repository</p>
+                            </a><!--GitHub icon-->
 
-                                <a href="https://www.linkedin.com/in/payal-p-3a96a179/" class="link">
-                                    <img src="dist/imgs/unoptimized/linked.jpg" width="100" class="icon" alt="My Linkedin Profile">
-                                    <p class="subTitle">My Linkedin Profile</p>
-                                </a><!--Linkedin icon-->
+                            <a href="https://www.linkedin.com/in/payal-p-3a96a179/" class="link">
+                                <img src="dist/imgs/unoptimized/linked.jpg" width="100" class="icon" alt="My Linkedin Profile">
+                                <p class="subTitle">My Linkedin Profile</p>
+                            </a><!--Linkedin icon-->
 
                         </div><!--icons-->
                     </div><!--aboutMeSection-->
@@ -217,6 +219,9 @@
                             <div class="myJourney"><a href="#" class="removeUnderscore">My Journey</a></div>
                         </div>
                     </div>
+
+
+
                     <div class="project">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/news-550x367.png">
@@ -225,9 +230,70 @@
                         <h1 class="heading">News Website - HTML, CSS and Javascript project</h1>
                         <div class="overlay">
                             <div class="projectName"><a href="http://www.payalcreations.co.uk/NewsWebsite/index.html" class="removeUnderscore">Project WebPage</a></div>
-                            <div class="myJourney"><a href="#" class="removeUnderscore">My Journey</a></div>
-                        </div>
-                    </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#myModal">My Journey</button>
+
+                                    <!-- Modal -->
+
+                                        <div class="modal-dialog modal-dialog-scrollable" id="myModal" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">Modal Header</h4>
+                                                    </div><!--modal-header-->
+                                                    <div class="modal-body">
+                                                        <p>Some text in the modal.</p>
+                                                    </div><!--modal-body-->
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    </div><!--modal-footer-->
+                                                </div><!---->
+                                            </div><!---->
+                                        </div><!--modal-dialog modal-dialog-scrollable-->
+                                </div><!--row-->
+                            </div><!--container-->
+                        </div><!--overlay-->
+
+                        <!--  <div class="myJourney" data-toggle="modal" data-target="#exampleModal">&lt;!&ndash;<a href="#" class="removeUnderscore" data-toggle="modal" data-target="#exampleModal">&ndash;&gt;My Journey&lt;!&ndash;</a>&ndash;&gt;</div>
+
+                          &lt;!&ndash;  &lt;!&ndash; Button trigger modal &ndash;&gt;
+                          <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModal">
+                              My Journey
+                          </button>&ndash;&gt;
+
+                          &lt;!&ndash; Modal &ndash;&gt;
+                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" id="exampleModal" role="dialog">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">My Journey - News Website</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <b>Skills used: HTML5, CSS, CSS Positioning, basic Javascript</b><hr>
+
+                                          <p>This project was based on the first module of Web Designing Career Programme by Training Dragon. It covered HTML5, CSS3 and basic Javascript. It was a 4 day course which covered topics like Headings, paragraphs, div, image, anchors, lists in HTML. I had used HTML about 9 years ago and this course refreshed my knowledge of it. The course covered best practices, keyboard shortcuts in WebStorm, creating wireframes, mockups, using HTML and CSS validators etc. In CSS, we covered basic CSS, absolute and relative positioning and also provided opportunity to do projects as exercises. In basic Javascript, topics like basic event handler and web hosting were discussed.</p>
+
+                                          <p>This Web Design Project started by creating wireframe and mockups( <a href="./Wireframe&Mockup/newsWebsite.html">Wireframe & Mockup</a> ). I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website.</p>
+
+                                          <p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly.</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+-->
+                    </div><!--project News website-->
+
                     <div class="project">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/tours-550x310.png">
@@ -349,17 +415,17 @@
                         </div>
                     </div>
 
-                   <!-- <div class="project">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/LogoSWS-550x280.png">
-                            <img src="dist/imgs/optimized/LogoSWS-550x280.png" alt="Posters" class="imgProject">
-                        </picture>
-                        <h1 class="heading">Logo - Graphic Design - My Trademark</h1>
-                        <div class="overlay">
-                            <div class="projectName"><a href="http://www.payalcreations.co.uk/Posters/logoSWS.png" class="removeUnderscore">Logo</a></div>
-                            <div class="myJourney"><a href="#" class="removeUnderscore">My Journey</a></div>
-                        </div>
-                    </div>-->
+                    <!-- <div class="project">
+                         <picture>
+                             <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/LogoSWS-550x280.png">
+                             <img src="dist/imgs/optimized/LogoSWS-550x280.png" alt="Posters" class="imgProject">
+                         </picture>
+                         <h1 class="heading">Logo - Graphic Design - My Trademark</h1>
+                         <div class="overlay">
+                             <div class="projectName"><a href="http://www.payalcreations.co.uk/Posters/logoSWS.png" class="removeUnderscore">Logo</a></div>
+                             <div class="myJourney"><a href="#" class="removeUnderscore">My Journey</a></div>
+                         </div>
+                     </div>-->
                 </div>
             </div><!--myProjects-->
         </main>
@@ -489,6 +555,7 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js"></script>-->
 
 
+
 <script src="node_modules/pixi.js/dist/pixi.min.js"></script>
 <script src="node_modules/pixi.js-legacy/dist/pixi-legacy.js"></script><!--Incase browser does not support webGL, pixi-legacy provides a fallback-->
 <script src="node_modules/requestanimationframe/app/requestAnimationFrame.js"></script>
@@ -499,6 +566,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script src="node_modules/webfontloader/webfontloader.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/enquire.js/dist/enquire.js"></script>
 <script src="dist/js/pixi.js"></script>
 <script src="dist/js/script.js"></script>
