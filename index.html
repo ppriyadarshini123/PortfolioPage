@@ -15,7 +15,85 @@
 
 </head>
 <body>
+
+<!--A Modal should be added on the top level element. Do not move it from here. Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a .modal within another fixed element.-->
+<!-- Nutritionist Modal -->
+<div class="modal" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle1">My Journey - News Website</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!--modal-header-->
+            <div class="modal-body">
+                <h6>Skills used:</h6>Responsive Web Design, Media queries<hr>
+
+                <h6>The Course : </h6><p>This project was based on the Mobile Web Design Course in Web Designing Career Programme by Training Dragon. This course was part of a 4 day course which also covered topics like Bootstrap, SASS, NodeJS Tools, GIT & GITHUB.
+
+                This course covered metatags, favicons, picture element, media queries, Embed responsively website tool, multidevice layout pattern e.g. mostly fluid, column drop, layout shifter, tiny tweaks, off canvas etc
+            </p>
+
+                <h6>The making of
+                    Project :
+                </h6>This Responsive
+                Web Design Project
+                started by creating
+                wireframe ( <a
+                    href="./Wireframe&Mockup/nutritionist.html">Wireframe</a> ) and ( <button type="button" class="btn btn-primary" data-toggle="popover" title="User Info">Popover with Title</button>) .
+                I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.
+                I had proposed to make a website for nutritionist. I would build 2 pages: Homepage and Recipes page. There will be 2 layout shifts and column drop in both the pages.
+                The navigation will also have 2 layout shifts. I would implement 'the toggle'. He suggested a lot of improvements in making wireframes & Mockups.
+                He suggested best practices, consistent look of website, advised to research, suggested to improve the look and feel of website, an eye for detail, professional approach,
+                considering negative space . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB.
+                The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly.
+                He had high expectations from me for the website.</p>
+
+                <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly. I learnt how to make wireframe & mockup. I also experimented with different looks to present images. It was quite a challenging project for me. </p>
+
+            </div><!--modal-body-->
+            <div class="modal-footer">
+                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
+
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog modal-dialog-scrollable-->
+</div><!--modal fade-->
+
+
+
+
+<!-- News Website Modal -->
+<div class="modal" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle2">My Journey - News Website</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!--modal-header-->
+            <div class="modal-body">
+                <h6>Skills used:</h6> HTML5, CSS, CSS Positioning, basic Javascript<hr>
+
+                <h6>The Course : </h6><p>This project was based on the first module of Web Designing Career Programme by Training Dragon. It covered HTML5, CSS3 and basic Javascript. It was a 4 day course which covered topics like Headings, paragraphs, div, image, anchors, lists in HTML. I had used HTML about 9 years ago and this course refreshed my knowledge of it. The course covered best practices, keyboard shortcuts in WebStorm, creating wireframes, mockups, using HTML and CSS validators etc. In CSS, we covered basic CSS, absolute and relative positioning and also provided opportunity to do projects as exercises. In basic Javascript, topics like basic event handler and web hosting were discussed.</p>
+
+                <h6>The making of Project : </h6><p>This Web Design Project started by creating wireframe and mockups( <a href="./Wireframe&Mockup/newsWebsite.html">Wireframe & Mockup</a> ). I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website.</p>
+
+                <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly.</p>
+
+            </div><!--modal-body-->
+            <div class="modal-footer">
+                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
+
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog modal-dialog-scrollable-->
+</div><!--modal fade-->
+
 <div class="navContainer">
+
     <header id="top">
         <div class="wrapper">
             <div class="logoAndHam">
@@ -213,14 +291,15 @@
                             <source media="(min-width: 1200px)" srcset="dist/imgs/optimized/weightcontrol-550x365.png">
                             <img src="dist/imgs/optimized/weightcontrol-550x365.png" alt="Nutritionist" class="imgProject">
                         </picture>
-                        <h1 class="heading">Nutritionist - Mobile Web Design project (RWD)</h1>
+                        <h1 class="heading">Nutritionist - Responsive Web Design project</h1>
                         <div class="overlay">
                             <div class="projectName"><a href="http://www.payalcreations.co.uk/Nutritionist/index.html" class="removeUnderscore">Project WebPage</a></div>
-                            <div class="myJourney"><a href="#" class="removeUnderscore">My Journey</a></div>
+                            <button
+                                    type="button" class="myJourney" data-toggle="modal" data-trigger="focus" data-target="#exampleModalScrollable1" data-placement="left">
+                                My Journey
+                            </button>
                         </div>
                     </div>
-
-
 
                     <div class="project">
                         <picture>
@@ -231,31 +310,10 @@
                         <div class="overlay">
                             <div class="projectName"><a href="http://www.payalcreations.co.uk/NewsWebsite/index.html" class="removeUnderscore">Project WebPage</a></div>
 
-                            <div class="container">
-                                <div class="row">
-                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#myModal">My Journey</button>
-
-                                    <!-- Modal -->
-
-                                        <div class="modal-dialog modal-dialog-scrollable" id="myModal" role="dialog">
-                                            <div class="modal-dialog">
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title">Modal Header</h4>
-                                                    </div><!--modal-header-->
-                                                    <div class="modal-body">
-                                                        <p>Some text in the modal.</p>
-                                                    </div><!--modal-body-->
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    </div><!--modal-footer-->
-                                                </div><!---->
-                                            </div><!---->
-                                        </div><!--modal-dialog modal-dialog-scrollable-->
-                                </div><!--row-->
-                            </div><!--container-->
+                            <button
+                                    type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable2">
+                                My Journey
+                            </button>
                         </div><!--overlay-->
 
                         <!--  <div class="myJourney" data-toggle="modal" data-target="#exampleModal">&lt;!&ndash;<a href="#" class="removeUnderscore" data-toggle="modal" data-target="#exampleModal">&ndash;&gt;My Journey&lt;!&ndash;</a>&ndash;&gt;</div>
@@ -553,6 +611,41 @@
 <!--<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/pixi.min.js"></script>-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js"></script>-->
+<!--<script>
+    /*// Every time a modal is shown, if it has an autofocus element, focus on it.
+    $('#myModal').on('shown.bs.modal', function() {
+        $(this).find('[autofocus]').focus();
+    });*/
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('.modal-body').focus();
+    })
+
+</script>-->
+
+<!--<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>-->
+
+
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+            placement : 'top',
+            trigger : 'hover',
+            html : true,
+            content :
+                '<a href="#" class="pull-left"><img src="dist/imgs/optimized/nutritionistLogo.png" class="" alt=""></a>'
+        });
+    });
+</script>
+
 
 
 
@@ -560,15 +653,20 @@
 <script src="node_modules/pixi.js-legacy/dist/pixi-legacy.js"></script><!--Incase browser does not support webGL, pixi-legacy provides a fallback-->
 <script src="node_modules/requestanimationframe/app/requestAnimationFrame.js"></script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/jquery.carousel.js"></script>
 <script src="dist/js/jcarousel.responsive.js"></script>
 <!--<script src="node_modules/require.js/require.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script src="node_modules/webfontloader/webfontloader.js"></script>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <script src="node_modules/enquire.js/dist/enquire.js"></script>
 <script src="dist/js/pixi.js"></script>
 <script src="dist/js/script.js"></script>
+
+
+
 </body>
 </html>

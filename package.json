@@ -31,7 +31,7 @@
     "jquery": "3.4.1",
     "pixi.js": "5.2.0",
     "pixi.js-legacy": "5.2.0",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "requestanimationframe": "0.0.23",
     "require.js": "1.0.0",
     "webfontloader": "1.6.28"
