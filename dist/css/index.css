@@ -176,6 +176,11 @@ body {
         text-decoration: none;
         color: white;
     }
+    .removeUnderscore:hover
+    {
+        text-decoration: underline;
+        color: white;
+    }
 
     /*HEADER SECTION*/
 
@@ -609,12 +614,14 @@ body {
         line-height: 7vw;
         height: 5vw;
         cursor: pointer;
-
     }
+
     .myJourney:hover, .projectName:hover
     {
         border: .1vw solid #ffffff;
         cursor: pointer;
+        text-decoration: underline;
+        color: #ffffff;
     }
     .myJourney
     {
@@ -914,6 +921,11 @@ body {
     {
         text-decoration: none;
     }
+    .removeUnderscore:hover
+    {
+        text-decoration: underline;
+        color: white;
+    }
     .socialMediaIcons
     {
         max-width: 100%;
@@ -1057,6 +1069,11 @@ body {
     .removeUnderscore
     {
         text-decoration: none;
+        color: white;
+    }
+    .removeUnderscore:hover
+    {
+        text-decoration: underline;
         color: white;
     }
 
@@ -1501,6 +1518,8 @@ body {
     {
         border: .1vw solid #ffffff;
         cursor: pointer;
+        text-decoration: underline;
+        color: #ffffff;
     }
     .myJourney
     {
@@ -1803,6 +1822,11 @@ body {
     {
         text-decoration: none;
     }
+    .removeUnderscore:hover
+    {
+        text-decoration: underline;
+        color: white;
+    }
     .socialMediaIcons
     {
         max-width: 100%;
@@ -1907,6 +1931,11 @@ body {
     .removeUnderscore
     {
         text-decoration: none;
+        color: white;
+    }
+    .removeUnderscore:hover
+    {
+        text-decoration: underline;
         color: white;
     }
 
@@ -2347,6 +2376,8 @@ body {
     {
         border: .1vw solid #ffffff;
         cursor: pointer;
+        text-decoration: underline;
+        color: #ffffff;
     }
     .myJourney
     {
@@ -3191,6 +3222,8 @@ body {
     {
         border: .1vw solid #ffffff;
         cursor: pointer;
+        text-decoration: underline;
+        color: #ffffff;
     }
     .myJourney
     {
@@ -3502,6 +3535,11 @@ body {
     .removeUnderscore
     {
         text-decoration: none;
+    }
+    .removeUnderscore:hover
+    {
+        text-decoration: underline;
+        color: white;
     }
     .socialMediaIcons
     {
