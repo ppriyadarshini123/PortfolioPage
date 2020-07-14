@@ -40,8 +40,7 @@
                 </h6>This Responsive
                 Web Design Project
                 started by creating
-                wireframe ( <a
-                    href="./Wireframe&Mockup/nutritionist.html">Wireframe</a> ) and ( <a href="index.html#myProjects" data-toggle="popover" title="Nutritionist Logo">Logo</a>) .
+                wireframe ( <a href="./Wireframe&Mockup/nutritionist.html">Wireframe</a> ) and ( <a href="index.html#myProjects" data-toggle="popover" title="Nutritionist Logo">Logo</a>) .
                 I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.
                 I had proposed to make a website for nutritionist. I would build 2 pages: Homepage and Recipes page. There will be 2 layout shifts and column drop in both the pages.
                 The navigation will also have 2 layout shifts. I would implement 'the toggle'. He suggested a lot of improvements in making wireframes & Mockups.
@@ -156,6 +155,34 @@
 
                 <p><h6>What I learnt : </h6></p>
                 <p>I learnt a lot during the building of this project. I researched in the different plugins and visited various websites for understanding how to make an ECommerce website. I also edited images using Adobe Photoshop. </p>
+
+            </div><!--modal-body-->
+            <div class="modal-footer">
+                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog modal-dialog-scrollable-->
+</div><!--modal-->
+
+<!-- wordpress Timebank -->
+<div class="modal" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle5" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle5">Cambourne Timebank website - WordPress</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!--modal-header-->
+            <div class="modal-body">
+                <h6>Skills used:</h6>WordPress<hr>
+
+                <h6>The making of Project :</h6>
+                <p>I started volunteering as a Website Administrator for Cambourne Timebank since Nov. 2019. I am part of the Cambourne Timebank Management Committee. It consists of 9 members. The Management Committee meets almost every month to discuss the progress of the website and other issues.  </p>
+                <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.html#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. This website is still on the Staging Server.</p>
+
+                <p><h6>What I learnt : </h6></p>
+                <p>This project became a very good learning experience for me as I am learning how to communicate with the team and being a team player. I also am working with templates and Elementor in WordPress for the first time.</p>
 
             </div><!--modal-body-->
             <div class="modal-footer">
@@ -421,7 +448,9 @@
                         <h1 class="heading">Cambourne Timebank Website - Wordpress project</h1>
                         <div class="overlay">
                             <div class="projectName"><a href="http://cambournetimebank.org.uk/" class="removeUnderscore">Project WebPage</a></div>
-                            <div class="myJourney"><a href="#" class="removeUnderscore">My Journey</a></div>
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable5">
+                                My Journey
+                            </button>
                         </div>
                     </div><!--timebank website-->
                     <div class="project">
@@ -639,9 +668,19 @@
             placement : 'auto',
             trigger : 'click',
             html : true,
-            content
-    :'<img src="dist/imgs/optimized/nutritionistLogo.png" class="" alt="" width="210">'
+            content:'<img src="dist/imgs/optimized/logos/nutritionistLogo.png" class="" alt="" width="210">'
+        });
     });
+</script><!--for Nutritionist logo Popover-->
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover2"]').popover({
+            placement : 'auto',
+            trigger : 'click',
+            html : true,
+            content:'<img src="dist/imgs/optimized/logos/logo-1c.png" class="" alt="" width="210">'
+        });
     });
 </script><!--for Nutritionist logo Popover-->
 
