@@ -2828,7 +2828,7 @@ body {
                 5px 0 0 #1a1a1a,
                 5px 0 0 #1a1a1a,
                 5px 0 0 #1a1a1a;
-        margin-top: 22%;
+        margin-top: 16%;
         font-size: 5vw;
         color: #ffffff;
         position: absolute;/*z-index only applies to top positioned elements, so position text absolutely and canvas relatively for z-index to work.*/
@@ -3284,6 +3284,7 @@ body {
     {
         padding-left: 2vw;
         padding-right: 2vw;
+        padding-top: 2vw;
         line-height: 1.8vw;
         padding-bottom: 1.5vw;
         font-size: 1.2vw;
@@ -3292,10 +3293,11 @@ body {
     .name
     {
         text-align: center;
-        padding-bottom: .3vw;
+        margin-bottom: 1vw;
         font-size: 1vw;
         letter-spacing: .1vw;
         line-height: 1.2vw;
+
     }
     .boldName
     {
@@ -3317,6 +3319,16 @@ body {
         box-sizing: border-box;
         background-color: #ffffff;
         border-bottom: #197780 solid .1vw;
+    }
+
+    .testimonial1, .testimonial2
+    {
+        background-color: #B3AB76;
+        color: #ffffff;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-radius: 1vw;
     }
     /* CONTACT FORM*/
     .upperCStars
