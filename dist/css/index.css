@@ -2767,6 +2767,7 @@ body {
         top: 1vw;
         font-size: 1vw;
         letter-spacing: .1vw;
+        margin-bottom: 0vw;
     }
 
     .navItemHome, .navItemAboutMe, .navItemMySkills, .navItemMyProjects, .navItemTestimonials, .navItemContactForm
