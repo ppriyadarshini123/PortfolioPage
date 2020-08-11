@@ -1121,7 +1121,7 @@ body {
         /*padding-right: 1vw;*/
         /*margin: 1vw;*/
         /*width: 80%;*/
-        margin-left: 500px;
+        margin-left: 425px;
         margin-right: 400px;
         display: block;
         /*width: 90%;*/
@@ -1199,7 +1199,7 @@ body {
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -28%;
+        bottom: -40%;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);

@@ -318,6 +318,8 @@ body {
         margin-left: 1.5vw;
         height: 15vw;/*This height is added, to avoid an extra space generated because of hover effect*/
         cursor: pointer;
+        transform: rotateY(360deg);
+        transition: 30s;
     }
     .downloadBtn:hover
     {
@@ -1215,6 +1217,8 @@ body {
         height: 15vw;/*This height is added, to avoid an extra space generated because of hover effect*/
         text-decoration: none;
         cursor: pointer;
+        transform: rotateY(360deg);
+        transition: 30s;
     }
     .downloadBtn:hover
     {
@@ -2078,6 +2082,8 @@ body {
         height: 9vw;/*This height is added, to avoid an extra space generated because of hover effect*/
         text-decoration: none;
         cursor: pointer;
+        transform: rotateY(360deg);
+        transition: 30s;
     }
     .downloadBtn:hover
     {
@@ -2926,11 +2932,16 @@ body {
         /*height: 4vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         text-decoration: none;
         cursor: pointer;
+        transform: rotateY(360deg);
+        transition: 30s;
+
     }
     .downloadBtn:hover
     {
         border: .2vw #B3AB76 solid;
     }
+
+
     .icons
     {
         display: inline-flex;

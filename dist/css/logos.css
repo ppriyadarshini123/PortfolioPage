@@ -1131,7 +1131,7 @@ body {
 
     .logo1
     {
-        margin-left: 530px !important;/*!important overrides the .jcarousel li above */
+        margin-left: 470px !important;/*!important overrides the .jcarousel li above */
         margin-right: 450px !important;/*!important overrides the .jcarousel li above */
         display: block !important;/*!important overrides the .jcarousel li above */
         margin-top: 6vw;
@@ -1139,7 +1139,7 @@ body {
 
     .logo2
     {
-        margin-left: 500px !important;/*!important overrides the .jcarousel li above */
+        margin-left: 440px !important;/*!important overrides the .jcarousel li above */
         margin-right: 450px !important;/*!important overrides the .jcarousel li above */
         display: block !important;/*!important overrides the .jcarousel li above */
 
@@ -1223,7 +1223,7 @@ body {
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -24%;
+        bottom: -30%;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
