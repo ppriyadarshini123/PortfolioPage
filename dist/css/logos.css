@@ -200,6 +200,10 @@ body {
         /*padding-right: 1vw;*/
         /*margin: 1vw;*/
         width: 100%;
+        position:absolute;
+        margin:0;
+        padding:0;
+        top:0px;
     }
 
     .skills {
@@ -1096,6 +1100,220 @@ body {
         font-weight: bold;
     }
 
+
+/*commented out*/
+   /* .logo1
+    {
+        margin-left: 470px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 450px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+        margin-top: 6vw;
+    }
+
+    .logo2
+    {
+        margin-left: 440px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 450px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+
+    }
+
+    .logo5
+    {
+        margin-left: 450px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 450px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+        margin-top: 6vw;
+    }
+
+    .logo9
+    {
+        margin-left: 300px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 580px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+        margin-top: 6vw;
+    }
+    .logo10
+    {
+        margin-left: 330px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 550px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+
+    }
+
+    .logoDiv
+    {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logoImg1
+    {
+        width: 300px;
+        background-color: white;
+    }
+    .logoImg
+    {
+        height: auto;
+        background-color: white;
+    }*/
+
+    /*Logos sprite*/
+    .sprite {
+        background-image: url(../../dist/imgs/optimized/logos/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        background-color: white;
+        margin-top: 1vw;
+
+    }
+
+    .sprite-LogoSWS {
+        width: 728px;
+        height: 239px;
+        background-position: -5px -5px;
+
+    }
+
+    .sprite-final-touches {
+        width: 4963px;
+        height: 3497px;
+        background-position: -5px -254px;
+    }
+
+    .sprite-final-touches-568x400 {
+        width: 568px;
+        height: 400px;
+        background-position: -5px -3761px;
+    }
+
+    .sprite-logo {
+        width: 113px;
+        height: 113px;
+        background-position: -743px -5px;
+    }
+
+    .sprite-logo-1a {
+        width: 315px;
+        height: 400px;
+        background-position: -583px -3761px;
+    }
+
+    .sprite-logo-1b {
+        width: 315px;
+        height: 400px;
+        background-position: -908px -3761px;
+    }
+
+    .sprite-logo-1c {
+        width: 315px;
+        height: 400px;
+        background-position: -1233px -3761px;
+    }
+
+    .sprite-logo-1c---for-website-170x99 {
+        width: 170px;
+        height: 94px;
+        background-position: -866px -5px;
+    }
+
+    .sprite-logo-1c---for-website-300x166 {
+        width: 300px;
+        height: 166px;
+        background-position: -1046px -5px;
+    }
+
+    .sprite-logo-1c---for-website-300x166 {
+        width: 300px;
+        height: 166px;
+        background-position: -1356px -5px;
+    }
+
+    .sprite-logo-234x234 {
+        width: 197px;
+        height: 149px;
+        background-position: -1666px -5px;
+
+
+    }
+
+    .sprite-logo-2a {
+        width: 315px;
+        height: 400px;
+        background-position: -1558px -3761px;
+
+    }
+
+    .sprite-logo-2c {
+        width: 315px;
+        height: 400px;
+        background-position: -1883px -3761px;
+    }
+
+    .sprite-logo-3a {
+        width: 315px;
+        height: 400px;
+        background-position: -2208px -3761px;
+    }
+
+    .sprite-logo-optimized {
+        width: 410px;
+        height: 340px;
+        background-position: -2533px -3761px;
+    }
+
+    .sprite-logo-optimized-300x249 {
+        width: 300px;
+        height: 249px;
+        background-position: -2953px -3761px;
+    }
+
+    .sprite-logos {
+        width: 550px;
+        height: 367px;
+        background-position: -3263px -3761px;
+    }
+
+    .sprite-logos {
+        width: 550px;
+        height: 367px;
+        background-position: -3823px -3761px;
+    }
+
+    .sprite-nutritionistLogo {
+        width: 410px;
+        height: 340px;
+        background-position: -4383px -3761px;
+    }
+
+    .sprite-posters {
+        width: 550px;
+        height: 367px;
+        background-position: -4978px -5px;
+    }
+
+    .sprite-timebank_logo {
+        width: 230px;
+        height: 320px;
+        background-position: -4978px -382px;
+    }
+
+    .sprite-timebank_logo-264x367 {
+        width: 264px;
+        height: 367px;
+        background-position: -5218px -382px;
+    }
+    .logo9
+    {
+        margin-left: -100px;
+    }
+    .logo10
+    {
+
+    }
+
     /*Carousel*/
     .jcarousel
     {
@@ -1121,71 +1339,14 @@ body {
         /*padding-right: 1vw;*/
         /*margin: 1vw;*/
         /*width: 80%;*/
-        margin-left: 490px;
-        margin-right: 400px;
+        margin-left: 43vw;
+        margin-right: 30vw;
         display: block;
         /*width: 90%;*/
         /* padding-top: 10vw;
          padding-bottom: 10vw;*/
     }
 
-    .logo1
-    {
-        margin-left: 470px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 450px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-        margin-top: 6vw;
-    }
-
-    .logo2
-    {
-        margin-left: 440px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 450px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-
-    }
-
-    .logo5
-    {
-        margin-left: 570px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 450px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-        margin-top: 6vw;
-    }
-
-    .logo9
-    {
-        margin-left: 300px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 580px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-        margin-top: 6vw;
-    }
-    .logo10
-    {
-        margin-left: 330px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 550px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-
-    }
-
-    .logoDiv
-    {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .logoImg1
-    {
-        width: 300px;
-        background-color: white;
-    }
-    .logoImg
-    {
-        height: auto;
-        background-color: white;
-    }
     /*Carousel Controls*/
     .jcarousel-control-prev,
     .jcarousel-control-next {
@@ -1224,7 +1385,7 @@ body {
     .jcarousel-pagination {
         position: absolute;
         bottom: -30%;
-        left: 50%;
+        left: 53%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
