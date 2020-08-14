@@ -3061,9 +3061,9 @@ body {
     .skills
     {
         display: block;
-        width: 90%;
+        /*width: 90%;*/
         max-width: 100%;
-        height: 10vw;
+        /*height: 10vw;*/
     }
 
     /*Carousel Controls*/
