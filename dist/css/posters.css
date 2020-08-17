@@ -1097,6 +1097,80 @@ body {
         font-weight: bold;
     }
 
+
+   /* .iDayPoster
+    {
+        margin-left: 400px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 500px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+    }
+
+    .hssPoster
+    {
+        margin-left: 350px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 400px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+    }
+
+    .yogaDPoster
+    {
+        margin-left: 350px !important;!*!important overrides the .jcarousel li above *!
+        margin-right: 450px !important;!*!important overrides the .jcarousel li above *!
+        display: block !important;!*!important overrides the .jcarousel li above *!
+    }
+*/
+    .sprite {
+        background-image: url(../../dist/imgs/optimized/posters/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    .sprite-HSS-Flyer-644x455 {
+        width: 644px;
+        height: 455px;
+        background-position: -5px -5px;
+        margin-left: -8vw;
+    }
+
+    .sprite-YogaDay-644x455 {
+        width: 644px;
+        height: 455px;
+        background-position: -5px -470px;
+        margin-left: -8vw;
+    }
+
+    .sprite-activityClub-350x455 {
+        width: 350px;
+        height: 455px;
+        background-position: -659px -5px;
+        margin-left: 1vw;
+    }
+    .sprite-independenceDay-587x455 {
+        width: 587px;
+        height: 455px;
+        background-position: -1099px -5px;
+        margin-left: -6vw;
+    }
+    .sprite-summerCamp-325x455 {
+        width: 325px;
+        height: 455px;
+        background-position: -739px -470px;
+        margin-left: 2vw;
+    }
+
+    /* .posterDiv
+     {
+         display: block;
+         width: 100%;
+         max-width: 100%;
+         height: auto;
+     }
+
+     .posterImg
+     {
+         height: auto;
+     }*/
+    /*Carousel Controls*/
     /*Carousel*/
     .jcarousel
     {
@@ -1125,44 +1199,10 @@ body {
         margin-right: 400px;
         display: block;
         /*width: 90%;*/
-       /* padding-top: 10vw;
-        padding-bottom: 10vw;*/
+        /* padding-top: 10vw;
+         padding-bottom: 10vw;*/
     }
 
-    .iDayPoster
-    {
-        margin-left: 400px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 500px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-    }
-
-    .hssPoster
-    {
-        margin-left: 350px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 400px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-    }
-
-    .yogaDPoster
-    {
-        margin-left: 350px !important;/*!important overrides the .jcarousel li above */
-        margin-right: 450px !important;/*!important overrides the .jcarousel li above */
-        display: block !important;/*!important overrides the .jcarousel li above */
-    }
-
-    .posterDiv
-    {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .posterImg
-    {
-        height: auto;
-    }
-    /*Carousel Controls*/
     .jcarousel-control-prev,
     .jcarousel-control-next {
         position: absolute;
