@@ -2931,7 +2931,7 @@ body {
         font-size: 1.2vw;
         letter-spacing: .1vw;
 
-        margin-left: -2.5vw;
+        margin-left: 2.5vw;
         margin-top: 2vw;
         /*height: 4vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         text-decoration: none;
@@ -3601,434 +3601,59 @@ body {
 
 
 
-    .sprite-ERD-468x308 {
-        width: 468px;
-        height: 308px;
-        background-position: -5px -5px;
-    }
-
-    .sprite-ERD-472x315 {
-        width: 472px;
-        height: 315px;
-        background-position: -483px -5px;
-    }
-
-    .sprite-Octocat-original-120x104 {
-        width: 120px;
-        height: 104px;
-        background-position: -965px -5px;
-    }
-
-    .sprite-bootstrap-74x104 {
-        width: 74px;
-        height: 104px;
-        background-position: -1095px -5px;
-    }
-
-    .sprite-camcareLogo-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -1179px -5px;
-    }
-
-    .sprite-camcareLogo-472x170 {
-        width: 472px;
-        height: 170px;
-        background-position: -1660px -5px;
-    }
-
-    .sprite-camcareLogo-550x289 {
-        width: 320px;
-        height: 115px;
-        background-position: -2142px -5px;
-    }
-
-    .sprite-cropped-Prakahs_Inkscape_logo--471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -2472px -5px;
-    }
-
-    .sprite-cropped-Prakahs_Inkscape_logo--520x120 {
-        width: 520px;
-        height: 120px;
-        background-position: -2953px -5px;
-    }
-
-    .sprite-css-92x104 {
-        width: 92px;
-        height: 104px;
-        background-position: -3483px -5px;
-    }
-
-    .sprite-ecommerce-472x315 {
-        width: 472px;
-        height: 315px;
-        background-position: -3585px -5px;
-    }
-
-    .sprite-ecommerce-550x367 {
-        width: 550px;
-        height: 367px;
-        background-position: -4067px -5px;
-    }
-
-    .sprite-erd-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -4627px -5px;
-    }
-
-    .sprite-erd-472x226 {
-        width: 472px;
-        height: 226px;
-        background-position: -5108px -5px;
-    }
-
-    .sprite-erd-550x263 {
-        width: 550px;
-        height: 263px;
-        background-position: -5590px -5px;
-    }
-
-    .sprite-flowchart-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -6150px -5px;
-    }
-
-    .sprite-flowchart-472x323 {
-        width: 472px;
-        height: 323px;
-        background-position: -6631px -5px;
-    }
-
-    .sprite-flowchart-550x376 {
-        width: 550px;
-        height: 376px;
-        background-position: -7113px -5px;
-    }
-
-    .sprite-git-104x104 {
-        width: 104px;
-        height: 104px;
-        background-position: -7673px -5px;
-    }
-
-    .sprite-github-icon {
-        width: 225px;
-        height: 225px;
-        background-position: -7787px -5px;
-    }
-
-    .sprite-github-icon-142x142 {
-        width: 142px;
-        height: 142px;
-        background-position: -8022px -5px;
-    }
-
-    .sprite-html5-88x104 {
-        width: 88px;
-        height: 104px;
-        background-position: -8174px -5px;
-    }
-
-    .sprite-illustrator-104x102 {
-        width: 104px;
-        height: 102px;
-        background-position: -8272px -5px;
-    }
-
-    .sprite-indesign-104x102 {
-        width: 104px;
-        height: 102px;
-        background-position: -8386px -5px;
-    }
-
-    .sprite-javascript-91x104 {
-        width: 91px;
-        height: 104px;
-        background-position: -8500px -5px;
-    }
-
-    .sprite-jquery-99x104 {
-        width: 99px;
-        height: 104px;
-        background-position: -8601px -5px;
-    }
-
-    .sprite-linked {
-        width: 225px;
-        height: 225px;
-        background-position: -8710px -5px;
-        margin-left: 2vw;
-    }
-
-    .sprite-linked-142x142 {
-        width: 142px;
-        height: 142px;
-        background-position: -8945px -5px;
-    }
-
-    .sprite-logo-195x150 {
-        width: 195px;
-        height: 150px;
-        background-position: -9097px -5px;
-    }
-
-    .sprite-logo-1c---for-website-471x260 {
-        width: 471px;
-        height: 260px;
-        background-position: -9302px -5px;
-    }
-
-    .sprite-logo-1c---for-website-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -9783px -5px;
-    }
-
-    .sprite-logo-1c---for-website-472x261 {
-        width: 472px;
-        height: 261px;
-        background-position: -10264px -5px;
-    }
-
-    .sprite-logo-1c---for-website-530x293 {
-        width: 530px;
-        height: 293px;
-        background-position: -10746px -5px;
-    }
-
-    .sprite-logo-234x234 {
-        width: 197px;
-        height: 149px;
-        background-position: -11286px -5px;
-    }
-
-    .sprite-logo-350x350 {
-        width: 350px;
-        height: 350px;
-        background-position: -11493px -5px;
-    }
-
-    .sprite-logoCERC-272x269 {
-        width: 272px;
-        height: 269px;
-        background-position: -11853px -5px;
-    }
-
-    .sprite-logoCERC-330x173 {
-        width: 175px;
-        height: 173px;
-        background-position: -12135px -5px;
-    }
-
-    .sprite-logoCERC-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -12320px -5px;
-    }
-
-    .sprite-logoCERC-550x289 {
-        width: 550px;
-        height: 289px;
-        background-position: -12801px -5px;
-    }
-
-    .sprite-logos {
-        width: 550px;
-        height: 367px;
-        background-position: -13361px -5px;
-    }
-
-    .sprite-logos-472x315 {
-        width: 472px;
-        height: 315px;
-        background-position: -13921px -5px;
-    }
-
-    .sprite-myPic-359x455 {
-        width: 359px;
-        height: 455px;
-        background-position: -14403px -5px;
-    }
-
-    .sprite-myPic-361x458 {
-        width: 361px;
-        height: 458px;
-        background-position: -14772px -5px;
-    }
-
-    .sprite-myPic-596x756 {
-        width: 596px;
-        height: 756px;
-        background-position: -15143px -5px;
-    }
-
-    .sprite-mysql-104x104 {
-        width: 104px;
-        height: 104px;
-        background-position: -15749px -5px;
-    }
-
-    .sprite-neon-star-brown-100x102 {
-        width: 100px;
-        height: 102px;
-        background-position: -15863px -5px;
-        margin-left: 6vw;
-        margin-top: -4vw;
-    }
-
-    .sprite-neon-star-brown-50x51 {
-        width: 50px;
-        height: 51px;
-        background-position: -15973px -5px;
-        margin-left: 5vw;
-        margin-top: -3vw;
-    }
-
-    .sprite-neon-star-lightblue-100x102 {
-        width: 100px;
-        height: 102px;
-        background-position: -16033px -5px;
-        margin-top: -4vw;
-    }
-
-    .sprite-neon-star-lightblue-50x51 {
-        width: 50px;
-        height: 51px;
-        background-position: -16143px -5px;
-        margin-left: 28vw;
-    }
-
-    .sprite-neon-star-lightpink-100x102 {
-        width: 100px;
-        height: 102px;
-        background-position: -16203px -5px;
-        margin-left: 15vw;
-    }
-
-    .sprite-neon-star-lightpink-50x51 {
-        width: 50px;
-        height: 51px;
-        background-position: -16313px -5px;
-        margin-top: -3.5vw;
-    }
-
-    .sprite-news-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -16373px -5px;
-    }
-
-    .sprite-news-484x323 {
-        width: 484px;
-        height: 323px;
-        background-position: -16854px -5px;
-    }
-
-    .sprite-news-550x367 {
-        width: 550px;
-        height: 367px;
-        background-position: -17348px -5px;
-    }
-
-    .sprite-nodejs-104x107 {
-        width: 101px;
-        height: 104px;
-        background-position: -17908px -5px;
-    }
-
-    .sprite-photoshop-104x104 {
-        width: 104px;
-        height: 104px;
-        background-position: -18019px -5px;
-    }
-
-    .sprite-php-104x104 {
-        width: 104px;
-        height: 104px;
-        background-position: -18133px -5px;
-    }
-
-    .sprite-portfolio-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -18247px -5px;
-    }
-
-    .sprite-posters {
-        width: 471px;
-        height: 314px;
-        background-position: -18728px -5px;
-    }
-
-    .sprite-posters-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -19209px -5px;
-    }
-
-    .sprite-posters-472x340 {
-        width: 472px;
-        height: 340px;
-        background-position: -19690px -5px;
-    }
-
-    .sprite-prakashSports-472x109 {
-        width: 472px;
-        height: 109px;
-        background-position: -20172px -5px;
-    }
-
-    .sprite-rwd-103x104 {
-        width: 103px;
-        height: 104px;
-        background-position: -20654px -5px;
-    }
-
-    .sprite-sass-110x104 {
-        width: 110px;
-        height: 104px;
-        background-position: -20767px -5px;
-    }
-
-    .sprite-tours-471x314 {
-        width: 471px;
-        height: 314px;
-        background-position: -20887px -5px;
-    }
-
-    .sprite-tours-472x266 {
-        width: 472px;
-        height: 266px;
-        background-position: -21368px -5px;
-    }
-
-    .sprite-tours-550x310 {
-        width: 471px;
-        height: 314px;
-        background-position: -21850px -5px;
-    }
-
-    .sprite-weightcontrol-471x313 {
-        width: 471px;
-        height: 313px;
-        background-position: -22331px -5px;
-    }
-
-    .sprite-weightcontrol-484x321 {
-        width: 484px;
-        height: 321px;
-        background-position: -22812px -5px;
-    }
-
-    .sprite-weightcontrol-550x365 {
-        width: 550px;
-        height: 365px;
-        background-position: -23306px -5px;
-    }
-
-
+    /* Generated by http://responsive-css.spritegen.com Responsive CSS Sprite Generator */
+
+    .sprite-erd-472x315, .sprite-logos-472x315, .sprite-camcarelogo-471x314, .sprite-cropped-prakahs-inkscape-logo-471x314, .sprite-flowchart-471x314,
+    .sprite-logo-1c-for-website-471x314, .sprite-logocerc-471x314, .sprite-mypic-361x458, .sprite-logo-234x234, .sprite-github-icon-142x142,
+    .sprite-linked-142x142, .sprite-git-104x104, .sprite-illustrator-104x102, .sprite-indesign-104x102, .sprite-mysql-104x104,
+    .sprite-jquery-99x104, .sprite-css-92x104, .sprite-javascript-91x104, .sprite-html5-88x104, .sprite-bootstrap-74x104
+    { max-width: 100%; background-size: 100%; background-image: url(../imgs/optimized/spritesheet.png); }
+
+    .sprite-erd-472x315 { background-position: 0 0%; background-size: 100%; }
+    .sprite-logos-472x315 { background-position: 0 8.478669%; background-size: 100%; }
+    .sprite-camcarelogo-471x314 { background-position: 0 16.95279%; background-size: 100.212314%; }
+    .sprite-cropped-prakahs-inkscape-logo-471x314 { background-position: 0 25.402361%; background-size: 100.212314%; }
+    .sprite-flowchart-471x314 { background-position: 0 33.851931%; background-size: 100.212314%; }
+    .sprite-logo-1c-for-website-471x314 { background-position: 0 42.301502%; background-size: 100.212314%; }
+    .sprite-logocerc-471x314 { background-position: 0 50.751073%; background-size: 100.212314%; }
+    .sprite-mypic-361x458 { background-position: 0 61.579241%; background-size: 130.747922%; }
+    .sprite-logo-234x234 { background-position: 0 68.481891%; background-size: 239.593909%; }
+    .sprite-github-icon-142x142 { background-position: 0 72.205128%; background-size: 332.394366%; }
+    .sprite-linked-142x142 { background-position: 0 75.871795%; background-size: 332.394366%; }
+    .sprite-git-104x104 { background-position: 0 78.77095%; background-size: 453.846154%; }
+    .sprite-illustrator-104x102 { background-position: 0 81.395939%; background-size: 453.846154%; }
+    .sprite-indesign-104x102 { background-position: 0 84.010152%; background-size: 453.846154%; }
+    .sprite-mysql-104x104 { background-position: 0 86.66836%; background-size: 453.846154%; }
+    .sprite-jquery-99x104 { background-position: 0 89.334688%; background-size: 476.767677%; }
+    .sprite-css-92x104 { background-position: 0 92.001016%; background-size: 513.043478%; }
+    .sprite-javascript-91x104 { background-position: 0 94.667344%; background-size: 518.681319%; }
+    .sprite-html5-88x104 { background-position: 0 97.333672%; background-size: 536.363636%; }
+    .sprite-bootstrap-74x104 { background-position: 0 100%; background-size: 637.837838%; }
+
+    /* Generated by http://responsive-css.spritegen.com Responsive CSS Sprite Generator */
+
+    .sprite-ecommerce-472x315,.sprite-news-471x314, .sprite-portfolio-471x314, .sprite-posters-471x314, .sprite-tours-471x314, .sprite-weightcontrol-471x313,
+    .sprite-octocat-original-120x104, .sprite-sass-110x104, .sprite-photoshop-104x104, .sprite-php-104x104, .sprite-rwd-103x104,
+    .sprite-nodejs-104x107, .sprite-neon-star-brown-100x102, .sprite-neon-star-lightblue-100x102, .sprite-neon-star-lightpink-100x102, .sprite-neon-star-brown-50x51,
+    .sprite-neon-star-lightblue-50x51, .sprite-neon-star-lightpink-50x51
+    { max-width: 100%; background-size: 100%; background-image: url(../imgs/optimized/spritesheet2.png); }
+
+    .sprite-ecommerce-472x315 { background-position: 0 0%; background-size: 100%; }
+    .sprite-news-471x314 { background-position: 0 0%; background-size: 100%; }
+    .sprite-portfolio-471x314 { background-position: 0 23.632959%; background-size: 100.212314%; }
+    .sprite-posters-471x314 { background-position: 0 35.430712%; background-size: 100.212314%; }
+    .sprite-tours-471x314 { background-position: 0 47.228464%; background-size: 100.212314%; }
+    .sprite-weightcontrol-471x313 { background-position: 0 59.004118%; background-size: 100.212314%; }
+    .sprite-octocat-original-120x104 { background-position: 0 65.625%; background-size: 393.333333%; }
+    .sprite-sass-110x104 { background-position: 0 69.270833%; background-size: 429.090909%; }
+    .sprite-photoshop-104x104 { background-position: 0 72.916667%; background-size: 453.846154%; }
+    .sprite-php-104x104 { background-position: 0 76.5625%; background-size: 453.846154%; }
+    .sprite-rwd-103x104 { background-position: 0 80.208333%; background-size: 458.252427%; }
+    .sprite-nodejs-104x107 { background-position: 0 83.854167%; background-size: 467.326733%; }
+    .sprite-neon-star-brown-100x102 { background-position: 0 87.439278%; background-size: 472%; }
+    .sprite-neon-star-lightblue-100x102 { background-position: 0 91.013185%; background-size: 472%; }
+    .sprite-neon-star-lightpink-100x102 { background-position: 0 94.587092%; background-size: 472%; margin-left: -9vw;margin-top: 12vw;}
+    .sprite-neon-star-brown-50x51 { background-position: 0 96.454143%; background-size: 944%; }
+    .sprite-neon-star-lightblue-50x51 { background-position: 0 98.227071%; background-size: 944%; }
+    .sprite-neon-star-lightpink-50x51 { background-position: 0 100%; background-size: 944%; margin-top:-17vw;margin-left: -12vw;}
 }/* >1200px - Desktop*/
