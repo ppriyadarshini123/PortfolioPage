@@ -2938,6 +2938,7 @@ body {
         cursor: pointer;
         /*transform: rotateY(360deg);
         transition: 30s;*/
+        height: 8vw;
 
     }
     .downloadBtn:hover
@@ -3606,269 +3607,275 @@ body {
         background-position: -5px -5px;
     }
 
+    .sprite-ERD-472x315 {
+        width: 472px;
+        height: 315px;
+        background-position: -483px -5px;
+    }
+
     .sprite-Octocat-original-120x104 {
         width: 120px;
         height: 104px;
-        background-position: -483px -5px;
+        background-position: -965px -5px;
     }
 
     .sprite-bootstrap-74x104 {
         width: 74px;
         height: 104px;
-        background-position: -613px -5px;
+        background-position: -1095px -5px;
     }
 
     .sprite-camcareLogo-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -697px -5px;
+        background-position: -1179px -5px;
     }
 
     .sprite-camcareLogo-472x170 {
         width: 472px;
         height: 170px;
-        background-position: -1178px -5px;
+        background-position: -1660px -5px;
     }
 
     .sprite-camcareLogo-550x289 {
         width: 320px;
         height: 115px;
-        background-position: -1660px -5px;
+        background-position: -2142px -5px;
     }
 
     .sprite-cropped-Prakahs_Inkscape_logo--471x314 {
         width: 471px;
         height: 314px;
-        background-position: -1990px -5px;
+        background-position: -2472px -5px;
     }
 
     .sprite-cropped-Prakahs_Inkscape_logo--520x120 {
         width: 520px;
         height: 120px;
-        background-position: -2471px -5px;
+        background-position: -2953px -5px;
     }
 
     .sprite-css-92x104 {
         width: 92px;
         height: 104px;
-        background-position: -3001px -5px;
+        background-position: -3483px -5px;
     }
 
     .sprite-ecommerce-472x315 {
         width: 472px;
         height: 315px;
-        background-position: -3103px -5px;
+        background-position: -3585px -5px;
     }
 
     .sprite-ecommerce-550x367 {
         width: 550px;
         height: 367px;
-        background-position: -3585px -5px;
+        background-position: -4067px -5px;
     }
 
     .sprite-erd-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -4145px -5px;
+        background-position: -4627px -5px;
     }
 
     .sprite-erd-472x226 {
         width: 472px;
         height: 226px;
-        background-position: -4626px -5px;
+        background-position: -5108px -5px;
     }
 
     .sprite-erd-550x263 {
         width: 550px;
         height: 263px;
-        background-position: -5108px -5px;
+        background-position: -5590px -5px;
     }
 
     .sprite-flowchart-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -5668px -5px;
+        background-position: -6150px -5px;
     }
 
     .sprite-flowchart-472x323 {
         width: 472px;
         height: 323px;
-        background-position: -6149px -5px;
+        background-position: -6631px -5px;
     }
 
     .sprite-flowchart-550x376 {
         width: 550px;
         height: 376px;
-        background-position: -6631px -5px;
+        background-position: -7113px -5px;
     }
 
     .sprite-git-104x104 {
         width: 104px;
         height: 104px;
-        background-position: -7191px -5px;
+        background-position: -7673px -5px;
     }
 
     .sprite-github-icon {
         width: 225px;
         height: 225px;
-        background-position: -7305px -5px;
+        background-position: -7787px -5px;
     }
 
     .sprite-github-icon-142x142 {
         width: 142px;
         height: 142px;
-        background-position: -7540px -5px;
+        background-position: -8022px -5px;
     }
 
     .sprite-html5-88x104 {
         width: 88px;
         height: 104px;
-        background-position: -7692px -5px;
+        background-position: -8174px -5px;
     }
 
     .sprite-illustrator-104x102 {
         width: 104px;
         height: 102px;
-        background-position: -7790px -5px;
+        background-position: -8272px -5px;
     }
 
     .sprite-indesign-104x102 {
         width: 104px;
         height: 102px;
-        background-position: -7904px -5px;
+        background-position: -8386px -5px;
     }
 
     .sprite-javascript-91x104 {
         width: 91px;
         height: 104px;
-        background-position: -8018px -5px;
+        background-position: -8500px -5px;
     }
 
     .sprite-jquery-99x104 {
         width: 99px;
         height: 104px;
-        background-position: -8119px -5px;
+        background-position: -8601px -5px;
     }
 
     .sprite-linked {
         width: 225px;
         height: 225px;
-        background-position: -8228px -5px;
+        background-position: -8710px -5px;
         margin-left: 2vw;
     }
 
     .sprite-linked-142x142 {
         width: 142px;
         height: 142px;
-        background-position: -8463px -5px;
+        background-position: -8945px -5px;
     }
 
     .sprite-logo-195x150 {
         width: 195px;
         height: 150px;
-        background-position: -8615px -5px;
+        background-position: -9097px -5px;
     }
 
     .sprite-logo-1c---for-website-471x260 {
         width: 471px;
         height: 260px;
-        background-position: -8820px -5px;
+        background-position: -9302px -5px;
     }
 
     .sprite-logo-1c---for-website-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -9301px -5px;
+        background-position: -9783px -5px;
     }
 
     .sprite-logo-1c---for-website-472x261 {
         width: 472px;
         height: 261px;
-        background-position: -9782px -5px;
+        background-position: -10264px -5px;
     }
 
     .sprite-logo-1c---for-website-530x293 {
         width: 530px;
         height: 293px;
-        background-position: -10264px -5px;
+        background-position: -10746px -5px;
     }
 
     .sprite-logo-234x234 {
         width: 197px;
         height: 149px;
-        background-position: -10804px -5px;
+        background-position: -11286px -5px;
     }
 
     .sprite-logo-350x350 {
         width: 350px;
         height: 350px;
-        background-position: -11011px -5px;
+        background-position: -11493px -5px;
     }
 
     .sprite-logoCERC-272x269 {
         width: 272px;
         height: 269px;
-        background-position: -11371px -5px;
+        background-position: -11853px -5px;
     }
 
     .sprite-logoCERC-330x173 {
         width: 175px;
         height: 173px;
-        background-position: -11653px -5px;
+        background-position: -12135px -5px;
     }
 
     .sprite-logoCERC-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -11838px -5px;
+        background-position: -12320px -5px;
     }
 
     .sprite-logoCERC-550x289 {
         width: 550px;
         height: 289px;
-        background-position: -12319px -5px;
+        background-position: -12801px -5px;
     }
 
     .sprite-logos {
         width: 550px;
         height: 367px;
-        background-position: -12879px -5px;
+        background-position: -13361px -5px;
     }
 
     .sprite-logos-472x315 {
         width: 472px;
         height: 315px;
-        background-position: -13439px -5px;
+        background-position: -13921px -5px;
     }
 
     .sprite-myPic-359x455 {
         width: 359px;
         height: 455px;
-        background-position: -13921px -5px;
+        background-position: -14403px -5px;
     }
 
     .sprite-myPic-361x458 {
         width: 361px;
         height: 458px;
-        background-position: -14290px -5px;
+        background-position: -14772px -5px;
     }
 
     .sprite-myPic-596x756 {
         width: 596px;
         height: 756px;
-        background-position: -14661px -5px;
+        background-position: -15143px -5px;
     }
 
     .sprite-mysql-104x104 {
         width: 104px;
         height: 104px;
-        background-position: -15267px -5px;
+        background-position: -15749px -5px;
     }
 
     .sprite-neon-star-brown-100x102 {
         width: 100px;
         height: 102px;
-        background-position: -15381px -5px;
+        background-position: -15863px -5px;
         margin-left: 6vw;
         margin-top: -4vw;
     }
@@ -3876,7 +3883,7 @@ body {
     .sprite-neon-star-brown-50x51 {
         width: 50px;
         height: 51px;
-        background-position: -15491px -5px;
+        background-position: -15973px -5px;
         margin-left: 5vw;
         margin-top: -3vw;
     }
@@ -3884,137 +3891,143 @@ body {
     .sprite-neon-star-lightblue-100x102 {
         width: 100px;
         height: 102px;
-        background-position: -15551px -5px;
+        background-position: -16033px -5px;
         margin-top: -4vw;
     }
 
     .sprite-neon-star-lightblue-50x51 {
         width: 50px;
         height: 51px;
-        background-position: -15661px -5px;
+        background-position: -16143px -5px;
         margin-left: 28vw;
     }
 
     .sprite-neon-star-lightpink-100x102 {
         width: 100px;
         height: 102px;
-        background-position: -15721px -5px;
+        background-position: -16203px -5px;
         margin-left: 15vw;
     }
 
     .sprite-neon-star-lightpink-50x51 {
         width: 50px;
         height: 51px;
-        background-position: -15831px -5px;
+        background-position: -16313px -5px;
         margin-top: -3.5vw;
     }
 
     .sprite-news-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -15891px -5px;
+        background-position: -16373px -5px;
     }
 
     .sprite-news-484x323 {
         width: 484px;
         height: 323px;
-        background-position: -16372px -5px;
+        background-position: -16854px -5px;
     }
 
     .sprite-news-550x367 {
         width: 550px;
         height: 367px;
-        background-position: -16866px -5px;
+        background-position: -17348px -5px;
     }
 
     .sprite-nodejs-104x107 {
         width: 101px;
         height: 104px;
-        background-position: -17426px -5px;
+        background-position: -17908px -5px;
     }
 
     .sprite-photoshop-104x104 {
         width: 104px;
         height: 104px;
-        background-position: -17537px -5px;
+        background-position: -18019px -5px;
     }
 
     .sprite-php-104x104 {
         width: 104px;
         height: 104px;
-        background-position: -17651px -5px;
+        background-position: -18133px -5px;
+    }
+
+    .sprite-portfolio-471x314 {
+        width: 471px;
+        height: 314px;
+        background-position: -18247px -5px;
     }
 
     .sprite-posters {
         width: 471px;
         height: 314px;
-        background-position: -17765px -5px;
+        background-position: -18728px -5px;
     }
 
     .sprite-posters-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -18246px -5px;
+        background-position: -19209px -5px;
     }
 
     .sprite-posters-472x340 {
         width: 472px;
         height: 340px;
-        background-position: -18727px -5px;
+        background-position: -19690px -5px;
     }
 
     .sprite-prakashSports-472x109 {
         width: 472px;
         height: 109px;
-        background-position: -19209px -5px;
+        background-position: -20172px -5px;
     }
 
     .sprite-rwd-103x104 {
         width: 103px;
         height: 104px;
-        background-position: -19691px -5px;
+        background-position: -20654px -5px;
     }
 
     .sprite-sass-110x104 {
         width: 110px;
         height: 104px;
-        background-position: -19804px -5px;
+        background-position: -20767px -5px;
     }
 
     .sprite-tours-471x314 {
         width: 471px;
         height: 314px;
-        background-position: -19924px -5px;
+        background-position: -20887px -5px;
     }
 
     .sprite-tours-472x266 {
         width: 472px;
         height: 266px;
-        background-position: -20405px -5px;
+        background-position: -21368px -5px;
     }
 
     .sprite-tours-550x310 {
-        width: 550px;
-        height: 310px;
-        background-position: -20887px -5px;
+        width: 471px;
+        height: 314px;
+        background-position: -21850px -5px;
     }
 
     .sprite-weightcontrol-471x313 {
         width: 471px;
         height: 313px;
-        background-position: -21447px -5px;
+        background-position: -22331px -5px;
     }
 
     .sprite-weightcontrol-484x321 {
         width: 484px;
         height: 321px;
-        background-position: -21928px -5px;
+        background-position: -22812px -5px;
     }
 
     .sprite-weightcontrol-550x365 {
         width: 550px;
         height: 365px;
-        background-position: -22422px -5px;
+        background-position: -23306px -5px;
     }
 
 
