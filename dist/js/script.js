@@ -1,4 +1,17 @@
-/*import enquire from 'enquire.js';*/
+/*import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import '../node_modules/pixi.js/dist/pixi.min.js';
+import '../node_modules/pixi.js-legacy/dist/pixi-legacy.js';
+import '../dist/js/pixi.js';
+import '../node_modules/requestanimationframe/app/requestAnimationFrame.js';
+import $ from 'jquery';
+import '../node_modules/popper.js/dist/popper.min.js';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../dist/js/jquery.carousel.js';
+import '../dist/js/jcarousel.responsive.js';*/
+
+import enquire from 'enquire.js';
+
+
 
 (function(){
 
@@ -28,18 +41,18 @@
     /**
      * This code is to dislay the .documents block using JQuery
      */
-/* $(function() {*/
-        $(document).ready(function(){
-            $mySql.click(function() {
-                $openWindow.toggle("fast");
-            });
+    /* $(function() {*/
+    $(document).ready(function(){
+        $mySql.click(function() {
+            $openWindow.toggle("fast");
         });
+    });
     /*});*/
 
     /*This is the javascript way of displayingblock*/
-   /* function myFunction() {
-        document.getElementById("openWindow").style.display = "block";
-    }*/
+    /* function myFunction() {
+         document.getElementById("openWindow").style.display = "block";
+     }*/
 
     /**
      * @name validation
@@ -89,41 +102,41 @@
         }/*if*/
     }//validation
 
-   /* /!**
-     * @name postersSlider
-     * @desc Sliding all posters on posters.html
-     *!/
-    function postersSlider()
-    {
-        var slideIndex = 1;
-        showSlides(slideIndex);
+    /* /!**
+      * @name postersSlider
+      * @desc Sliding all posters on posters.html
+      *!/
+     function postersSlider()
+     {
+         var slideIndex = 1;
+         showSlides(slideIndex);
 
-// Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+ // Next/previous controls
+         function plusSlides(n) {
+             showSlides(slideIndex += n);
+         }
 
-// Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+ // Thumbnail image controls
+         function currentSlide(n) {
+             showSlides(slideIndex = n);
+         }
 
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-    }/!*postersSlider*!/*/
+         function showSlides(n) {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             var dots = document.getElementsByClassName("dot");
+             if (n > slides.length) {slideIndex = 1}
+             if (n < 1) {slideIndex = slides.length}
+             for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+             }
+             for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex-1].style.display = "block";
+             dots[slideIndex-1].className += " active";
+         }
+     }/!*postersSlider*!/*/
 
     /**
      * @name bindBtns
