@@ -4,8 +4,6 @@
 (function(){
 
     let stage = new PIXI.Container();
-    /*let renderer = PIXI.autoDetectRenderer(window.innerWidth-4, window.innerHeight-4, {view: document.getElementById("dispCnv")}, {transparent: false}, {backgroundColor: 0x197780}, {clearBeforeRender: true});*/
-
     let h;
 
     //mobile
@@ -50,20 +48,11 @@
         }/*unmatch*/
     });/*enquire.register*/
 
-    let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
-    renderer.backgroundColor = 0x197780;
-
-    /*console.log(window.innerWidth);
-    console.log(h);*/
     /*This helper function will automatically detect which renderer you should be using.
     WebGL is the preferred renderer as it is a lot faster. If WebGL is not supported by the browser then
     this function will return a canvas renderer*/
-    /*let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});*/
-    /*console.log(renderer);*/
-    /*renderer.backgroundColor = 0x197780;*/
-
-    /* var webGLcanvas = renderer.view;
-    *  var ctx = renderer.context; */
+    let renderer = PIXI.autoDetectRenderer({width: window.innerWidth, height: h,transparent: false, forceCanvas: true});
+    renderer.backgroundColor = 0x197780;
 
     let _stars = [], _glows = [];
     let _mouseX = window.innerWidth*0.5, _mouseY = window.innerHeight*0.5, _starInterval;
@@ -71,36 +60,28 @@
     let width, height, fontSize, textPixels, yOffset;
     let textCanvas, textCtx;
     let htmlText = document.getElementById("html-text");
-
     let percent = 0;
-
-    /*Append renderer to the canvas element*/
-    /*document.body.getElementsByTagName("canvas")[0].appendChild(renderer.view);*/
-    /*document.querySelector('#home').appendChild(renderer.view);*/
-    /*document.body.appendChild(renderer.view);*/
-
-    /*initCanvas();*/
-
-    function begin() {
-       /* console.log("begin");*/
-        resize();
-        requestAnimationFrame( animate );
-    }
-
-    /*let render = function() {
-        renderer.render(stage);
-        /!*requestAnimationFrame(render);*!/
-    }
-
-    render();*/
-
     let textures = [
         PIXI.Texture.from("/dist/imgs/optimized/neon-star-lightblue-100x102.png"),
         PIXI.Texture.from("/dist/imgs/optimized/neon-star-brown-100x102.png"),
         PIXI.Texture.from("/dist/imgs/optimized/neon-star-lightpink-100x102.png"),
-
     ];
 
+    /**
+     * @name begin
+     * @desc begin animation
+     */
+    function begin() {
+        resize();
+        requestAnimationFrame( animate );
+    }/*begin*/
+
+
+    /**
+     * @name createStar
+     * @desc creates star on stage
+     * @param text
+     */
     function createStar(text) {
         let star = new PIXI.Sprite(text);
         star.width = 5 + Math.random()*20;
@@ -112,9 +93,12 @@
         star.alpha = 0;
         star.launched = false;
         _stars.push(star);
-        /*console.log("createStar");*/
-    }
+    }/*createStar(text)*/
 
+    /**
+     * @name createGlow
+     * @desc Creates glow on stage
+     */
     function createGlow() {
         let glow = new PIXI.Sprite(PIXI.Texture.from('/dist/imgs/unoptimized/glow-star.png'));
         let size = 2 + Math.random()*14;
@@ -127,18 +111,18 @@
         glow.alpha = 0;
         glow.launched = false;
         _glows.push(glow);
-        /*console.log("createGlow");*/
-    }
+    }/*createGlow()*/
 
+    /**
+     * @name launchStar()
+     * @desc launches stars
+     */
     function launchStar() {
         let star = _stars[_nextStar];
         _nextStar = _nextStar == _stars.length-1 ? 0 : _nextStar + 1;
         star.launched = true;
         star.alpha = 1;
         let pos = textPixels[Math.floor(Math.random()*textPixels.length)];
-        /*console.log(pos);
-        console.log(Math.floor(Math.random()*textPixels.length));
-        console.log(Math.random()*textPixels.length);*/
         star.position.x = pos.x;
         star.position.y = yOffset + pos.y;
 
@@ -146,9 +130,13 @@
         star.vy = -1 + Math.random()*-1;
         star.vr = -0.2 + Math.random()*0.4;
         star.p = 0;
-        /*console.log("launchStar");*/
-    }
+    }/*launchStar()*/
 
+    /**
+     * @name launchGlow
+     * @desc launches glow star
+     * @param i
+     */
     function launchGlow(i) {
         let glow = _glows[_nextGlow];
         _nextGlow = _nextGlow == _glows.length-1 ? 0 : _nextGlow + 1;
@@ -159,16 +147,22 @@
 
         glow.vx = 0.5 + Math.random()*0.5;
         glow.vy = -0.5 + Math.random()*-0.5;
-        /*console.log("launchGlow");*/
-    }
+    }/*launchGlow(i)*/
 
+    /**
+     * @name launchStarBatch()
+     * @desc launches batch of star
+     */
     function launchStarBatch() {
         for (let i = 0; i < 6; i++) {
-           /* console.log("launchStarBatch");*/
             launchStar();
-        }
-    }
+        }/*for*/
+    }/*launchStarBatch()*/
 
+    /**
+     * @name animate()
+     * @desc Animate the stars
+     */
     function animate() {
         launchStarBatch();
         requestAnimationFrame( animate );
@@ -181,8 +175,8 @@
                 // _stars[i].vy += 0.04;
                 _stars[i].p += _stars[i].vr;
                 _stars[i].alpha -= 0.01;
-            }
-        }
+            }/*if*/
+        }/*for*/
 
         for (let i = 0; i < _glows.length; i++) {
             if(_glows[i].launched) {
@@ -192,124 +186,69 @@
                 if (_glows[i].position.y < 0) {
                     _glows[i].position.x = Math.random()*width;
                     _glows[i].position.y = height + Math.random()*50;
-                }
+                }/*if*/
                 if (_glows[i].position.x > width) {
                     _glows[i].position.x = -Math.random()*100;
                     _glows[i].position.y = height*Math.random();
-                }
+                }/*if*/
+            }/*if*/
+        }/*for*/
 
-            }
-        }
-        /*webGlCtx.render(stage);*/
         // render the stage
         renderer.render(stage);
-        /*console.log("animate");*/
-        /*render();*/
-    }
-// canvas
-    /*Creates one more canvas*/
-    function initCanvas() {
-        /*textCanvas = document.getElementById("dispCnv");*/
-        /*textCtx = textCanvas.getContext("2d");*/
+    }// canvas
 
+    /**
+     * @name initCanvas
+     * @desc Creates one more canvas
+     */
+    function initCanvas() {
         /*commented new*/
         textCanvas = renderer.view;
-        /*console.log(renderer.view);
-        console.log(textCanvas.getContext('webgl'));
-        console.log(textCanvas.getContext('webgl2'));*/
-        //textCtx = textCanvas.getContext('webgl')|| textCanvas.getContext('webgl2');
-        /*contextId '2d' is not always supported in browser*/
-        
         if(textCanvas.getContext('webgl')||textCanvas.getContext('webgl2'))
         {
-            /*console.log("in webgl disable");*/
             if(textCanvas.getContext('webgl'))
                 textCanvas.getContext('webgl').disable(textCanvas.getContext('webgl').DITHER);
             if(textCanvas.getContext('webgl2'))
             textCanvas.getContext('webgl2').disable(textCanvas.getContext('webgl2').RENDERBUFFER_ALPHA_SIZE);
-        }
-       /* console.log(textCanvas.getContext('webgl'));
-        console.log(textCanvas.getContext('webgl2'));*/
-
+        }/*if*/
         textCtx = textCanvas.getContext("2d");
-       /* console.log(textCanvas.getContext('2d'));
-        console.log("initCanvas");*/
         document.querySelector('#home').appendChild(renderer.view);
-        /* console.log(textCtx.drawingBufferWidth);
-         console.log(textCtx.drawingBufferHeight);*/
-    }
+    }/*initCanvas()*/
 
+    /**
+     * @name sampleCanvas()
+     * @desc create canvas and populate the stars
+     */
     function sampleCanvas() {
-        /*textCanvas.style.width = width + 'px';
-        textCanvas.style.height = fontSize + 'px';
-        textCanvas.style.marginTop = -(fontSize / 2) + 'px';
-        textCanvas.width = width;
-        textCanvas.height = fontSize;
-        textCtx.textAlign = 'center';
-        textCtx.textBaseline = "top";
-        textCtx.font = fontSize + 'px "Luckiest Guy"';
-        textCtx.fillStyle = '#eee';
-        textCtx.fillRect(0, 0, width, fontSize);
-        */
-
-        /* textCtx.clearRect(0, 0, renderer.width, fontSize);*//*sets the pixels in a rectangular area to transparent black. The rectangle's corner is at (x,y).
-    This code snippet erases part of the canvas. This is commonly required at the start of each frame in an animation.*/
-
-        /*textCtx.fillText('WELCOME TO MY WEBPAGE', width / 2, 0);*/
-       /* console.log("sampleCanvas");*/
         textCtx.fillStyle = "#197780";/*the green background color*/
         textCtx.fillRect(window.innerWidth/4,0, window.innerWidth/2, window.innerHeight);/*This rectangle contains the stars*/
         let pix = textCtx.getImageData(0,0, window.innerWidth, fontSize).data;/*returns an ImageData object representing the underlying pixel data for a specified portion of the canvas. RGBA color value is specified with RGBA. The alpha parameter is a number between 0 (fully transparent) and 255(fully opaque)*/
-        /*textCtx.putImageData(pix, 0, -100);*/
+
         textPixels = [];
-        /*console.log(pix.length);*/
-        /*let imageData = new Uint8Array(textCtx.width * fontSize * 4);/!*length is 4 , to store 4 values of red, green, blue, alpha*!/*/
 
         for (let i = pix.length; i >= 0; i -= 4) {
-            /*console.log(pix[i] != 0);*/
             if (pix[i] != 0) {
                 let x = (i / 4) % window.innerWidth;
                 let y = Math.floor(Math.floor(i / window.innerWidth) / 4);
-                /* console.log(y);*/
                 if ((x && x % 6 == 0) && (y && y % 6 == 0)) {
                     textPixels.push({
                         x: x,
                         y: y
-                    });
+                    });/*if*/
+                }/*if*/
+            }/*if*/
+        }/*for*/
+    }/*sampleCanvas()*/
 
-                }
-            }
-        }
-        /*creating a rectangle and then reading its pixels*/
-        /*textCtx.fillStyle = renderer.backgroundColor;*/
-        /*console.log(textCtx.backgroundColor);*/
-        /*textCtx.viewport(0, 0, textCtx.width, textCtx.height);*/
-
-        /*textCtx.readPixels(0, 0, textCtx.width, fontSize, textCtx.RGBA, textCtx.UNSIGNED_BYTE, imageData);*/
-        /*console.log(imageData);*/
-
-        /* for (let i = imageData.length; i >= 0; i -= 4) {
-             if (imageData[i] != 0) {
-                 let x = (i / 4) % textCtx.width;
-                 let y = Math.floor(Math.floor(i / textCtx.width) / 4);
-
-                 if ((x && x % 6 == 0) && (y && y % 6 == 0))
-                     textPixels.push({
-                         x: x,
-                         y: y
-                     });
-
-             }console.log(textPixels);
-         }*/
-    }
-
-    /*We need this text display "Welcome to my Webpage display, Resizing will be needed depending on the viewport size*/
+    /**
+     * @name resizeText
+     * @desc We need this text display "Welcome to my Webpage display, Resizing will be needed depending on the viewport size
+     */
     function resizeText() {
         htmlText.style.fontSize = fontSize+'px';
         htmlText.style.height = fontSize+'px';
         htmlText.style.color = '#ffffff';
-       /* htmlText.style.marginTop = '25%';
-        /!*console.log("resizeText");*!/!*!/*/
 
         /*For mobile*/
         enquire.register("screen and (max-width:360px)", {
@@ -358,10 +297,12 @@
 
             }/*unmatch*/
         });/*enquire.register*/
-    }
+    }/*resizeText()*/
 
-
-
+    /**
+     * @name resize()
+     * @desc resize the canvas
+     */
     function resize() {
         width = window.innerWidth;
         height = h;
@@ -373,7 +314,6 @@
         enquire.register("screen and (max-width:360px)", {
             match: function () {
                 fontSize = 25;
-
             },/*match*/
             unmatch: function () {
 
@@ -412,7 +352,7 @@
 
             }/*unmatch*/
         });/*enquire.register*/
-        /*if (fontSize > 100) fontSize = 100;*/
+
         yOffset = height*0.6 - (fontSize/2);
 
         /*rendering the canvas with specified width and height*/
@@ -420,59 +360,45 @@
 
         resizeText();
         sampleCanvas();
-        /*console.log("resize");*/
-    }
+    }/*resize()*/
 
+    /**
+     * @Name bindBtns()
+     * @desc Starting the Confetti display of stars
+     */
     function bindBtns()
     {
         initCanvas();
         begin();
+
         /*don't comment, need this to call resize(), depending on the viewport size*/
         window.addEventListener('resize', resize);
 
         //create stars
         for (let i = 0; i < 600; i++) {
             createStar(textures[i%5]);
-            /*console.log("create stars");*/
-        }
+        }/*for*/
 
         for (let i = 0; i < 100; i++) {
             createGlow();
-            /*console.log("createGlow");*/
-        }
+        }/*for*/
 
         for (let i = 0; i < 100; i++) {
             setTimeout(function() {
                 launchGlow();
-                /*console.log("launchGlow");*/
             }, 10);
-        }
+        }/*for*/
+    }/*bindBtns()*/
 
-
-    }
-
-    /*WebFont.load({
-        google: {
-            families: ['Luckiest Guy'],
-            urls: [
-                'https://fonts.googleapis.com/css?family=Luckiest+Guy'
-            ]
-        },
-        active: begin
-    });*/
-    /*begin();*/
 
     /**
      * @name init
      * @desc Initializing function
      */
     function init() {
-
         bindBtns();
-
     }//end init
 
-   /* window.addEventListener('load', init);*/
     window.onload = init;
 })();//close iffy
 

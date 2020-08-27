@@ -1,14 +1,3 @@
-/*import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import '../node_modules/pixi.js/dist/pixi.min.js';
-import '../node_modules/pixi.js-legacy/dist/pixi-legacy.js';
-import '../dist/js/pixi.js';
-import '../node_modules/requestanimationframe/app/requestAnimationFrame.js';
-import $ from 'jquery';
-import '../node_modules/popper.js/dist/popper.min.js';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
-import '../dist/js/jquery.carousel.js';
-import '../dist/js/jcarousel.responsive.js';*/
-
 import enquire from 'enquire.js';
 
 
@@ -22,23 +11,6 @@ import enquire from 'enquire.js';
     const $openWindow = $('#openWindow');
 
     /**
-     * @name mobile
-     * @desc code for the changing picture when the tabs are clicked, for the mobile viewport
-     */
-    /*  function mobile()
-      {
-          enquire.register("screen and (max-width:360px)", {
-              match: function(){
-
-
-              },/!*match*!/
-              unmatch: function(){
-
-              }/!*unmatch*!/
-          });/!*enquire.register*!/
-      }//mobile*/
-
-    /**
      * This code is to dislay the .documents block using JQuery
      */
     /* $(function() {*/
@@ -47,12 +19,7 @@ import enquire from 'enquire.js';
             $openWindow.toggle("fast");
         });
     });
-    /*});*/
 
-    /*This is the javascript way of displayingblock*/
-    /* function myFunction() {
-         document.getElementById("openWindow").style.display = "block";
-     }*/
 
     /**
      * @name validation
@@ -61,6 +28,7 @@ import enquire from 'enquire.js';
     function validation()
     {
         if(submit){
+
             /*submit is a HTMlCollection, therefore we start a loop, for click event*/
             for(let j=0; j< submit.length; j++) {
                 submit[j].addEventListener("click", function () {
@@ -101,42 +69,6 @@ import enquire from 'enquire.js';
             }/*For tabName*/
         }/*if*/
     }//validation
-
-    /* /!**
-      * @name postersSlider
-      * @desc Sliding all posters on posters.html
-      *!/
-     function postersSlider()
-     {
-         var slideIndex = 1;
-         showSlides(slideIndex);
-
- // Next/previous controls
-         function plusSlides(n) {
-             showSlides(slideIndex += n);
-         }
-
- // Thumbnail image controls
-         function currentSlide(n) {
-             showSlides(slideIndex = n);
-         }
-
-         function showSlides(n) {
-             var i;
-             var slides = document.getElementsByClassName("mySlides");
-             var dots = document.getElementsByClassName("dot");
-             if (n > slides.length) {slideIndex = 1}
-             if (n < 1) {slideIndex = slides.length}
-             for (i = 0; i < slides.length; i++) {
-                 slides[i].style.display = "none";
-             }
-             for (i = 0; i < dots.length; i++) {
-                 dots[i].className = dots[i].className.replace(" active", "");
-             }
-             slides[slideIndex-1].style.display = "block";
-             dots[slideIndex-1].className += " active";
-         }
-     }/!*postersSlider*!/*/
 
     /**
      * @name bindBtns
