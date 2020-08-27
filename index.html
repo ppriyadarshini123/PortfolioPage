@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Home page</title>
     <link rel="stylesheet" href="dist/css/index.css" media="screen">
+
     <!--FAVICON CODE-->
     <link rel="apple-touch-icon" sizes="180x180" href="dist/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png">
     <link rel="manifest" href="dist/favicon/site.webmanifest">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="dist/js/pixi.js"></script>
 </head>
 <body>
 
 <!--A Modal should be added on the top level element. Do not move it from here. Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a .modal within another fixed element.-->
 <!-- Nutritionist Modal -->
-<div class="modal" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+<div class="modal" id="modalNutritionist" tabindex="-1" role="dialog" aria-labelledby="modalNutritionistTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle1">My Journey - Nutritionist - Responsive Web Design project</h5>
+                <h5 class="modal-title" id="modalNutritionistTitle">My Journey - Nutritionist - Responsive Web Design project</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -53,25 +53,23 @@
             </div><!--modal-body-->
             <div class="modal-footer">
                 <button type="button" class="myJourney" data-dismiss="modal">Close</button>
-
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalNutritionist-->
 
 <!-- News Website Modal -->
-<div class="modal" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+<div class="modal" id="modalNewsWebsite" tabindex="-1" role="dialog" aria-labelledby="modalNewsWebsiteTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle2">My Journey - News Website</h5>
+                <h5 class="modal-title" id="modalNewsWebsiteTitle">My Journey - News Website</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div><!--modal-header-->
             <div class="modal-body">
                 <h6>Skills used:</h6> HTML5, CSS, CSS Positioning, basic Javascript<hr>
-
                 <h6>The Course : </h6><p>This project was based on the first module of Web Designing Career Programme by Training Dragon. It covered HTML5, CSS3 and basic Javascript. It was a 4 day course which covered topics like Headings, paragraphs, div, image, anchors, lists in HTML. I had used HTML about 9 years ago and this course refreshed my knowledge of it. The course covered best practices, keyboard shortcuts in WebStorm, creating wireframes, mockups, using HTML and CSS validators etc. In CSS, we covered basic CSS, absolute and relative positioning and also provided opportunity to do projects as exercises. In basic Javascript, topics like basic event handler and web hosting were discussed.</p>
 
                 <h6>The making of Project : </h6><p>This Web Design Project started by creating wireframe and mockups (<a href="./Wireframe&Mockup/newsWebsite.html">Wireframe & Mockup</a> ). I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website.</p>
@@ -85,14 +83,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalNewsWebsite-->
 
 <!-- Tours & Travels Modal -->
-<div class="modal" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle3" aria-hidden="true">
+<div class="modal" id="modalToursTravels" tabindex="-1" role="dialog" aria-labelledby="modalToursTravelsTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle3">My Journey - Tours & Travels - Javascript & JQuery Project</h5>
+                <h5 class="modal-title" id="modalToursTravelsTitle">My Journey - Tours & Travels - Javascript & JQuery Project</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -115,24 +113,76 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalToursTravels-->
 
-<!-- wordpress ECommerce -->
-<div class="modal" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle4" aria-hidden="true">
+<!-- Timebank -->
+<div class="modal" id="modalTimebank" tabindex="-1" role="dialog" aria-labelledby="modalTimebankTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle4">My Journey - ECommerce website - WordPress</h5>
+                <h5 class="modal-title" id="modalTimebankTitle">My Journey - Cambourne Timebank website - WordPress</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!--modal-header-->
+            <div class="modal-body">
+                <h6>Skills used:</h6>WordPress<hr>
+
+                <h6>The making of Project :</h6>
+                <p>I started volunteering as a Website Administrator for Cambourne Timebank since Nov. 2019. I am part of the Cambourne Timebank Management Committee. It consists of 9 members. The Management Committee meets almost every month to discuss the progress of the website and other issues.  </p>
+                <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.html#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. This website is still on the Staging Server.</p>
+
+                <p><h6>What I learnt : </h6></p>
+                <p>This project became a very good learning experience for me as I am learning how to communicate with the team and being a team player. I also am working with templates and Elementor in WordPress for the first time.</p>
+
+            </div><!--modal-body-->
+            <div class="modal-footer">
+                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog modal-dialog-scrollable-->
+</div><!--modalTimebank-->
+
+<!-- This portfolio  -->
+<div class="modal" id="modalPortfolio" tabindex="-1" role="dialog" aria-labelledby="modalPortfolioTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPortfolioTitle">My Journey - This Portfolio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!--modal-header-->
+            <div class="modal-body">
+                <h6>Skills used:</h6>HTML, CSS, Javascript, Graphic Design, Adobe Illustrator, JQuery, Bootstrap<hr>
+
+                <h6>The making of Project :</h6>
+                <p>While making this project,
+                    I have learnt a lot. I have used Image optimization, CSS Sprites, played with GZip Compression to improve the performance of the website.</p>
+                <p><h6>What I learnt : </h6></p>
+                <p>I learnt a lot  while making this project. I tried different things and challenged my imagination.</p>
+            </div><!--modal-body-->
+            <div class="modal-footer">
+                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog modal-dialog-scrollable-->
+</div><!--modalPortfolio-->
+
+<!-- ECommerce -->
+<div class="modal" id="modalECommerce" tabindex="-1" role="dialog" aria-labelledby="modalECommerceTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalECommerceTitle">My Journey - ECommerce website - WordPress</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div><!--modal-header-->
             <div class="modal-body">
                 <h6>Skills used:</h6>WordPress, External CSS<hr>
-
                 <h6>The Course :
                 </h6><p>This project was based on the third module of Web Designing Career Programme by Training Dragon. It covered WordPress. It was a 2 days course which covered topics like WordPress installation, Themes, configuring WordPress, Plugins, managing media, CMS, administration & security.  I had never formally learnt WordPress, therefore this was my first time learning.</p>
-
                 <h6>The making of Project :</h6>
                 <p>This WordPress Project started by giving a proposal to my Tutor. I had suggested the following:</p>
                 <p><b>Theme:</b> Bard</p>
@@ -161,42 +211,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
-
-<!-- wordpress Timebank -->
-<div class="modal" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle5" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document" >
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle5">My Journey - Cambourne Timebank website - WordPress</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div><!--modal-header-->
-            <div class="modal-body">
-                <h6>Skills used:</h6>WordPress<hr>
-
-                <h6>The making of Project :</h6>
-                <p>I started volunteering as a Website Administrator for Cambourne Timebank since Nov. 2019. I am part of the Cambourne Timebank Management Committee. It consists of 9 members. The Management Committee meets almost every month to discuss the progress of the website and other issues.  </p>
-                <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.html#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. This website is still on the Staging Server.</p>
-
-                <p><h6>What I learnt : </h6></p>
-                <p>This project became a very good learning experience for me as I am learning how to communicate with the team and being a team player. I also am working with templates and Elementor in WordPress for the first time.</p>
-
-            </div><!--modal-body-->
-            <div class="modal-footer">
-                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
-            </div><!--modal-footer-->
-        </div><!--modal-content-->
-    </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalECommerce-->
 
 <!--Prakash Sports  -->
-<div class="modal" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle6" aria-hidden="true">
+<div class="modal" id="modalPrakash" tabindex="-1" role="dialog" aria-labelledby="modalPrakashTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle6">My Journey - Prakash Sports website - WordPress</h5>
+                <h5 class="modal-title" id="modalPrakashTitle">My Journey - Prakash Sports website - WordPress</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -215,14 +237,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalPrakash-->
 
 <!--CERC  -->
-<div class="modal" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle7" aria-hidden="true">
+<div class="modal" id="modalCERC" tabindex="-1" role="dialog" aria-labelledby="modalCERCTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle7">My Journey - CERC - WordPress</h5>
+                <h5 class="modal-title" id="modalCERCTitle">My Journey - CERC - WordPress</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -241,14 +263,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalCERC-->
 
 <!--CamcareUK  -->
-<div class="modal" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle8" aria-hidden="true">
+<div class="modal" id="modalCamcare" tabindex="-1" role="dialog" aria-labelledby="modalCamcareTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle8">My Journey - CamCareUK - WordPress</h5>
+                <h5 class="modal-title" id="modalCamcareTitle">My Journey - CamCareUK - WordPress</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -267,14 +289,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalCamcare-->
 
 <!--mySQL  -->
-<div class="modal" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle9" aria-hidden="true">
+<div class="modal" id="modalSQL" tabindex="-1" role="dialog" aria-labelledby="modalSQLTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle9">My Journey - mySQL Project</h5>
+                <h5 class="modal-title" id="modalSQLTitle">My Journey - mySQL Project</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -292,14 +314,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalSQL-->
 
 <!--flowchart  -->
-<div class="modal" id="exampleModalScrollable10" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle10" aria-hidden="true">
+<div class="modal" id="modalFlowchart" tabindex="-1" role="dialog" aria-labelledby="modalFlowchartTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle10">My Journey - Flowchart</h5>
+                <h5 class="modal-title" id="modalFlowchartTitle">My Journey - Flowchart</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -317,14 +339,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalFlowchart-->
 
 <!--all posters -->
-<div class="modal" id="exampleModalScrollable11" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle11" aria-hidden="true">
+<div class="modal" id="modalPosters" tabindex="-1" role="dialog" aria-labelledby="modalPostersTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle11">My Journey - All Posters</h5>
+                <h5 class="modal-title" id="modalPostersTitle">My Journey - All Posters</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -342,14 +364,14 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalPosters-->
 
 <!--all logos  -->
-<div class="modal" id="exampleModalScrollable12" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle12" aria-hidden="true">
+<div class="modal" id="modalLogos" tabindex="-1" role="dialog" aria-labelledby="modalLogosTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document" >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle12">My Journey - All Logos</h5>
+                <h5 class="modal-title" id="modalLogosTitle">My Journey - All Logos</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -367,33 +389,7 @@
             </div><!--modal-footer-->
         </div><!--modal-content-->
     </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
-
-<!-- This portfolio  -->
-<div class="modal" id="exampleModalScrollable13" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle13" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document" >
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle13">My Journey - This Portfolio</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div><!--modal-header-->
-            <div class="modal-body">
-                <h6>Skills used:</h6>HTML, CSS, Javascript, Graphic Design, Adobe Illustrator, JQuery, Bootstrap<hr>
-
-                <h6>The making of Project :</h6>
-                <p>While making this project,
-                    I have learnt a lot. I have used Image optimization, CSS Sprites, played with GZip Compression to improve the performance of the website.</p>
-                <p><h6>What I learnt : </h6></p>
-                <p>I learnt a lot  while making this project. I tried different things and challenged my imagination.</p>
-            </div><!--modal-body-->
-            <div class="modal-footer">
-                <button type="button" class="myJourney" data-dismiss="modal">Close</button>
-            </div><!--modal-footer-->
-        </div><!--modal-content-->
-    </div><!--modal-dialog modal-dialog-scrollable-->
-</div><!--modal-->
+</div><!--modalLogos-->
 
 <div class="navContainer">
     <header id="top">
@@ -402,18 +398,12 @@
                 <span class="hamburger" id="openNav">&#9776;</span><!--Hamburger Icon-->
                 <div class="logoName">
                     <a href="index.html" class="showHome">
-                       <!-- <picture>-->
-                           <!-- <source media="(max-width: 360px)" srcset="dist/imgs/optimized/logo-234x234.png">
-                            <source media="(max-width: 768px)" srcset="dist/imgs/optimized/logo-234x234.png">
-                            <source media="(min-width: 769px) and (max-width: 1200px)" srcset="dist/imgs/optimized/logo-350x350.png">
-                            <source media="(min-width: 1201px)" srcset="dist/imgs/optimized/logo-195x150.gif">-->
-                            <img class="sprite-logo-234x234" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAACVAQMAAADSeKxEAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABlJREFUeNrtwQEBAAAAgJD+r+4ICgAAAKgBDyIAAdylp3MAAAAASUVORK5CYII=">
-                       <!-- </picture>-->
+                        <img class="sprite-logo-234x234" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAACVAQMAAADSeKxEAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABlJREFUeNrtwQEBAAAAgJD+r+4ICgAAAKgBDyIAAdylp3MAAAAASUVORK5CYII=">
                     </a>
                 </div><!--LogoName-->
-            </div><!--Logo and hamburger icon-->
-        </div><!--wrapper, Logo-->
-    </header><!--header-->
+            </div><!--logoAndHam-->
+        </div><!--wrapper-->
+    </header><!--header logo& hamburger-->
     <div class="wrapper">
         <nav class="topNav">
             <div class="navItemHome">
@@ -435,29 +425,28 @@
                 <a href="#myProjects" class="removeUnderscore">
                     <p class="txtNav">My Projects</p>
                 </a>
-            </div><!--navItemMyWork-->
+            </div><!--navItemMyProjects-->
             <div class="navItemTestimonials">
                 <a href="#testimonial" class="removeUnderscore">
                     <p class="txtNav">Testimonials</p>
                 </a>
-            </div><!--navItemBlog-->
+            </div><!--navItemTestimonials-->
             <div class="navItemContactForm">
                 <a href="#contactForm" class="removeUnderscore">
                     <p class="txtNav">Contact Form</p>
                 </a>
             </div><!--navItemContactForm-->
         </nav>
-    </div><!--wrapper-->
+    </div><!--wrapper Navigation-->
     <div class="headerSection">
         <div class="wrapper">
             <div class="homeSection" id="home">
-                <!--         <canvas id="dispCnv" width="2550" height="932"></canvas>-->
                 <div id="html-text" class="text">
                     Welcome to my Webpage
-                </div>
-            </div><!--home Section-->
+                </div><!--html-text-->
+            </div><!--homeSection-->
         </div><!--wrapper-->
-    </div><!--Header Section-->
+    </div><!--HeaderSection-->
     <div class="wrapper2">
         <main>
             <div class="aboutMe" id="aboutMe">
@@ -473,27 +462,21 @@
                         <p class="intro">
                             My name is Payal Priyadarshini. I am a freelance Web Designer looking for opportunities.
                         </p>
-                    </div><!--intro-->
+                    </div><!--flexWidth-->
                     <div class="aboutMeSection">
                         <img class="sprite-mypic-361x458" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAHKAQMAAAD7PShNAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACxJREFUeNrtwTEBAAAAwqD1T20LL6AAAAAAAAAAAAAAAAAAAAAAAAAAAICvAVQWAAHuIazQAAAAAElFTkSuQmCC">
-                        <!--<div class="btn">-->
-
                         <a href="dist/docs/UK%20CV%20-%20web%20designer.pdf" download>
                             <input name="Download My CV" value="Download My CV" class="downloadBtn" type="submit">
                         </a>
-
-                        <!--</div>-->
                         <div class="icons">
                             <a href="https://github.com/ppriyadarshini123" class="link">
                                 <img class="sprite-github-icon-142x142" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACOAQMAAADdM6JLAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABlJREFUeNrtwTEBAAAAwqD1T20MH6AAAOBhCooAAZx+I98AAAAASUVORK5CYII=">
                                 <p class="subTitle">My GitHub repository</p>
                             </a><!--GitHub icon-->
-
                             <a href="https://www.linkedin.com/in/payal-p-3a96a179/" class="link">
                                 <img class="sprite-linked-142x142" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACOAQMAAADdM6JLAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABlJREFUeNrtwTEBAAAAwqD1T20MH6AAAOBhCooAAZx+I98AAAAASUVORK5CYII=">
                                 <p class="subTitle">My Linkedin Profile</p>
                             </a><!--Linkedin icon-->
-
                         </div><!--icons-->
                     </div><!--aboutMeSection-->
                     <div class="flexWidth">
@@ -511,36 +494,81 @@
                 </div><!--textPic-->
             </div><!--aboutMe-->
         </main>
-    </div><!--About Me-->
+    </div><!--About Me wrapper-->
     <div class="wrapper2">
         <main>
             <div class="mySkills" id="mySkills">
                 <p class="title">My Skills</p>
                 <div class="jcarousel">
                     <ul class="alignHorizontal">
-                        <li><img class="sprite-html5-88x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABoAQMAAABPIaXaAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABJJREFUeNpjYBgFo2AUjILhCQAE4AAB+I3MKgAAAABJRU5ErkJggg=="><p class="title">HTML</p></li>
-                        <li><img class="sprite-css-92x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABoAQMAAABGygWgAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQAkAAAVIAAHbmQdrAAAAAElFTkSuQmCC"><p class="title">CSS</p></li>
-                        <li><img class="sprite-javascript-91x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAABoAQMAAACkFh7ZAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQAkAAAVIAAHbmQdrAAAAAElFTkSuQmCC"><p class="title">Javascript</p></li>
-                        <li><img class="sprite-jquery-99x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABoAQMAAADfMtwVAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">JQuery</p></li>
-                        <li><img class="sprite-nodejs-104x107" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABoAQMAAADSLKxSAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">NodeJS</p></li>
-                        <li><img class="sprite-git-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">GIT</p></li>
-                        <li><img class="sprite-octocat-original-120x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABoAQMAAAAAfKYKAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAroDwAGgAABi47q4AAAAABJRU5ErkJggg=="><p class="title">GITHUB</p></li>
-                        <li><img class="sprite-rwd-103x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABoAQMAAADW2XxvAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">Responsive Web Design</p></li>
-                        <li><img class="sprite-bootstrap-74x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABoAQMAAABsevQPAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABJJREFUeNpjYBgFo2AUjAL6AgAEeAABV6iYTwAAAABJRU5ErkJggg=="><p class="title">Bootstrap</p></li>
-                        <li><img class="sprite-sass-110x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABoAQMAAAAqzFelAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAoQAAAGGAAB3knFwwAAAABJRU5ErkJggg=="><p class="title">SASS</p></li>
-                        <li><img class="sprite-photoshop-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">Adobe Photoshop</p></li>
-                        <li><img class="sprite-illustrator-104x102" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABmAQMAAAAd2EaSAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMFgAAAWUAAF2+LisAAAAAElFTkSuQmCC"><p class="title">Adobe Illustrator</p></li>
-                        <li><img class="sprite-indesign-104x102" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABmAQMAAAAd2EaSAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMFgAAAWUAAF2+LisAAAAAElFTkSuQmCC"><p class="title">Adobe InDesign</p></li>
-                        <li><img class="sprite-php-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">PHP</p></li>
-                        <li><img class="sprite-mysql-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC"><p class="title">MySQL</p></li>
+                        <li>
+                            <img class="sprite-html5-88x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABoAQMAAABPIaXaAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABJJREFUeNpjYBgFo2AUjILhCQAE4AAB+I3MKgAAAABJRU5ErkJggg==">
+                            <p class="title">HTML</p>
+                        </li>
+                        <li>
+                            <img class="sprite-css-92x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABoAQMAAABGygWgAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQAkAAAVIAAHbmQdrAAAAAElFTkSuQmCC">
+                            <p class="title">CSS</p>
+                        </li>
+                        <li>
+                            <img class="sprite-javascript-91x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAABoAQMAAACkFh7ZAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQAkAAAVIAAHbmQdrAAAAAElFTkSuQmCC">
+                            <p class="title">Javascript</p>
+                        </li>
+                        <li>
+                            <img class="sprite-jquery-99x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABoAQMAAADfMtwVAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">JQuery</p>
+                        </li>
+                        <li>
+                            <img class="sprite-nodejs-104x107" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABoAQMAAADSLKxSAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">NodeJS</p>
+                        </li>
+                        <li>
+                            <img class="sprite-git-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">GIT</p>
+                        </li>
+                        <li>
+                            <img class="sprite-octocat-original-120x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABoAQMAAAAAfKYKAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAroDwAGgAABi47q4AAAAABJRU5ErkJggg==">
+                            <p class="title">GITHUB</p>
+                        </li>
+                        <li>
+                            <img class="sprite-rwd-103x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABoAQMAAADW2XxvAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">Responsive Web Design</p>
+                        </li>
+                        <li>
+                            <img class="sprite-bootstrap-74x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABoAQMAAABsevQPAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABJJREFUeNpjYBgFo2AUjAL6AgAEeAABV6iYTwAAAABJRU5ErkJggg==">
+                            <p class="title">Bootstrap</p>
+                        </li>
+                        <li>
+                            <img class="sprite-sass-110x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABoAQMAAAAqzFelAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAoQAAAGGAAB3knFwwAAAABJRU5ErkJggg==">
+                            <p class="title">SASS</p>
+                        </li>
+                        <li>
+                            <img class="sprite-photoshop-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">Adobe Photoshop</p>
+                        </li>
+                        <li>
+                            <img class="sprite-illustrator-104x102" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABmAQMAAAAd2EaSAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMFgAAAWUAAF2+LisAAAAAElFTkSuQmCC">
+                            <p class="title">Adobe Illustrator</p>
+                        </li>
+                        <li>
+                            <img class="sprite-indesign-104x102" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABmAQMAAAAd2EaSAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMFgAAAWUAAF2+LisAAAAAElFTkSuQmCC">
+                            <p class="title">Adobe InDesign</p>
+                        </li>
+                        <li>
+                            <img class="sprite-php-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">PHP</p>
+                        </li>
+                        <li>
+                            <img class="sprite-mysql-104x104" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoAQMAAAAn0ifiAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMBQAAAWwAAHKF0mdAAAAAElFTkSuQmCC">
+                            <p class="title">MySQL</p>
+                        </li>
                     </ul>
-                </div>
+                </div><!--jcarousel-->
                 <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
                 <a href="#" class="jcarousel-control-next">&rsaquo;</a>
                 <p class="jcarousel-pagination"></p>
             </div><!--mySkills-->
         </main>
-    </div><!--Skills-->
+    </div><!--Skills wrapper-->
     <div class="wrapper2">
         <main>
             <div class="myProjects" id="myProjects">
@@ -550,12 +578,14 @@
                         <img class="sprite-weightcontrol-471x313" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE5AQMAAAD4BPhwAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAMCPAUlcAAGIBFGeAAAAAElFTkSuQmCC">
                         <h1 class="heading">Nutritionist - Responsive Web Design project</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="http://www.payalcreations.co.uk/Nutritionist/index.html" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-trigger="focus" data-target="#exampleModalScrollable1" data-placement="right">
+                            <div class="projectName">
+                                <a href="http://www.payalcreations.co.uk/Nutritionist/index.html" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-trigger="focus" data-target="#modalNutritionist" data-placement="right">
                                 My Journey
                             </button>
                         </div><!--overlay-->
-                    </div><!--Nutritionist-->
+                    </div><!--project Nutritionist-->
                     <div class="project">
                         <img class="sprite-news-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">News Website - HTML, CSS and Javascript project</h1>
@@ -563,138 +593,158 @@
                             <div class="projectName">
                                 <a href="http://www.payalcreations.co.uk/NewsWebsite/index.html" class="removeUnderscore">Project WebPage</a>
                             </div><!--projectName-->
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable2">
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalNewsWebsite">
                                 My Journey
                             </button>
                         </div><!--overlay-->
-                    </div><!--News website-->
-                    <div class="project">
-                        <img class="sprite-logo-1c-for-website-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                        <h1 class="heading">Cambourne Timebank Website - Wordpress project</h1>
-                        <div class="overlay">
-                            <div class="projectName"><a href="http://cambournetimebank.org.uk/" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable5">
-                                My Journey
-                            </button>
-                        </div>
-                    </div><!--timebank website-->
-
-                    <div class="project">
-                        <img class="sprite-portfolio-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                        <h1 class="heading">This Portfolio - HTML, CSS, Javascript project</h1>
-                        <div class="overlay">
-                            <div class="projectName"><a href="#" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable13">
-                                My Journey
-                            </button>
-                        </div>
-                    </div><!--timebank website-->
-
-                    <div class="project">
-                        <img class="sprite-ecommerce-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
-                        <h1 class="heading">ECommerce Website - Wordpress project</h1>
-                        <div class="overlay">
-                            <div class="projectName"><a href="http://www.payalcreations.co.uk/wordpress/" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable4">
-                                My Journey
-                            </button>
-                        </div><!--overlay-->
-                    </div><!--ECommerce Wordpress website-->
+                    </div><!--project News website-->
                     <div class="project">
                         <img class="sprite-tours-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">Tours & Travels - Javascript & JQuery project</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="http://www.payalcreations.co.uk/Tours&Travels/index.html" class="removeUnderscore">Project WebPage</a></div>
-                            <button
-                                    type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable3">
+                            <div class="projectName">
+                                <a href="http://www.payalcreations.co.uk/Tours&Travels/index.html" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalToursTravels">
                                 My Journey
                             </button>
                         </div><!--overlay-->
-                    </div><!--Tours & Travels-->
+                    </div><!--project Tours & Travels-->
+                    <div class="project">
+                        <img class="sprite-logo-1c-for-website-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
+                        <h1 class="heading">Cambourne Timebank Website - Wordpress project</h1>
+                        <div class="overlay">
+                            <div class="projectName">
+                                <a href="http://cambournetimebank.org.uk/" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalTimebank">
+                                My Journey
+                            </button>
+                        </div><!--overlay-->
+                    </div><!--project timebank website-->
+                    <div class="project">
+                        <img class="sprite-portfolio-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
+                        <h1 class="heading">This Portfolio - HTML, CSS, Javascript project</h1>
+                        <div class="overlay">
+                            <div class="projectName">
+                                <a href="#" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalPortfolio">
+                                My Journey
+                            </button>
+                        </div><!--overlay-->
+                    </div><!--project this portfolio-->
+                    <div class="project">
+                        <img class="sprite-ecommerce-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
+                        <h1 class="heading">ECommerce Website - Wordpress project</h1>
+                        <div class="overlay">
+                            <div class="projectName">
+                                <a href="http://www.payalcreations.co.uk/wordpress/" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalECommerce">
+                                My Journey
+                            </button>
+                        </div><!--overlay-->
+                    </div><!--project ECommerce Wordpress website-->
                     <div class="project">
                         <img class="sprite-cropped-prakahs-inkscape-logo-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">PrakashSports Website - Wordpress project</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="https://prakashsports.com/" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable6">
+                            <div class="projectName">
+                                <a href="https://prakashsports.com/" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalPrakash">
                                 My Journey
                             </button>
-                        </div>
-                    </div><!--prakash sports-->
+                        </div><!--overlay-->
+                    </div><!--project prakash sports-->
                     <div class="project">
                         <img class="sprite-logocerc-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">Cambourne Electronics & Robotics Club - Charity website - WordPress</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="http://camcare.org.uk/cerc/" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable7">
+                            <div class="projectName">
+                                <a href="http://camcare.org.uk/cerc/" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalCERC">
                                 My Journey
                             </button>
-                        </div>
-                    </div><!--Cambourne Electronics & Robotics Club-->
+                        </div><!--overlay-->
+                    </div><!--project Cambourne Electronics & Robotics Club-->
                     <div class="project">
                         <img class="sprite-camcarelogo-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">CamCareUK - Charity Website - WordPress</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="https://camcare.org.uk/" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable8">
+                            <div class="projectName">
+                                <a href="https://camcare.org.uk/" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalCamcare">
                                 My Journey
                             </button>
-                        </div>
-                    </div><!--CamCareUK - Charity Website-->
+                        </div><!--overlay-->
+                    </div><!--project CamCareUK - Charity Website-->
                     <div class="project">
                         <img class="sprite-erd-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
                         <h1 class="heading">mySQL Project</h1>
                         <div class="overlay">
-                            <div class="projectName" id="mysql">Project Documents</div>
+                            <div class="projectName" id="mysql">Project Documents</div><!--projectName-->
                             <div class="documents" id="openWindow">
-                                <div class="queries"><a class="removeUnderline" href="./SQL/sql_pdf.html">SQL Queries</a></div>
-                                <div class="erd"><a class="removeUnderline" href="./SQL/erd_pdf.html">ERD Diagram</a></div>
-                            </div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable9">
+                                <div class="queries">
+                                    <a class="removeUnderline" href="./SQL/sql_pdf.html">SQL Queries</a>
+                                </div><!--queries-->
+                                <div class="erd">
+                                    <a class="removeUnderline" href="./SQL/erd_pdf.html">ERD Diagram</a>
+                                </div><!--erd-->
+                            </div><!--documents-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalSQL">
                                 My Journey
                             </button>
-                        </div>
-                    </div><!--mySQL-->
+                        </div><!--overlay-->
+                    </div><!--project mySQL-->
                     <div class="project">
                         <img class="sprite-flowchart-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">Flowchart - Introduction to Programming</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="Flowchart/flowchart.html" class="removeUnderscore">Project WebPage</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable10">
+                            <div class="projectName">
+                                <a href="Flowchart/flowchart.html" class="removeUnderscore">Project WebPage</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalFlowchart">
                                 My Journey
                             </button>
-                        </div>
-                    </div><!--Flowchart-->
+                        </div><!--overlay-->
+                    </div><!--project Flowchart-->
                     <div class="project">
                         <img class="sprite-posters-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
                         <h1 class="heading">All Posters - Graphic Design</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="./posters.html" class="removeUnderscore">Posters</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable11">
+                            <div class="projectName">
+                                <a href="./posters.html" class="removeUnderscore">Posters</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalPosters">
                                 My Journey
                             </button>
                         </div><!--overlay-->
-                    </div><!--All posters - Graphic Design-->
+                    </div><!--project All posters - Graphic Design-->
                     <div class="project">
                         <img class="sprite-logos-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
                         <h1 class="heading">All Logos - Graphic Design</h1>
                         <div class="overlay">
-                            <div class="projectName"><a href="./logos.html" class="removeUnderscore">Logos</a></div>
-                            <button type="button" class="myJourney" data-toggle="modal" data-target="#exampleModalScrollable12">
+                            <div class="projectName">
+                                <a href="./logos.html" class="removeUnderscore">Logos</a>
+                            </div><!--projectName-->
+                            <button type="button" class="myJourney" data-toggle="modal" data-target="#modalLogos">
                                 My Journey
                             </button>
                         </div><!--overlay-->
-                    </div><!--All Logos - Graphic Design-->
+                    </div><!--project All Logos - Graphic Design-->
                 </div><!--projectsGrid-->
             </div><!--myProjects-->
         </main>
-    </div><!--My Projects-->
+    </div><!--Projects wrapper2-->
     <div class="wrapper2">
         <main>
             <div class="testimonial" id="testimonial">
                 <div class="titleMap">Testimonials
                 </div><!--titleMap-->
-
                 <div class="displayTestimonials">
                     <div class="testimonial1">
                         <p class="test">Payal completely redesigned our website and did a fantastic job; she really understood what was needed and came up with a solution that exceeded my expectations. The new design is very user-friendly and attractive. I’m impressed by the quality of the work. She is dedicated, attentive, talented, has an eye for detail and cares about the clients needs. I would highly recommend her services for website development.
@@ -702,7 +752,7 @@
                         <p class="boldName">Laura Papanikolaou</p>
                         <p class="name">Former Coordinator</p>
                         <p class="name">Cambourne Timebank</p>
-                    </div>
+                    </div><!--testimonial1-->
                     <div class="testimonial2">
                         <p class="test">I endorse Payal website development skills. Single handedly she has developed and published the Cambourne Timebank website that includes a tablet and mobile version. It is colourful, dynamic and easy to navigate. She has taken on board feedback from Management Committee members to ensure it is fit for purpose and meets the agreed brief.
 
@@ -711,8 +761,7 @@
                         <p class="boldName">Janet Leonard</p>
                         <p class="name">Chair & Befriending Coordinator</p>
                         <p class="name">Cambourne Timebank</p>
-                    </div>
-
+                    </div><!--testimonial2-->
                 </div><!--displayTestimonials-->
                 <div class="displayTestimonials">
                     <div class="testimonial1">
@@ -720,16 +769,16 @@
                         <p class="boldName">Cllr Dr Shrobona Bhattacharya</p>
                         <p class="name">District & Parish Councillor</p>
                         <p class="name">Founder & Chair, CamCareUK</p>
-                    </div>
+                    </div><!--testimonial1-->
                     <div class="testimonial2">
                         <p class="test">Payal has been working with us for a couple of years now. She has helped me in setting up and maintaining the website for CERC. She is very helpful. Her work included setting up Wordpress on the Hosting account, showcasing the members and their profiles using pictures and videos. She also set up the Blog page for PiWars 2020 and setting up the user logins. She knows her work well. It has been a pleasure working with Payal.</p>
                         <p class="boldName">Sujit Bhattacharya</p>
                         <p class="name">Co-founder of Cambourne Electronics & Robotics Club (CERC) </p>
-                    </div>
+                    </div><!--testimonial2-->
                 </div><!--displayTestimonials-->
             </div><!--testimonial-->
         </main>
-    </div><!--Testimonials-->
+    </div><!--Testimonials wrapper2-->
     <div class="wrapper2">
         <main>
             <div class="contactForm" id="contactForm">
@@ -740,30 +789,32 @@
                     <img class="sprite-neon-star-brown-100x102" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABmAQMAAAAH5KYcAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRMFgAAAWUAAF2+LisAAAAAElFTkSuQmCC">
                     <img class="sprite-neon-star-lightpink-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
                 </div><!--upperStars-->
+
                 <form class="contactFormArea" id="contactFormArea" name="contactForm">
                     <div class="rowCF">
                         <p class="labels">Name
                         </p>
                         <input name="name"  type="text" pattern="[a-zA-Z]" class="txtBox" placeholder="Your Name.."  required >
                         <p class="formMessage"></p>
-                    </div><!--name area-->
+                    </div><!--rowCF name area-->
                     <div class="rowCF">
                         <p class="labels">Email
                         </p><!--Email label-->
                         <input type="email" name="textbox" pattern = "^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your Email.." class="txtBox" required>
                         <p class="formMessage"></p>
-                    </div><!--email area-->
+                    </div><!--rowCF email area-->
                     <div class="rowCF">
                         <p class="labels">Message
                         </p><!--message label-->
                         <textarea name="message" rows="4"  cols="23" class="txtBox" placeholder="Your Message.." required></textarea>
                         <p class="formMessage"></p>
-                    </div><!--message textarea-->
+                    </div><!--rowCF message textarea-->
                     <div class="btn">
                         <input type="submit" name="Submit" class="submitBtn">
                         <p class="submitMessage"></p>
                     </div><!--btn-->
                 </form><!--contact form area-->
+
                 <div class="lowerCStars">
                     <img class="sprite-neon-star-lightblue-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
                     <img class="sprite-neon-star-brown-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
@@ -788,7 +839,7 @@
                 </nav><!--sitemap first column-->
             </div><!--colSitemap-->
         </div><!-- rowSiteMapSocial-->
-        <div class="base">Cambridge, UK</div><!--Copyright-->
+        <div class="base">Cambridge, UK</div><!--base Copyright-->
     </footer><!--Sitemap-->
 </div><!--Container for Navigation - position:sticky-->
 
