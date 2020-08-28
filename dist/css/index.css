@@ -157,7 +157,7 @@ body {
     }
 
     /*HEADER SECTION*/
-    .headerSection
+    .welcomeSection
     {
         margin-top: 2vw;
     }
@@ -259,12 +259,13 @@ body {
     .downloadBtn
     {
         background-color: #197780;
-        padding: 4vw 13vw;
+        padding: 8vw 14vw;
         color: white;
         font-size: 5vw;
         letter-spacing: .1vw;
-        height: 18vw;/*This height is added, to avoid an extra space generated because of hover effect*/
+       /* height: 18vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         cursor: pointer;
+        display: block;
     }
     .downloadBtn:hover
     {
@@ -1032,7 +1033,7 @@ body {
     }
 
     /*HEADER SECTION*/
-    .headerSection
+    .welcomeSection
     {
         margin-top: 3.4vw;
     }
@@ -1137,16 +1138,17 @@ body {
     .downloadBtn
     {
         background-color: #197780;
-        padding: 4vw 13vw;
+        padding: 6vw 0vw;
         color: white;
         font-size: 5vw;
         letter-spacing: .1vw;
-        margin-bottom: 1vw;
-        margin-left: 1.5vw;
-        height: 18vw;/*This height is added, to avoid an extra space generated because of hover effect*/
+        margin-left: 2vw;
+        margin-right: 2vw;
+       /* height: 18vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         text-decoration: none;
         cursor: pointer;
         margin-top: 3vw;
+        display: block;
     }
     .downloadBtn:hover
     {
@@ -1909,7 +1911,7 @@ body {
     }
 
     /*HEADER SECTION*/
-    .headerSection
+    .welcomeSection
     {
         margin-top: 3.4vw;
     }
@@ -2019,13 +2021,13 @@ body {
     .downloadBtn
     {
         background-color: #197780;
-        padding: 2vw 2vw;
+        padding: 3vw 6vw;
         color: white;
         font-size: 2.6vw;
         letter-spacing: .1vw;
         margin-bottom: 1vw;
         margin-left: 1.5vw;
-        height: 9vw;/*This height is added, to avoid an extra space generated because of hover effect*/
+       /* height: 9vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         text-decoration: none;
         cursor: pointer;
         margin-top: 2vw;
@@ -2656,7 +2658,7 @@ body {
     .sprite-flowchart-471x314 { background-position: 0 33.851931%; background-size: 100.212314%; }
     .sprite-logo-1c-for-website-471x314 { background-position: 0 42.301502%; background-size: 100.212314%; }
     .sprite-logocerc-471x314 { background-position: 0 50.751073%; background-size: 100.212314%; }
-    .sprite-mypic-361x458 { background-position: 0 61.579241%; background-size: 130.747922%; }
+    .sprite-mypic-361x458 { background-position: 0 61.579241%; background-size: 130.747922%; margin-bottom: 5vw;}
     .sprite-logo-234x234 { background-position: 0 68.481891%; background-size: 239.593909%; }
     .sprite-github-icon-142x142 { background-position: 0 72.205128%; background-size: 332.394366%; }
     .sprite-linked-142x142 { background-position: 0 75.871795%; background-size: 332.394366%; margin-left:2vw}
@@ -2781,7 +2783,7 @@ body {
     }
 
     /*HEADER SECTION*/
-    .headerSection
+    .welcomeSection
     {
         margin-top: 3.4vw;
     }
@@ -2882,16 +2884,16 @@ body {
     .downloadBtn
     {
         background-color: #197780;
-        padding: 2vw 2vw;
+        padding: 3vw 4vw;
         color: white;
-        font-size: 1.2vw;
+        font-size: 1.7vw;
         letter-spacing: .1vw;
         margin-left: 2.5vw;
         margin-top: 2vw;
         /*height: 4vw;!*This height is added, to avoid an extra space generated because of hover effect*!*/
         text-decoration: none;
         cursor: pointer;
-        height: 8vw;
+        display: block;
     }
     .downloadBtn:hover
     {
