@@ -1,3 +1,7 @@
+<?php
+ini_set('display_errors', 1);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +15,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png">
     <link rel="manifest" href="dist/favicon/site.webmanifest">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
 
-<!--A Modal should be added on the top level element. Do not move it from here. Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a .modal within another fixed element.-->
+<!--A Modal should be added on the top level element. Do not move it from here. Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You�ll likely run into issues when nesting a .modal within another fixed element.-->
 <!-- Nutritionist Modal -->
 <div class="modal" id="modalNutritionist" tabindex="-1" role="dialog" aria-labelledby="modalNutritionistTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -480,7 +485,7 @@
                         <p class="intro">
                             This webpage is under construction and therefore few of the links may not work. You can have a look at my projects, skills and get in touch with me on my email:
                         </p>
-                        <p class="email">payal.priyadarshini@gmail.com</p>
+                        <p class="email">payal . priyadarshini @ gmail . com</p>
                         <p class="intro">Thanks.</p>
                         <div class="lowerStars">
                             <img class="sprite-neon-star-lightblue-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
@@ -653,7 +658,7 @@
                     </div><!--project prakash sports-->
                     <div class="project">
                         <img class="sprite-logocerc-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                        <h1 class="heading">Cambourne Electronics & Robotics Club - Charity website - WordPress</h1>
+                        <h1 class="heading">Cambourne Electronics & Robotics Club - WordPress</h1>
                         <div class="overlay">
                             <div class="projectName">
                                 <a href="http://camcare.org.uk/cerc/" class="removeUnderscore">Project WebPage</a>
@@ -738,7 +743,7 @@
                 </div><!--titleMap-->
                 <div class="displayTestimonials">
                     <div class="testimonial1">
-                        <p class="test">Payal completely redesigned our website and did a fantastic job; she really understood what was needed and came up with a solution that exceeded my expectations. The new design is very user-friendly and attractive. I’m impressed by the quality of the work. She is dedicated, attentive, talented, has an eye for detail and cares about the clients needs. I would highly recommend her services for website development.
+                        <p class="test">Payal completely redesigned our website and did a fantastic job; she really understood what was needed and came up with a solution that exceeded my expectations. The new design is very user-friendly and attractive. I�m impressed by the quality of the work. She is dedicated, attentive, talented, has an eye for detail and cares about the clients needs. I would highly recommend her services for website development.
                         </p>
                         <p class="boldName">Laura Papanikolaou</p>
                         <p class="name">Former Coordinator</p>
@@ -779,25 +784,28 @@
                     <img class="sprite-neon-star-lightpink-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
                 </div><!--upperStars-->
 
-                <form class="contactFormArea" id="contactFormArea" name="contactForm">
+                <form class="contactFormArea" id="contactFormArea" name="contactForm" action="?" method="post">
+                     
                     <div class="rowCF">
                         <p class="labels">Name
                         </p>
-                        <input name="name"  type="text" pattern="[a-zA-Z]" class="txtBox" placeholder="Your Name.."  required >
+                        <input name="name"  type="text" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" class="txtBox" placeholder="Your Name.."  title="Please enter characters only e.g. john" required>
                         <p class="formMessage"></p>
                     </div><!--rowCF name area-->
                     <div class="rowCF">
                         <p class="labels">Email
                         </p><!--Email label-->
-                        <input type="email" name="textbox" pattern = "^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your Email.." class="txtBox" required>
+                        <input type="email" name="textbox" pattern ="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your Email.." class="txtBox" title="Please enter a valid email address e.g. info@payalcreations.co.uk" required>
                         <p class="formMessage"></p>
                     </div><!--rowCF email area-->
                     <div class="rowCF">
                         <p class="labels">Message
                         </p><!--message label-->
-                        <textarea name="message" rows="4"  cols="23" class="txtBox" placeholder="Your Message.." required></textarea>
+                        <textarea name="message" rows="4"  cols="23" class="txtBox" placeholder="Your Message.." title="This is a required field" required></textarea>
                         <p class="formMessage"></p>
                     </div><!--rowCF message textarea-->
+                   
+                     <div class="g-recaptcha" data-sitekey="6LdTrtcZAAAAABFKwKB_v6l_DiFea_yPxKEWN_E0"></div>
                     <div class="btn">
                         <input type="submit" name="Submit" class="submitBtn">
                         <p class="submitMessage"></p>
@@ -835,9 +843,9 @@
 <!-- Start cookieyes banner -->
 <script src="https://cdn-cookieyes.com/client_data/80e20addf3721bfb3b77f9c9.js"></script>
 <!-- End cookieyes banner -->
-<!--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>&lt;!&ndash;for Nutritionist logo Popover&ndash;&gt;-->
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><!--for Nutritionist logo Popover-->
 
+<script src="node_modules/jquery/dist/jquery.min.js"></script><!--for Bootstrap to run--> 
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!--for Bootstrap to run--> 
 <script>
     $(document).ready(function(){
         $('[data-toggle="popover"]').popover({
@@ -860,13 +868,11 @@
     });
 </script><!--for Nutritionist logo Popover-->
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script><!--For ReCaptcha-->
 <script src="node_modules/pixi.js/dist/pixi.min.js"></script>
 <script src="node_modules/pixi.js-legacy/dist/pixi-legacy.js"></script><!--Incase browser does not support webGL, pixi-legacy provides a fallback-->
 <script src="node_modules/requestanimationframe/app/requestAnimationFrame.js"></script>
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="dist/js/jquery.carousel.js"></script>
 <script src="dist/js/jcarousel.responsive.js"></script>
 <script src="node_modules/enquire.js/dist/enquire.js"></script>
