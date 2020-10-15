@@ -11,7 +11,7 @@
     const $openWindow = $('#openWindow');
 
     /**
-     * This code is to dislay the .documents block using JQuery
+     * This code is to display the .documents block using JQuery
      */
     /* $(function() {*/
     $(document).ready(function(){
@@ -29,7 +29,6 @@
     {
         console.log(submit);
         if(submit){
-
             /*submit is a HTMlCollection, therefore we start a loop, for click event*/
             for(let j=0; j< submit.length; j++) {
                 submit[j].addEventListener("click", function () {
@@ -67,11 +66,21 @@
                         /*TODO Using PHP send email about form submission. I need PHPStorm subsciption.*/
                         /*Display message after form submission*/
                         /*console.log(document.getElementsByClassName("submitMessage"));*/
+                        
+                        
+                        
+                        
+                        
                         document.getElementsByClassName("submitMessage")[0].innerHTML = "Sorry, this feature is not yet implemented. Please send an email to Payal at payal.priyadarshini@gmail.com";
 
                         /* document.contactForm.submit();*/
                     }/*submit.addEventListener*/
                 )/*submit.addEventListener*/
+        
+        
+        
+        
+        
             }/*For tabName*/
         }/*if*/
     }//validation
@@ -84,9 +93,7 @@
      */
     function bindBtns() {
         validation();
-       
-//        myFunction();
-//        postersSlider();
+      
     }//bindBtns
 
     /**
