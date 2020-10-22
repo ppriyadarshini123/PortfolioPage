@@ -22,13 +22,12 @@
     "url": "https://github.com/ppriyadarshini123/PortfolioPage/issues"
   },
   "homepage": "https://github.com/ppriyadarshini123/PortfolioPage#readme",
-  "devDependencies": {
-    "browser-sync": "2.26.7"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.3",
     "enquire.js": "latest",
-    "jquery": "3.4.1",
+    "jquery": "^3.5.1",
+    "php": "^1.0.1",
     "pixi.js": "5.2.0",
     "pixi.js-legacy": "5.2.0",
     "popper.js": "^1.16.1",

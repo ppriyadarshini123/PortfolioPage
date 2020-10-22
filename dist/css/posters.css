@@ -150,41 +150,37 @@ body
         width: 644px;
         height: 455px;
         background-position: -5px -5px;
-        zoom: .54;
-        margin-left: 2%;
-        margin-top: 48%;
+        zoom: .55;
+        
     }
 
     .sprite-YogaDay-644x455 {
         width: 644px;
         height: 455px;
         background-position: -5px -470px;
-       zoom:.54;/*To reduce size to fit into mobile screen, used with CSS sprite*/
-        margin-left: 2%;
-        margin-top: 47%;
+       zoom:.55;/*To reduce size to fit into mobile screen, used with CSS sprite*/
+        
     }
 
     .sprite-activityClub-350x455 {
         width: 350px;
         height: 455px;
         background-position: -659px -5px;
-        transform: scale(.8);
+        transform: scale(.95);
     }
     .sprite-independenceDay-587x455 {
         width: 587px;
         height: 455px;
         background-position: -1099px -5px;
-        zoom: .5;
-        margin-left: 16%;
-        margin-top: 59%;
+        zoom: .6;
+       
     }
     .sprite-summerCamp-325x455 {
         width: 325px;
         height: 455px;
         background-position: -739px -470px;
-        zoom: .8;
-        margin-left: 28%;
-        margin-top: 26%;
+        zoom: .95;
+        
     }
 
     .posters
@@ -201,10 +197,47 @@ body
         text-align: center;
         padding-bottom: 2vw;
     }
+    
+    .standardWidth
+    {
+        width: 178vw;       
+        text-align: center;
+    }
+    
+    .widthPosters
+    {
+        width: 98vw;
+/*        text-align: center;*/
+    }
+
 
     /*CAROUSEL SECTION*/
-
-    .jcarousel {
+.jcarousel
+    {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 2vw;
+    }
+    
+      .jcarousel ul
+    {
+        list-style: none;
+/*        height: 500px;newly added*/        
+        display: flex;
+/*        justify-content: space-around;*/
+/*        height: 291px;*/
+        width: 524vw;
+    }
+    .jcarousel li
+    { 
+        display: block;
+        width: 98vw!important;
+        text-align: -webkit-center;              
+    }
+    
+    
+/*    .jcarousel {
         position: relative;
         overflow: hidden;
         width: 100%;
@@ -223,7 +256,7 @@ body
 
     .jcarousel li {
         box-sizing: border-box;
-    }
+    }*/
 
     /*Carousel Controls*/
     .jcarousel-control-prev,
@@ -262,7 +295,7 @@ body
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: 3%;
+        bottom: 1%;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -507,6 +540,17 @@ body
         letter-spacing: .1vw;
         font-weight: bold;
     }
+    
+    .standardWidth
+    {
+        width: 87vw;       
+        text-align: center;
+    }
+    .widthPosters
+    {
+        width: 32.5vw;
+        text-align: center;
+    }
 
     /*SPRITESHEET*/
     .sprite {
@@ -519,57 +563,58 @@ body
         width: 644px;
         height: 455px;
         background-position: -5px -5px;
-        margin-left: -19%;
+        
     }
 
     .sprite-YogaDay-644x455 {
         width: 644px;
         height: 455px;
         background-position: -5px -470px;
-        margin-left: -18%;
+        
     }
 
     .sprite-activityClub-350x455 {
         width: 350px;
         height: 455px;
         background-position: -659px -5px;
-        margin-left: 5vw;
+        
     }
     .sprite-independenceDay-587x455 {
         width: 587px;
         height: 455px;
         background-position: -1099px -5px;
-        margin-left: -13%;
+       
     }
     .sprite-summerCamp-325x455 {
         width: 325px;
         height: 455px;
         background-position: -739px -470px;
-        margin-left: 15%;
+       
     }
 
     /*Carousel*/
-    .jcarousel
+     .jcarousel
     {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 2vw;
     }
-    .jcarousel ul
+    
+      .jcarousel ul
     {
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        
+        width: 456vw;
+        display: flex;
+        justify-content: space-around;
     }
+  
     .jcarousel li
     {
-        width: 100%;
-        margin-left: 7%;
-        margin-right: 62%;
-        text-align: center;
-        display: inline-table;
+        display: block;
+        width: 73vw!important;
+        text-align: -webkit-center; 
     }
 
     /*Carousel Controls*/
@@ -822,6 +867,7 @@ body
         background-color: #197780;
         padding-top: 2vw;
         padding-bottom: 3vw;
+        position: relative;
     }
     .alignHorizontal
     {
@@ -833,6 +879,17 @@ body
         color: white;
         letter-spacing: .1vw;
         font-weight: bold;
+    }
+    
+       .standardWidth
+    {
+        width: 56vw;       
+        text-align: center;
+    }
+    .widthPosters
+    {
+        width: 26.5vw;
+        text-align: center;
     }
 
     /*SPRITESHEET*/
@@ -846,33 +903,33 @@ body
         width: 644px;
         height: 455px;
         background-position: -5px -5px;
-        margin-left: -13%;
+      
     }
 
     .sprite-YogaDay-644x455 {
         width: 644px;
         height: 455px;
         background-position: -5px -470px;
-        margin-left: -13%;
+        
     }
 
     .sprite-activityClub-350x455 {
         width: 350px;
         height: 455px;
         background-position: -659px -5px;
-        margin-left: 5vw;
+
     }
     .sprite-independenceDay-587x455 {
         width: 587px;
         height: 455px;
         background-position: -1099px -5px;
-        margin-left: -10%;
+       
     }
     .sprite-summerCamp-325x455 {
         width: 325px;
         height: 455px;
         background-position: -739px -470px;
-        margin-left: 21%;
+        
     }
 
 
@@ -882,24 +939,24 @@ body
         position: relative;
         overflow: hidden;
         width: 100%;
+        padding-top: 2vw;
     }
-    .jcarousel ul
+    
+      .jcarousel ul
     {
-        width: 380vw;
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        height: 42vw;/*newly added*/
+        width: 492vw;
+        display: flex;
+        justify-content: space-around;
     }
     .jcarousel li
-    {
-        width: 100%;
-        margin-left: 8%;
-        margin-right: 62%;
-        margin-top: 3vw;
-        text-align: center;
-        display: inline-table;
+    { 
+        display: block;
+        width: 47vw!important;
+        text-align: -webkit-center;              
     }
+    
 
     /*Carousel Controls*/
     .jcarousel-control-prev,
@@ -926,19 +983,19 @@ body
     .jcarousel-control-prev {
         left: 21%;
         position: absolute;
-        top: 97%;
+        top: 47%;
     }
 
     .jcarousel-control-next {
-        right: 21%;
+        right: 14%;
         position: absolute;
-        top: 97%;
+        top: 47%;
     }
 
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -46%;
+        bottom: 5%;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -1141,6 +1198,7 @@ body
         background-color: #197780;
         padding-top: 2vw;
         padding-bottom: 3vw;
+        position: relative;
     }
     .alignHorizontal
     {
@@ -1153,6 +1211,16 @@ body
         font-weight: bold;
         margin-bottom: 2vw;
     }
+    .standardWidth
+    {
+        width: 56vw;       
+        text-align: center;
+    }
+    .widthPosters
+    {
+        width: 12.5vw;
+        text-align: center;
+    }
 
     /*SPRITESHEET*/
     .sprite {
@@ -1164,34 +1232,34 @@ body
     .sprite-HSS-Flyer-644x455 {
         width: 644px;
         height: 455px;
-        background-position: -5px -5px;
-        margin-left: -17%;
+       background-position: -5px -5px;
+        /*margin-left: -17%;*/
     }
 
     .sprite-YogaDay-644x455 {
         width: 644px;
         height: 455px;
         background-position: -5px -470px;
-        margin-left: -17%;
+        /*margin-left: -17%;*/
     }
 
     .sprite-activityClub-350x455 {
         width: 350px;
         height: 455px;
         background-position: -659px -5px;
-        margin-left: 2vw;
+        /*margin-left: 2vw;*/
     }
     .sprite-independenceDay-587x455 {
         width: 587px;
         height: 455px;
         background-position: -1099px -5px;
-        margin-left: -18%;
+        /*margin-left: -18%;*/
     }
     .sprite-summerCamp-325x455 {
         width: 325px;
         height: 455px;
         background-position: -739px -470px;
-        margin-left: 13%;
+        /*margin-left: 13%;*/
     }
 
 
@@ -1199,7 +1267,7 @@ body
     /*Carousel*/
     .jcarousel
     {
-        position: relative;
+/*        position: relative;*/
         overflow: hidden;
         width: 100%;
         padding-top: 2vw;
@@ -1207,18 +1275,18 @@ body
     }
     .jcarousel ul
     {
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        height: 42vw;/*newly added*/
+        width: 456vw;
+        display: flex;
+        justify-content: space-around;
     }
     .jcarousel li
-    {
-        width: 100%;
-        margin-left: 17%;
-        margin-right: 62%;
-        text-align: center;
-        display: inline-table;
+    { 
+        display: block;
+        width: 31vw!important;
+/*        margin-left: auto;
+        margin-right: auto;               */
     }
 
     .jcarousel-control-prev,
@@ -1245,19 +1313,19 @@ body
     .jcarousel-control-prev {
         left: 55px;
         position: absolute;
-        top: 81%;
+        top: 47%;
     }
 
     .jcarousel-control-next {
         right: 55px;
         position: absolute;
-        top: 81%;
+        top: 47%;
     }
 
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -33%;
+        bottom: 3%;
         left: 51%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);

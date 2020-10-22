@@ -3,3 +3,4 @@
 #ignoring node-modules folder
 node-modules/
 node_modules/.cache/
+/nbproject/private/

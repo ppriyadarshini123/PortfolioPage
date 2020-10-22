@@ -1,4 +1,5 @@
 <?php
+
 ini_set('display_errors', 1);
 ?>
 <!DOCTYPE html>
@@ -43,7 +44,7 @@ ini_set('display_errors', 1);
                         </h6><p>This Responsive
                             Web Design Project
                             started by creating
-                            wireframe ( <a href="./Wireframe&Mockup/nutritionist.html">Wireframe</a> ) and ( <a href="index.html#myProjects" data-toggle="popover" title="Nutritionist Logo">Logo</a>) .
+                            wireframe ( <a href="./Wireframe&Mockup/nutritionist.html">Wireframe</a> ) and ( <a href="index.php#myProjects" data-toggle="popover" title="Nutritionist Logo">Logo</a>) .
                             I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.
                             I had proposed to make a website for nutritionist. I would build 2 pages: Homepage and Recipes page. There will be 2 layout shifts and column drop in both the pages.
                             The navigation will also have 2 layout shifts. I would implement 'the toggle'. He suggested a lot of improvements in making wireframes & Mockups.
@@ -133,7 +134,7 @@ ini_set('display_errors', 1);
                         <h6>Skills used:</h6>WordPress<hr>
                         <h6>The making of Project :</h6>
                         <p>I started volunteering as a Website Administrator for Cambourne Timebank since Nov. 2019. I am part of the Cambourne Timebank Management Committee. It consists of 9 members. The Management Committee meets almost every month to discuss the progress of the website and other issues.  </p>
-                        <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.html#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. This website is still on the Staging Server.</p>
+                        <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.php#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. This website is still on the Staging Server.</p>
                         <h6>What I learnt : </h6>
                         <p>This project became a very good learning experience for me as I am learning how to communicate with the team and being a team player. I also am working with templates and Elementor in WordPress for the first time.</p>
                     </div><!--modal-body-->
@@ -398,7 +399,7 @@ ini_set('display_errors', 1);
                     <div class="logoAndHam">
                         <span class="hamburger" id="openNav">&#9776;</span><!--Hamburger Icon-->
                         <div class="logoName">
-                            <a href="index.html" class="showHome">
+                            <a href="index.php" class="showHome">
                                 <img class="sprite-logo-234x234" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAACVAQMAAADSeKxEAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABlJREFUeNrtwQEBAAAAgJD+r+4ICgAAAKgBDyIAAdylp3MAAAAASUVORK5CYII=">
                             </a>
                         </div><!--LogoName-->
@@ -738,36 +739,46 @@ ini_set('display_errors', 1);
                 </div><!--Projects wrapper2-->
                 <div class="wrapper2">
                     <div class="testimonial" id="testimonial">
-                        <div class="titleMap">Testimonials
+                        <div class="title">Testimonials
                         </div><!--titleMap-->
                         <div class="displayTestimonials">
-                            <div class="testimonial1">
-                                <p class="test">Payal completely redesigned our website and did a fantastic job; she really understood what was needed and came up with a solution that exceeded my expectations. The new design is very user-friendly and attractive. I�m impressed by the quality of the work. She is dedicated, attentive, talented, has an eye for detail and cares about the clients needs. I would highly recommend her services for website development.
+                            <div class="testimonial1">                              
+                               <div class="doubleQuotes"><img src="dist/imgs/optimized/double.png"></div>
+                                <p class="test">
+                                     Payal completely redesigned our website and did a fantastic job; she really understood what was needed and came up with a solution that exceeded my expectations. The new design is very user-friendly and attractive. I am impressed by the quality of the work. She is dedicated, attentive, talented, has an eye for detail and cares about the clients needs. I would highly recommend her services for website development.
                                 </p>
-                                <p class="boldName">Laura Papanikolaou</p>
+                                 <div class="doubleQuotesClosing"><img src="dist/imgs/optimized/double2.png"></div>
+                                <p class="boldName name">Laura Papanikolaou</p>
                                 <p class="name">Former Coordinator</p>
                                 <p class="name">Cambourne Timebank</p>
                             </div><!--testimonial1-->
                             <div class="testimonial2">
-                                <p class="test">I endorse Payal website development skills. Single handedly she has developed and published the Cambourne Timebank website that includes a tablet and mobile version. It is colourful, dynamic and easy to navigate. She has taken on board feedback from Management Committee members to ensure it is fit for purpose and meets the agreed brief.
+                                <div class="doubleQuotes"><img src="dist/imgs/optimized/double1brown.png"></div>
+                                <p class="test boldName">
+                                    I endorse Payal website development skills. Single handedly she has developed and published the Cambourne Timebank website that includes a tablet and mobile version. It is colourful, dynamic and easy to navigate. She has taken on board feedback from Management Committee members to ensure it is fit for purpose and meets the agreed brief.
 
                                     Payal is a committed, reliable self starter, that has not only achieved this goal whilst under Covid 19 lockdown yet also provide excellent expertise to a local volunteer group, Cambourne Timebank, and the birth of its new  Management Committee. Without exception, we have all found her contribution valuable and helpful. Payal is always friendly, responsive and professional.
                                 </p>
-                                <p class="boldName">Janet Leonard</p>
-                                <p class="name">Chair & Befriending Coordinator</p>
-                                <p class="name">Cambourne Timebank</p>
+                                <div class="doubleQuotesClosing"><img src="dist/imgs/optimized/doublebrown.png"></div>
+                                <p class="boldName name">Janet Leonard</p>
+                                <p class="name boldName">Chair & Befriending Coordinator</p>
+                                <p class="name boldName">Cambourne Timebank</p>
                             </div><!--testimonial2-->
                         </div><!--displayTestimonials-->
                         <div class="displayTestimonials">
-                            <div class="testimonial1">
-                                <p class="test">Payal has helped to set up the initial website for CamCareUK on Wordpress. It was nice to work with Payal. We had several interactions where we discussed the requirements, implementation details and features of the website.It was her first website for a charity. On a different occasion, she also used her Graphic Design skills to make posters for us. Although with a family and a fulltime job, Payal was fully dedicated and eager to help whenever possible.  She is very sincere and a enthusiastic web developer. I wish her all the best.</p>
-                                <p class="boldName">Cllr Dr Shrobona Bhattacharya</p>
-                                <p class="name">District & Parish Councillor</p>
-                                <p class="name">Founder & Chair, CamCareUK</p>
-                            </div><!--testimonial1-->
                             <div class="testimonial2">
+                                <div class="doubleQuotes"><img src="dist/imgs/optimized/double1brown.png"></div>
+                                <p class="test boldName">Payal has helped to set up the initial website for CamCareUK on Wordpress. It was nice to work with Payal. We had several interactions where we discussed the requirements, implementation details and features of the website.It was her first website for a charity. On a different occasion, she also used her Graphic Design skills to make posters for us. Although with a family and a fulltime job, Payal was fully dedicated and eager to help whenever possible.  She is very sincere and a enthusiastic web developer. I wish her all the best.</p>
+                                <div class="doubleQuotesClosing"><img src="dist/imgs/optimized/doublebrown.png"></div>
+                                <p class="name boldName">Cllr Dr Shrobona Bhattacharya</p>
+                                <p class="name boldName">District & Parish Councillor</p>
+                                <p class="name boldName">Founder & Chair, CamCareUK</p>
+                            </div><!--testimonial1-->
+                            <div class="testimonial1">
+                                <div class="doubleQuotes"><img src="dist/imgs/optimized/double.png"></div>
                                 <p class="test">Payal has been working with us for a couple of years now. She has helped me in setting up and maintaining the website for CERC. She is very helpful. Her work included setting up Wordpress on the Hosting account, showcasing the members and their profiles using pictures and videos. She also set up the Blog page for PiWars 2020 and setting up the user logins. She knows her work well. It has been a pleasure working with Payal.</p>
-                                <p class="boldName">Sujit Bhattacharya</p>
+                                <div class="doubleQuotesClosing"><img src="dist/imgs/optimized/double2.png"></div>
+                                <p class="name boldName">Sujit Bhattacharya</p>
                                 <p class="name">Co-founder of Cambourne Electronics & Robotics Club (CERC) </p>
                             </div><!--testimonial2-->
                         </div><!--displayTestimonials-->
@@ -783,7 +794,7 @@ ini_set('display_errors', 1);
                             <img class="sprite-neon-star-lightpink-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
                         </div><!--upperStars-->
 
-                        <form class="contactFormArea" id="contactFormArea" name="contactForm" action="#" method="post">
+                        <form class="contactFormArea" id="contactFormArea" name="contactForm" action="#footer" method="post">
                             <div class="rowCF">
                                 <p class="labels">Name
                                 </p>
@@ -806,14 +817,14 @@ ini_set('display_errors', 1);
                             <div class="g-recaptcha" data-sitekey="6LdTrtcZAAAAABFKwKB_v6l_DiFea_yPxKEWN_E0"></div>
                             <div class="btn">
                                 <input type="submit" name="Submit" class="submitBtn">
-
+                                 <p name="formMessageSubmit"></p>
                                 <?php
                                     if (!empty($_POST)) {
                                         $name = $_POST['name'];
                                         $email = $_POST['email'];
                                         $message = $_POST['message'];
                                         $to = "payal.priyadarshini@gmail.com";
-                                        $subject = "Message from payalcreations.co.uk";
+                                        $subject = "Message from payal@payalcreations.co.uk";
                                         $message = "<html>
                                                         <head>
                                                              <title>HTML email</title>
@@ -822,13 +833,13 @@ ini_set('display_errors', 1);
                                                             <p>You received a message from: $email </p>
                                                             <table>
                                                                  <tr>
-                                                                    <th>Name</th>
+                                                                    <th style='color: red; font-size: 20px;'>Name</th>
                                                                  </tr>
                                                                  <tr>
-                                                                <td>$name</td>                                
+                                                                     <td>$name</td>                                
                                                                 </tr>
                                                                 <tr>
-                                                                    <th>Message</th>
+                                                                    <th style='color: red; font-size: 20px;'>Message</th>
                                                                 </tr>
                                                                  <tr>
                                                                     <td>$message</td>                                
@@ -843,15 +854,24 @@ ini_set('display_errors', 1);
                                         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
                                         // More headers
-                                        $headers .= 'From: <webmaster@example.com>' . "\r\n";
-                                        $headers .= 'Cc: myboss@example.com' . "\r\n";
-
-                                        mail($to, $subject, $message, $headers);
+                                        $headers .= 'From: payal@payalcreations.co.uk' . "\r\n";
+//                                        $headers .= 'Cc: myboss@example.com' . "\r\n";
+                                             
+//                                        mail($to, $subject, $message, $headers);
+                                        
+                                        if (mail($to, $subject, $message, $headers)) 
+                                        {
+//                                            $formMessageSubmit = $_POST['formMessageSubmit'];
+                                            echo "<p style='color: red;'>Thanks for your message. Your message has been successfully sent.</p>";
+                                            
+                                        } else {
+                                            echo "<p style='color: red;'>Oops, something went wrong. Please try again later</p>";
+                                        }
                                     }
-                                ?>
+                                        ?>
 
 
-                                <p class="submitMessage"></p>
+                            
                             </div><!--btn-->
                         </form><!--contact form area-->
 
@@ -863,7 +883,7 @@ ini_set('display_errors', 1);
                     </div><!--contactForm-->
                 </div><!--Contact Form-->
             </main>
-            <footer class="wrapper">
+            <footer class="wrapper" id="footer">
                 <div class="rowSiteMapSocial">
                     <div class="colSiteMap">
                         <p class="txtSM">Sitemap</p>
