@@ -1797,8 +1797,7 @@ body {
     .jcarousel li
     {
         display: block;
-        width: 62vw!important;
-         
+        width: 62vw!important;         
     }
 
     /*Carousel Controls*/
@@ -1838,7 +1837,7 @@ body {
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: 0%;
+        bottom: -4%;
         left: 53%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);

@@ -179,8 +179,8 @@ body
         width: 325px;
         height: 455px;
         background-position: -739px -470px;
-        zoom: .95;
-        
+        zoom: .9;
+        margin-left: 11%;        
     }
 
     .posters
@@ -1200,10 +1200,10 @@ body
         padding-bottom: 3vw;
         position: relative;
     }
-    .alignHorizontal
+/*    .alignHorizontal
     {
         display: inline-flex;
-    }
+    }*/
     .title
     {
         color: white;
