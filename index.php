@@ -462,7 +462,7 @@ ini_set('display_errors', 1);
                             <div class="flexWidth">
                                 <p class="hi">Hi, </p>
                                 <p class="intro">
-                                    My name is Payal Priyadarshini. I am a freelance Web Designer looking for opportunities.
+                                    My name is Payal Priyadarshini. I am a freelance Web Designer and Full Stack Web Developer looking for opportunities.
                                 </p>
                             </div><!--flexWidth-->
                             <div class="aboutMeSection">
@@ -483,7 +483,7 @@ ini_set('display_errors', 1);
                             </div><!--aboutMeSection-->
                             <div class="flexWidth">
                                 <p class="intro">
-                                    This webpage is under construction and therefore few of the links may not work. You can have a look at my projects, skills and get in touch with me on my email:
+                                    You can have a look at my projects, skills, CV and get in touch with me on my email:
                                 </p>
                                 <p class="email">payal . priyadarshini @ gmail . com</p>
                                 <p class="intro">Thanks.</p>

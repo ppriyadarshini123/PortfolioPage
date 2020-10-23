@@ -163,18 +163,56 @@ body {
         margin-top: 3.2vw;
         background-color: #197780;
         padding-top: 2vw;
+        position: relative;
     }
 
-    .alignHorizontal
-    {
-        display: inline-flex;
-    }
+  
     .title
     {
         color: white;
         letter-spacing: .1vw;
         font-weight: bold;
     }
+    
+     
+      .widthLogos1
+    {
+        margin-top: 12vw;      
+    }
+    
+    .widthLogos
+    {
+        margin-left: -4vw;
+        margin-top: 12vw;
+    }
+    
+    .extra
+    {
+        margin-left: -13vw;
+        margin-top: 2vw;
+        
+    }
+    
+    .extra2
+    {
+        margin-left: -11vw;
+    }
+    
+    
+    
+    .spark
+    {
+        margin-top: 4vw; 
+        margin-left: -15vw;
+    }
+    
+    .logo10
+    {
+       margin-left: -17vw;
+       margin-top: 0vw;
+    }
+    
+
 
     /*Logos sprite*/
     .sprite
@@ -191,7 +229,7 @@ body {
         width: 728px;
         height: 239px;
         background-position: -5px -5px;
-        margin-left: -80vw;
+       
         margin-top: 95vw;
         zoom: .45;
     }
@@ -208,7 +246,7 @@ body {
         width: 568px;
         height: 400px;
         background-position: -5px -3761px;
-        margin-left: -63vw;
+        
         margin-top: 39vw;
         zoom: .6;
     }
@@ -224,14 +262,14 @@ body {
         width: 315px;
         height: 400px;
         background-position: -583px -3761px;
-        margin-left: -34vw;
+        
     }
 
     .sprite-logo-1b {
         width: 315px;
         height: 400px;
         background-position: -908px -3761px;
-        margin-left: -34vw;
+        
     }
 
     .sprite-logo-1c {
@@ -257,45 +295,45 @@ body {
         height: 166px;
         background-position: -1356px -5px;
         margin-top: 33vw;
-        margin-left: -32vw;
+       
     }
 
     .sprite-logo-234x234 {
         width: 197px;
         height: 149px;
         background-position: -1666px -5px;
-        margin-top: 38vw;
-        margin-left: -15vw;
+        
+        
     }
 
     .sprite-logo-2a {
         width: 315px;
         height: 400px;
         background-position: -1558px -3761px;
-        margin-left: -34vw;
+        
     }
 
     .sprite-logo-2c {
         width: 315px;
         height: 400px;
         background-position: -1883px -3761px;
-        margin-left: -34vw;
+        
     }
 
     .sprite-logo-3a {
         width: 315px;
         height: 400px;
         background-position: -2208px -3761px;
-        margin-left: -34vw;
+        
     }
 
     .sprite-logo-optimized {
         width: 410px;
         height: 340px;
         background-position: -2533px -3761px;
-        margin-left: -38vw;
+        
         zoom: .6;
-        margin-top: 41vw;
+        
     }
 
     .sprite-logo-optimized-300x249 {
@@ -339,32 +377,32 @@ body {
         height: 367px;
         background-position: -5218px -382px;
     }
-    .logo9
-    {
-        margin-left: -100px;
-    }
+
 
     /*Carousel*/
     .jcarousel
     {
-        position: relative;
+        
         overflow: hidden;
         width: 100%;
         padding-top: 2vw;
-        padding-bottom: 10vw;
+        text-align: -webkit-center;
+        
     }
     .jcarousel ul
     {
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        height: 124vw;/*newly added*/
+        width: 1105vw;
+        display: flex;
+        justify-content: space-around;
+        
     }
     .jcarousel li
     {
-        margin-left: 40vw;
-        margin-right: 30vw;
-        display: inline-table;
+        display: block;
+        width: 62vw!important;
+         
     }
 
     /*Carousel Controls*/
@@ -392,19 +430,19 @@ body {
     .jcarousel-control-prev {
         left: 11px;
         position: absolute;
-        top: 97%;
+        top: 48%;
     }
 
     .jcarousel-control-next {
         right: 11px;
         position: absolute;
-        top: 97%;
+        top: 48%;
     }
 
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -39%;
+        bottom: 0%;
         left: 47%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -643,16 +681,37 @@ body {
         padding-top: 2vw;
         position: relative;
     }
-    .alignHorizontal
-    {
-        display: inline-flex;
-    }
+   
     .title
     {
         color: white;
         letter-spacing: .1vw;
         font-weight: bold;
     }
+    
+      .widthLogos1
+    {
+        margin-top: 12vw;      
+    }
+    
+    .widthLogos
+    {
+        margin-top: 7vw;      
+    }
+    
+    .spark
+    {
+        margin-top: 4vw; 
+        margin-left: -17vw;
+    }
+    
+    .logo10
+    {
+       margin-left: -7vw;
+       margin-top: 5vw;
+    }
+    
+
 
     /*Logos sprite*/
     .sprite {
@@ -667,7 +726,7 @@ body {
         width: 728px;
         height: 239px;
         background-position: -5px -5px;
-        margin-left: -38vw;
+        
         margin-top: 9vw;
     }
 
@@ -681,7 +740,7 @@ body {
         width: 568px;
         height: 400px;
         background-position: -5px -3761px;
-        margin-left: -27vw;
+       
     }
 
     .sprite-logo {
@@ -694,14 +753,14 @@ body {
         width: 315px;
         height: 400px;
         background-position: -583px -3761px;
-        margin-left: -8vw;
+       
     }
 
     .sprite-logo-1b {
         width: 315px;
         height: 400px;
         background-position: -908px -3761px;
-        margin-left: -8vw;
+        
     }
 
     .sprite-logo-1c {
@@ -727,7 +786,7 @@ body {
         height: 166px;
         background-position: -1356px -5px;
         margin-top: 11vw;
-        margin-left: -6vw;
+       
     }
 
     .sprite-logo-234x234 {
@@ -741,28 +800,28 @@ body {
         width: 315px;
         height: 400px;
         background-position: -1558px -3761px;
-        margin-left: -7vw;
+        
     }
 
     .sprite-logo-2c {
         width: 315px;
         height: 400px;
         background-position: -1883px -3761px;
-        margin-left: -8vw;
+        
     }
 
     .sprite-logo-3a {
         width: 315px;
         height: 400px;
         background-position: -2208px -3761px;
-        margin-left: -8vw;
+        
     }
 
     .sprite-logo-optimized {
         width: 410px;
         height: 340px;
         background-position: -2533px -3761px;
-        margin-left: -16vw;
+        
     }
 
     .sprite-logo-optimized-300x249 {
@@ -806,33 +865,34 @@ body {
         height: 367px;
         background-position: -5218px -382px;
     }
-    .logo9
-    {
-        margin-left: -100px;
-    }
+   
 
     /*Carousel*/
     .jcarousel
     {
-        position: relative;
+        
         overflow: hidden;
         width: 100%;
         padding-top: 2vw;
-        padding-bottom: 5vw;
+        text-align: -webkit-center;
+        
     }
     .jcarousel ul
     {
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        height: 68vw;/*newly added*/
+        width: 1105vw;
+        display: flex;
+        justify-content: space-around;
+        
     }
     .jcarousel li
     {
-        margin-left: 40vw;
-        margin-right: 30vw;
-        display: inline-table;
+        display: block;
+        width: 62vw!important;
+         
     }
+
 
     /*Carousel Controls*/
     .jcarousel-control-prev,
@@ -871,7 +931,7 @@ body {
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: 1%;
+        bottom: 0%;
         left: 53%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -1082,17 +1142,37 @@ body {
         margin-top: 3.2vw;
         background-color: #197780;
         padding-top: 2vw;
+        position: relative;
     }
-    .alignHorizontal
-    {
-        display: inline-flex;
-    }
+
     .title
     {
         color: white;
         letter-spacing: .1vw;
         font-weight: bold;
     }
+    
+     .widthLogos1
+    {
+        margin-top: 12vw;      
+    }
+    
+    .widthLogos
+    {
+        margin-top: 0vw;      
+    }
+    
+    .spark
+    {
+        margin-top: 4vw;  
+    }
+    
+    .logo10
+    {
+       
+    }
+    
+
 
 
     /*Logos sprite*/
@@ -1108,7 +1188,7 @@ body {
         width: 728px;
         height: 239px;
         background-position: -5px -5px;
-        margin-left: -21vw;
+       
         margin-top: 4vw;
     }
 
@@ -1122,7 +1202,7 @@ body {
         width: 568px;
         height: 400px;
         background-position: -5px -3761px;
-        margin-left: -16vw;
+        
     }
 
     .sprite-logo {
@@ -1135,14 +1215,14 @@ body {
         width: 315px;
         height: 400px;
         background-position: -583px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-1b {
         width: 315px;
         height: 400px;
         background-position: -908px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-1c {
@@ -1168,7 +1248,7 @@ body {
         height: 166px;
         background-position: -1356px -5px;
         margin-top: 5vw;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-234x234 {
@@ -1182,28 +1262,28 @@ body {
         width: 315px;
         height: 400px;
         background-position: -1558px -3761px;
-        margin-left: -4vw;
+       
     }
 
     .sprite-logo-2c {
         width: 315px;
         height: 400px;
         background-position: -1883px -3761px;
-        margin-left: -4vw;
+       
     }
 
     .sprite-logo-3a {
         width: 315px;
         height: 400px;
         background-position: -2208px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-optimized {
         width: 410px;
         height: 340px;
         background-position: -2533px -3761px;
-        margin-left: -7vw;
+        
     }
 
     .sprite-logo-optimized-300x249 {
@@ -1247,33 +1327,32 @@ body {
         height: 367px;
         background-position: -5218px -382px;
     }
-    .logo9
-    {
-        margin-left: -100px;
-    }
+    
 
     /*Carousel*/
-    .jcarousel
+ .jcarousel
     {
-        position: relative;
+        
         overflow: hidden;
         width: 100%;
-        padding-bottom: 4vw;
+        padding-top: 2vw;
+        text-align: -webkit-center;
+        
     }
-
     .jcarousel ul
     {
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
-
+        height: 42vw;/*newly added*/
+        width: 1105vw;
+        display: flex;
+        justify-content: space-around;
+        
     }
     .jcarousel li
     {
-        margin-left: 43vw;
-        margin-right: 30vw;
         display: block;
+        width: 62vw!important;
+         
     }
 
     /*Carousel Controls*/
@@ -1301,19 +1380,19 @@ body {
     .jcarousel-control-prev {
         left: 12vw;
         position: absolute;
-        top: 81%;
+        top: 31%;
     }
 
     .jcarousel-control-next {
         right: 12vw;
         position: absolute;
-        top: 81%;
+        top: 31%;
     }
 
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -39%;
+        bottom: 9%;
         left: 51%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -1514,16 +1593,34 @@ body {
         margin-top: 3.2vw;
         background-color: #197780;
         padding-top: 2vw;
+        position: relative;
     }
-    .alignHorizontal
-    {
-        display: inline-flex;
-    }
+
     .title
     {
         color: white;
         letter-spacing: .1vw;
         font-weight: bold;
+    }
+    
+    .widthLogos1
+    {
+        margin-top: 12vw;      
+    }
+    
+    .widthLogos
+    {
+        margin-top: 4vw;      
+    }
+    
+    .spark
+    {
+        margin-top: 4vw;  
+    }
+    
+    .logo10
+    {
+       margin-top: 4vw;
     }
 
     /*Logos sprite*/
@@ -1532,15 +1629,14 @@ body {
         background-repeat: no-repeat;
         display: block;
         background-color: white;
-        margin-top: 1vw;
+        
     }
 
     .sprite-LogoSWS {
         width: 728px;
         height: 239px;
         background-position: -5px -5px;
-        margin-left: -21vw;
-        margin-top: 4vw;
+        
     }
 
     .sprite-final-touches {
@@ -1553,7 +1649,7 @@ body {
         width: 568px;
         height: 400px;
         background-position: -5px -3761px;
-        margin-left: -16vw;
+        
     }
 
     .sprite-logo {
@@ -1566,14 +1662,14 @@ body {
         width: 315px;
         height: 400px;
         background-position: -583px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-1b {
         width: 315px;
         height: 400px;
         background-position: -908px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-1c {
@@ -1598,43 +1694,42 @@ body {
         width: 300px;
         height: 166px;
         background-position: -1356px -5px;
-        margin-top: 5vw;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-234x234 {
         width: 197px;
         height: 149px;
         background-position: -1666px -5px;
-        margin-top: 7vw;
+        
     }
 
     .sprite-logo-2a {
         width: 315px;
         height: 400px;
         background-position: -1558px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-2c {
         width: 315px;
         height: 400px;
         background-position: -1883px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-3a {
         width: 315px;
         height: 400px;
         background-position: -2208px -3761px;
-        margin-left: -4vw;
+        
     }
 
     .sprite-logo-optimized {
         width: 410px;
         height: 340px;
         background-position: -2533px -3761px;
-        margin-left: -7vw;
+        
     }
 
     .sprite-logo-optimized-300x249 {
@@ -1678,32 +1773,32 @@ body {
         height: 367px;
         background-position: -5218px -382px;
     }
-    .logo9
-    {
-        margin-left: -100px;
-    }
+  
 
     /*Carousel*/
     .jcarousel
     {
-        position: relative;
+        
         overflow: hidden;
         width: 100%;
         padding-top: 2vw;
-        padding-bottom: 5vw;
+        text-align: -webkit-center;
+        
     }
     .jcarousel ul
     {
-        position: relative;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        height: 42vw;/*newly added*/
+        width: 1105vw;
+        display: flex;
+        justify-content: space-around;
+        
     }
     .jcarousel li
     {
-        margin-left: 43vw;
-        margin-right: 30vw;
         display: block;
+        width: 62vw!important;
+         
     }
 
     /*Carousel Controls*/
@@ -1731,19 +1826,19 @@ body {
     .jcarousel-control-prev {
         left: 55px;
         position: absolute;
-        top: 81%;
+        top: 46%;
     }
 
     .jcarousel-control-next {
         right: 55px;
         position: absolute;
-        top: 81%;
+        top: 46%;
     }
 
     /** Carousel Pagination **/
     .jcarousel-pagination {
         position: absolute;
-        bottom: -18%;
+        bottom: 0%;
         left: 53%;
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
