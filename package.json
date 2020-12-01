@@ -2,10 +2,10 @@
   "name": "portfoliopage",
   "version": "1.0.0",
   "description": "This is the home page of my portfolio",
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startServer": "browser-sync start --directory --server --files '*.js, *.html,*.css'"
+    "startServer": "browser-sync start --directory --proxy 'http://localhost:3001/Payal_Priyadarshini_Portfolio_HomePage/PortfolioPage/' --files '*.php, build/js/*.js, build/css/*.css'"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,9 @@
   "devDependencies": {},
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "browser-sync": "^2.26.13",
     "enquire.js": "latest",
+    "gulp": "^4.0.2",
     "jquery": "^3.5.1",
     "php": "^1.0.1",
     "pixi.js": "5.2.0",
