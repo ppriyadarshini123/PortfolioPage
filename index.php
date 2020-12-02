@@ -20,7 +20,35 @@ ini_set('display_errors', 0);
          
     </head>
     <body>
+         <!-- News Website Modal -->
+        <div class="modal" id="modalHomeSearch" tabindex="-1" role="dialog" aria-labelledby="modalHomeSearchTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalHomeSearchTitle">My Journey - Home Search</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!--modal-header-->
+                    <div class="modal-body">
+                        <h6>Skills used:</h6> PHP, MySQL, XAMPP, MySQL Transactions, Javascript, JQuery, Gulp, Browser Sync<hr>
+                        <h6>The Course : </h6><p>This project was based on the PHP Module of Web Designing Career Programme by Training Dragon. It covered PHP and MySQL. It was a 4 day course which covered topics like PHP Programming, PHP Functions, PHP Global variables, MySQL Queries, Making an ECommerce Website with Content Management System with different user roles. This course covered a lot of hands-on exercises.  </p>
 
+                        <h6>The making of Project : </h6><p>This Web Design Project started by creating <a href="./dist/docs/Payal_Priyadarshini_PHP_Project_Proposal.pdf">proposal document</a> and making of the HTML template. I also made the <a href="index.php#myProjects" data-toggle="popover3" title="Home Search Logo">Logo</a>. The project started with making of the Home Page and preparing the database. This project was created as a dummy website to practice basic CRUD operations using PHP and MySQL.   </p>
+
+                        <h6>What I learnt : </h6><p>I thoroughly enjoyed making this project. It brought me back to Full stack web development which I left 10 years ago. I revised CRUD programming and working with database, which is still my favourite.</p>
+
+                    </div><!--modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="myJourney" data-dismiss="modal">Close</button>
+
+                    </div><!--modal-footer-->
+                </div><!--modal-content-->
+            </div><!--modal-dialog modal-dialog-scrollable-->
+        </div><!--modalNewsWebsite-->
+
+        
+        
         <!--A Modal should be added on the top level element. Do not move it from here. Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You�ll likely run into issues when nesting a .modal within another fixed element.-->
         <!-- Nutritionist Modal -->
         <div class="modal" id="modalNutritionist" tabindex="-1" role="dialog" aria-labelledby="modalNutritionistTitle" aria-hidden="true">
@@ -299,7 +327,7 @@ ini_set('display_errors', 0);
             <div class="modal-dialog modal-dialog-scrollable" role="document" >
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalSQLTitle">My Journey - mySQL Project</h5>
+                        <h5 class="modal-title" id="modalSQLTitle">My Journey - MySQL Project</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -599,7 +627,7 @@ ini_set('display_errors', 0);
                             </div><!--project Nutritionist-->
                             <div class="project">
                                 <img class="sprite-portfolio-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                                <h1 class="heading">This Portfolio - PHP, HTML, CSS, Javascript Project</h1>
+                                <h1 class="heading">Payal Creations - PHP, HTML, CSS, JQuery, Javascript Project</h1>
                                 <div class="overlay">
                                     <div class="projectName">
                                         <a href="#" class="removeUnderscore">This webpage</a>
@@ -611,16 +639,40 @@ ini_set('display_errors', 0);
                             </div><!--project this portfolio-->
                               <div class="project">
                                   <img class="" alt="" src="dist/imgs/optimized/HomeSearch_logo_pic-471x314.png">
-                                <h1 class="heading">Home Search - PHP, mySQL Project</h1>
+                                <h1 class="heading">Home Search - PHP, MySQL Project</h1>
                                 <div class="overlay">
                                     <div class="projectName">
-                                        <a href="http://www.payalcreations.co.uk/Home-Search/index.php" class="removeUnderscore">Project WebPage</a>
+                                        <a href="http://www.payalcreations.co.uk/Home_Search/index.php" class="removeUnderscore">Project WebPage</a>
                                     </div><!--projectName-->
                                     <button type="button" class="myJourney" data-toggle="modal" data-trigger="focus" data-target="#modalHomeSearch" data-placement="right">
                                         My Journey
                                     </button>
                                 </div><!--overlay-->
                             </div><!--project PHP HomeSearch-->
+                             <div class="project">
+                                <img class="sprite-logos-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
+                                <h1 class="heading">Logos Gallery - Graphic Design</h1>
+                                <div class="overlay">
+                                    <div class="projectName">
+                                        <a href="./logos.html" class="removeUnderscore">Logos</a>
+                                    </div><!--projectName-->
+                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#modalLogos">
+                                        My Journey
+                                    </button>
+                                </div><!--overlay-->
+                            </div><!--project All Logos - Graphic Design-->
+                             <div class="project">
+                                <img class="sprite-posters-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
+                                <h1 class="heading">Posters Gallery - Graphic Design</h1>
+                                <div class="overlay">
+                                    <div class="projectName">
+                                        <a href="./posters.html" class="removeUnderscore">Posters</a>
+                                    </div><!--projectName-->
+                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#modalPosters">
+                                        My Journey
+                                    </button>
+                                </div><!--overlay-->
+                            </div><!--project All posters - Graphic Design-->                           
                             <div class="project">
                                 <img class="sprite-news-471x314" alt="" src="dist/imgs/optimized/news-471x314.png">
                                 <h1 class="heading">News Website - HTML, CSS and Javascript Project</h1>
@@ -647,7 +699,7 @@ ini_set('display_errors', 0);
                             </div><!--project Tours & Travels-->                       
                             <div class="project">
                                 <img class="sprite-ecommerce-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
-                                <h1 class="heading">ECommerce Website - Wordpress Project</h1>
+                                <h1 class="heading">ECommerce Website - WordPress Project</h1>
                                 <div class="overlay">
                                     <div class="projectName">
                                         <a href="http://www.payalcreations.co.uk/wordpress/" class="removeUnderscore">Project WebPage</a>
@@ -695,7 +747,7 @@ ini_set('display_errors', 0);
                             </div><!--project CamCareUK - Charity Website-->
                             <div class="project">
                                 <img class="sprite-erd-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
-                                <h1 class="heading">mySQL Project</h1>
+                                <h1 class="heading">MySQL Project</h1>
                                 <div class="overlay">
                                     <div class="projectName" id="mysql">Project Documents</div><!--projectName-->
                                     <div class="documents" id="openWindow">
@@ -723,30 +775,7 @@ ini_set('display_errors', 0);
                                     </button>
                                 </div><!--overlay-->
                             </div><!--project Flowchart-->
-                            <div class="project">
-                                <img class="sprite-posters-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                                <h1 class="heading">Posters Gallery - Graphic Design</h1>
-                                <div class="overlay">
-                                    <div class="projectName">
-                                        <a href="./posters.html" class="removeUnderscore">Posters</a>
-                                    </div><!--projectName-->
-                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#modalPosters">
-                                        My Journey
-                                    </button>
-                                </div><!--overlay-->
-                            </div><!--project All posters - Graphic Design-->
-                            <div class="project">
-                                <img class="sprite-logos-472x315" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdgAAAE7AQMAAABExwL2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwTEBAAAAwqD1T20IX6AAAAAAAAAAAAAAAAAAAAAAAAB4DUnUAAGn9894AAAAAElFTkSuQmCC">
-                                <h1 class="heading">Logos Gallery - Graphic Design</h1>
-                                <div class="overlay">
-                                    <div class="projectName">
-                                        <a href="./logos.html" class="removeUnderscore">Logos</a>
-                                    </div><!--projectName-->
-                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#modalLogos">
-                                        My Journey
-                                    </button>
-                                </div><!--overlay-->
-                            </div><!--project All Logos - Graphic Design-->
+                           
                         </div><!--projectsGrid-->
                     </div><!--myProjects-->
                 </div><!--Projects wrapper2-->
@@ -952,7 +981,19 @@ ini_set('display_errors', 0);
                     content: '<img src="dist/imgs/optimized/logos/logo-1c.png" class="" alt="" width="210">'
                 });
             });
-        </script><!--for Nutritionist logo Popover-->
+        </script><!--for Cambourne Timebank logo Popover-->
+        
+         <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover3"]').popover({
+                    placement: 'auto',
+                    trigger: 'click',
+                    html: true,
+                    content: '<img src="dist/imgs/optimized/logos/HomeSearch_logo_pic-471x314.png" class="" alt="" width="210">'
+                });
+            });
+        </script><!--for Home Search logo Popover-->
+
 
         <script src="https://www.google.com/recaptcha/api.js" async defer></script><!--For ReCaptcha-->
         <script src="node_modules/pixi.js/dist/pixi.min.js"></script>
