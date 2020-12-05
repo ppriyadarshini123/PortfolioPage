@@ -20,7 +20,7 @@ ini_set('display_errors', 0);
          
     </head>
     <body>
-         <!-- News Website Modal -->
+         <!-- Home Search Modal -->
         <div class="modal" id="modalHomeSearch" tabindex="-1" role="dialog" aria-labelledby="modalHomeSearchTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
@@ -45,7 +45,7 @@ ini_set('display_errors', 0);
                     </div><!--modal-footer-->
                 </div><!--modal-content-->
             </div><!--modal-dialog modal-dialog-scrollable-->
-        </div><!--modalNewsWebsite-->
+        </div><!--modalHomeSearch-->
 
         
         
@@ -975,7 +975,7 @@ ini_set('display_errors', 0);
         <script>
             $(document).ready(function () {
                 $('[data-toggle="popover2"]').popover({
-                    placement: 'auto',
+                    placement: ' auto',
                     trigger: 'click',
                     html: true,
                     content: '<img src="dist/imgs/optimized/logos/logo-1c.png" class="" alt="" width="210">'
@@ -985,7 +985,7 @@ ini_set('display_errors', 0);
         
          <script>
             $(document).ready(function () {
-                $('[data-toggle="popover3"]').popover({
+                $('[data-toggle="popover3"]').popover({                    
                     placement: 'auto',
                     trigger: 'click',
                     html: true,
@@ -993,8 +993,6 @@ ini_set('display_errors', 0);
                 });
             });
         </script><!--for Home Search logo Popover-->
-
-
         <script src="https://www.google.com/recaptcha/api.js" async defer></script><!--For ReCaptcha-->
         <script src="node_modules/pixi.js/dist/pixi.min.js"></script>
         <script src="node_modules/pixi.js-legacy/dist/pixi-legacy.js"></script><!--Incase browser does not support webGL, pixi-legacy provides a fallback-->
@@ -1002,8 +1000,7 @@ ini_set('display_errors', 0);
 
         <script src="dist/js/jquery.carousel.js"></script>
         <script src="dist/js/jcarousel.responsive.js"></script>
-        <script src="node_modules/enquire.js/dist/enquire.js"></script>
-        
+        <script src="node_modules/enquire.js/dist/enquire.js"></script>       
         
 <!--         <script src="dist/js/script.js"></script>-->
         <script src="dist/js/pixi.js"></script>
