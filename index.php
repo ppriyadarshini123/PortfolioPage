@@ -960,8 +960,9 @@ ini_set('display_errors', 0);
         <script src="node_modules/jquery/dist/jquery.min.js"></script><!--for Bootstrap to run--> 
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!--for Bootstrap to run--> 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function (e) {
                 $('[data-toggle="popover"]').popover({
+                    e.preventDefault();
                     placement: 'auto', 
                     trigger: 'click',
                     html: true,
@@ -971,8 +972,9 @@ ini_set('display_errors', 0);
         </script><!--for Nutritionist logo Popover-->
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function (e) {
                 $('[data-toggle="popover2"]').popover({
+                    e.preventDefault();
                     placement: 'auto',
                     trigger: 'click',
                     html: true,
@@ -982,8 +984,9 @@ ini_set('display_errors', 0);
         </script><!--for Cambourne Timebank logo Popover-->
         
          <script>
-            $(document).ready(function () {
-                $('[data-toggle="popover3"]').popover({                    
+            $(document).ready(function (e) {
+                $('[data-toggle="popover3"]').popover({
+                    e.preventDefault();
                     placement: 'auto',
                     trigger: 'click',
                     html: true,
