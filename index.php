@@ -45,9 +45,7 @@ ini_set('display_errors', 0);
                     </div><!--modal-footer-->
                 </div><!--modal-content-->
             </div><!--modal-dialog modal-dialog-scrollable-->
-        </div><!--modalHomeSearch-->
-
-        
+        </div><!--modalHomeSearch-->        
         
         <!--A Modal should be added on the top level element. Do not move it from here. Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You�ll likely run into issues when nesting a .modal within another fixed element.-->
         <!-- Nutritionist Modal -->
@@ -188,7 +186,7 @@ ini_set('display_errors', 0);
                         <h6>Skills used:</h6>PHP,HTML, CSS, Javascript, WebGL, Graphic Design, Adobe Illustrator, JQuery, Bootstrap, Media Queries<hr>
 
                         <h6>The making of Project :</h6>
-                        <p>While making this project,
+                        <p>I started with making the <a href="./Wireframe&Mockup/portfolioMockup.html">Mockup</a> using Adobe Photoshop. While making this project,
                             I have learnt a lot. I have used Image optimization, CSS Sprites, played with GZip Compression to improve the performance of the website.</p>
                         <h6>What I learnt : </h6>
                         <p>I learnt a lot  while making this project. I tried different things and challenged my imagination.</p>
@@ -964,7 +962,7 @@ ini_set('display_errors', 0);
         <script>
             $(document).ready(function () {
                 $('[data-toggle="popover"]').popover({
-                    placement: 'auto',
+                    placement: 'auto', 
                     trigger: 'click',
                     html: true,
                     content: '<img src="dist/imgs/optimized/logos/nutritionistLogo.png" class="" alt="" width="210">'
@@ -975,7 +973,7 @@ ini_set('display_errors', 0);
         <script>
             $(document).ready(function () {
                 $('[data-toggle="popover2"]').popover({
-                    placement: ' auto',
+                    placement: 'auto',
                     trigger: 'click',
                     html: true,
                     content: '<img src="dist/imgs/optimized/logos/logo-1c.png" class="" alt="" width="210">'
