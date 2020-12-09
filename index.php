@@ -961,8 +961,7 @@ ini_set('display_errors', 0);
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!--for Bootstrap to run--> 
         <script>
             $(document).ready(function (e) {
-                $('[data-toggle="popover"]').popover({
-                    e.preventDefault();
+                $('[data-toggle="popover"]').popover({                    
                     placement: 'auto', 
                     trigger: 'click',
                     html: true,
@@ -973,8 +972,7 @@ ini_set('display_errors', 0);
 
         <script>
             $(document).ready(function (e) {
-                $('[data-toggle="popover2"]').popover({
-                    e.preventDefault();
+                $('[data-toggle="popover2"]').popover({                    
                     placement: 'auto',
                     trigger: 'click',
                     html: true,
@@ -985,8 +983,7 @@ ini_set('display_errors', 0);
         
          <script>
             $(document).ready(function (e) {
-                $('[data-toggle="popover3"]').popover({
-                    e.preventDefault();
+                $('[data-toggle="popover3"]').popover({                    
                     placement: 'auto',
                     trigger: 'click',
                     html: true,
