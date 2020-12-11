@@ -482,6 +482,10 @@ body {
     }
 
     /* MY PROJECTS*/
+    .imghomeSearch
+    {
+        width: 100%;
+    }
     .myProjects
     {
         background-color: #197780;
@@ -827,7 +831,37 @@ body {
         padding-top: 1vw;
         padding-bottom: .7vw;
     }
-
+    
+    /* DISPLAY USER AGENT STRING*/
+    .btnUserAgent
+    {
+        text-align: center;
+        letter-spacing: .2vw;
+        font-size: 7vw;
+        background-color: #197780;
+        color: white;
+        display: block;
+        padding: 2vw 14vw;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        height: 35vw;
+    }
+    .disUA{
+        line-height: 16vw;
+        font-size: 5vw;
+        padding-left: 1.5vw;
+    }
+    .margins
+    {
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+    
+    .displayUAS{}    
+    .displayTS{}
+    
 
     /* SITEMAP*/
     /*Sitemap & social media icons*/
@@ -1419,6 +1453,10 @@ body {
     }
 
     /* MY PROJECTS*/
+    .imghomeSearch
+    {
+        width: 100%;
+    }
     .myProjects
     {
         background-color: #197780;
@@ -2342,6 +2380,10 @@ body {
     }
 
     /* MY PROJECTS*/
+    .imghomeSearch
+    {
+        width: 100%;
+    }
     .myProjects
     {
         background-color: #197780;
@@ -3173,6 +3215,10 @@ body {
     }
 
     /* MY PROJECTS*/
+    .imghomeSearch
+    {
+        width: 100%;
+    }
     .myProjects
     {
         background-color: #197780;

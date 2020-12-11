@@ -636,7 +636,7 @@ ini_set('display_errors', 0);
                                 </div><!--overlay-->
                             </div><!--project this portfolio-->
                               <div class="project">
-                                  <img class="" alt="" src="dist/imgs/optimized/HomeSearch_logo_pic-471x314.png">
+                                  <img class="imghomeSearch" alt="" src="dist/imgs/optimized/HomeSearch_logo_pic-471x314.png">
                                 <h1 class="heading">Home Search - PHP, MySQL Project</h1>
                                 <div class="overlay">
                                     <div class="projectName">
@@ -932,6 +932,9 @@ ini_set('display_errors', 0);
                         </div><!--lowerStars-->
                     </div><!--contactForm-->
                 </div><!--Contact Form-->
+                <div class="margins">
+                    <button id="getUserAgentString" class="btnUserAgent">Get User Agent Strings</button>
+                </div><!--margins-->
             </main>
             <footer class="wrapper" id="footer">
                 <div class="rowSiteMapSocial">
