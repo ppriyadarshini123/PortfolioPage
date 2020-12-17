@@ -833,6 +833,10 @@ body {
     }
     
     /* DISPLAY USER AGENT STRING*/
+    .bold
+    {
+        font-weight: bold;
+    }
     .btnUserAgent
     {
         text-align: center;
@@ -841,17 +845,17 @@ body {
         background-color: #197780;
         color: white;
         display: block;
-        padding: 2vw 14vw;
+        padding: 2vw 7vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
-        height: 35vw;
+        height: 27vw;
     }
     .disUA{
         line-height: 16vw;
         font-size: 5vw;
-        padding-left: 1.5vw;
+        padding-left: 1vw;
     }
     .margins
     {
@@ -3217,7 +3221,7 @@ body {
     /* MY PROJECTS*/
     .imghomeSearch
     {
-        width: 100%;
+        width: 91%;
     }
     .myProjects
     {

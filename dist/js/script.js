@@ -30,19 +30,31 @@ $(document).ready(function () {
  * and redirecting to viewUserAgent.html page with querystring
  */
 function getUserAgentInformation() {
+    
     //Get timestamp of accessing URL
+    //The static Date.now() method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
     let timestamp = Date.now();
 
     //Create QueryString
     let qs = "?";
+    //The appCodeName property returns the code name of the browser.
+    //Note: All modern browsers returns "Mozilla", for compatibility reasons.
     qs += "bcn=" + navigator.appCodeName + "&";
+    //The appName property returns the name of the browser.
     qs += "bn=" + navigator.appName + "&";
+    //The appVersion property returns the version information of the browser.
     qs += "bv=" + navigator.appVersion + "&";
+    //The cookieEnabled property returns a Boolean value that specifies whether cookies are enabled in the browser.
     qs += "ce=" + navigator.cookieEnabled + "&";
+    //The language property returns the language version of the browser.
     qs += "bl=" + navigator.language + "&";
+    //The onLine property returns a Boolean value that specifies whether the browser is in online or offline mode.
     qs += "bo=" + navigator.onLine + "&";
+    //The platform property returns for which platform the browser is compiled.
     qs += "p=" + navigator.platform + "&";
-    qs += "uas=" + navigator.userAgent + "&";
+    //The userAgent property returns the value of the user-agent header sent by the browser to the server.
+    //The value returned, contains information about the name, version and platform of the browser.
+    qs += "uas=" + navigator.userAgent + "&"; 
     qs += "timestamp=" + timestamp;
 
     //Redirect to viewUserAgent.html page with querystring
@@ -96,7 +108,8 @@ function getParameterByName(name, url = window.location.href) {
 }//getParameterByName
 
 /** 
- * This code is to display user agent string and the timestamp of accessing the URL
+ * @name displayUserAgent
+ * @desc This function is to display user agent string and the timestamp of accessing the URL
  * and displaying it on the viewUserAgent.html page
  */
 function displayUserAgent() {
@@ -116,7 +129,9 @@ function displayUserAgent() {
 
     //Display Values in div
     if (divUAS !== null)
-        divUAS.innerHTML = "<p>Browser Codename: " + bcn + "</p><p>Browser Name: " + bn + "</p><p>Browser version: " + bv + "</p><p>Cookies Enabled : " + ce + "</p><p>Browser language: " + bl + "</p><p>Browser online: " + bo + "</p><p>Platform: " + p + "</p><p>User Agent Header: " + uas;
+        divUAS.innerHTML = "<p class='bold'>User Agent Header:</p> " + uas + "<p class='bold'>Browser Codename:</p> " + bcn + "<p class='bold'>Browser Name:</p>" + bn + "<p class='bold'>Browser version:</p>" + bv
+            + "<p class='bold'>Cookies Enabled :</p> " + ce + "<p class='bold'>Browser language:</p> " + bl
+            + "<p class='bold'>Browser online:</p> " + bo + "<p class='bold'>Platform:</p> " + p;
     if (divTimeStamp !== null)
         divTimeStamp.innerHTML = timestamp;
 }//displayUserAgent()
@@ -191,7 +206,9 @@ function validation()
  */
 function bindBtns() {
     validation();
-    if (btnGetUserAgentString)
+    
+    //Attach a click event to the button
+    if (btnGetUserAgentString !== null)
         btnGetUserAgentString.addEventListener("click", getUserAgentInformation);
     displayUserAgent();
 }//bindBtns

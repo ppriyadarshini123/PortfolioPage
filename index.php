@@ -34,7 +34,7 @@ ini_set('display_errors', 0);
                         <h6>Skills used:</h6> PHP, MySQL, XAMPP, MySQL Transactions, Javascript, JQuery, Gulp, Browser Sync<hr>
                         <h6>The Course : </h6><p>This project was based on the PHP Module of Web Designing Career Programme by Training Dragon. It covered PHP and MySQL. It was a 4 day course which covered topics like PHP Programming, PHP Functions, PHP Global variables, MySQL Queries, Making an ECommerce Website with Content Management System with different user roles. This course covered a lot of hands-on exercises.  </p>
 
-                        <h6>The making of Project : </h6><p>This Web Design Project started by creating <a href="./dist/docs/Payal_Priyadarshini_PHP_Project_Proposal.pdf">proposal document</a> and making of the HTML template. I also made the <a href="index.php#myProjects" data-toggle="popover3" title="Home Search Logo">Logo</a>. The project started with making of the Home Page and preparing the database. This project was created as a dummy website to practice basic CRUD operations using PHP and MySQL.   </p>
+                        <h6>The making of Project : </h6><p>This Web Design Project started by creating <a href="./dist/docs/Payal_Priyadarshini_PHP_Project_Proposal.pdf">proposal document</a> and making of the HTML template. I also made the <a href="index.php#myProjects" data-toggle="popover3" title="Home Search Logo">Logo</a>. The project started with making of the Home Page and preparing the database. This project was created as a dummy website to practice basic CRUD operations using PHP and MySQL. I have implemented the Signin page, Content Management System for Admin, property dealer and customers, given User Rights for access. This project is not responsive and is only visible on laptop (viewport size >1200px)</p>
 
                         <h6>What I learnt : </h6><p>I thoroughly enjoyed making this project. It brought me back to Full stack web development which I left 10 years ago. I revised CRUD programming and working with database, which is still my favourite.</p>
 
@@ -59,7 +59,7 @@ ini_set('display_errors', 0);
                         </button>
                     </div><!--modal-header-->
                     <div class="modal-body">
-                        <h6>Skills used:</h6>Responsive Web Design, Media queries<hr>
+                        <h6>Skills used:</h6>HTML, CSS, WebPack, GIT, JavaScript, JQuery, Responsive Web Design, Media queries, GIFs, Absolute & Relative positioning<hr>
 
                         <h6>The Course : </h6><p>This project was based on the Mobile Web Design Course in Web Designing Career Programme by Training Dragon. This course was part of a 4 day course which also covered topics like Bootstrap, SASS, NodeJS Tools, GIT & GITHUB.
 
@@ -72,15 +72,15 @@ ini_set('display_errors', 0);
                             Web Design Project
                             started by creating
                             wireframe ( <a href="./Wireframe&Mockup/nutritionist.html">Wireframe</a> ) and ( <a href="index.php#myProjects" data-toggle="popover" title="Nutritionist Logo">Logo</a>) .
-                            I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.
+                            I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor guided me very well during the Project.
                             I had proposed to make a website for nutritionist. I would build 2 pages: Homepage and Recipes page. There will be 2 layout shifts and column drop in both the pages.
                             The navigation will also have 2 layout shifts. I would implement 'the toggle'. He suggested a lot of improvements in making wireframes & Mockups.
                             He suggested best practices, consistent look of website, advised to research, suggested to improve the look and feel of website, an eye for detail, professional approach,
                             considering negative space . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB.
-                            The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly.
+                            The journey in building the project involved a lot of changes in look and feel of the website as my Tutor ensured that the website looked modern and user friendly.
                             He had high expectations from me for the website.</p>
 
-                        <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly. I learnt how to make wireframe & mockup. I also experimented with different looks to present images. It was quite a challenging project for me. </p>
+                        <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly. I learnt how to make wireframe & mockup. I also experimented with different looks to present images. It was quite a challenging project for me. Finally I was happy with the outcome. </p>
 
                     </div><!--modal-body-->
                     <div class="modal-footer">
@@ -101,10 +101,10 @@ ini_set('display_errors', 0);
                         </button>
                     </div><!--modal-header-->
                     <div class="modal-body">
-                        <h6>Skills used:</h6> HTML5, CSS, CSS Positioning, basic Javascript<hr>
+                        <h6>Skills used:</h6> HTML5, CSS, Absolute & Relative Positioning, basic JavaScript<hr>
                         <h6>The Course : </h6><p>This project was based on the first module of Web Designing Career Programme by Training Dragon. It covered HTML5, CSS3 and basic Javascript. It was a 4 day course which covered topics like Headings, paragraphs, div, image, anchors, lists in HTML. I had used HTML about 9 years ago and this course refreshed my knowledge of it. The course covered best practices, keyboard shortcuts in WebStorm, creating wireframes, mockups, using HTML and CSS validators etc. In CSS, we covered basic CSS, absolute and relative positioning and also provided opportunity to do projects as exercises. In basic Javascript, topics like basic event handler and web hosting were discussed.</p>
 
-                        <h6>The making of Project : </h6><p>This Web Design Project started by creating wireframe and mockups (<a href="./Wireframe&Mockup/newsWebsite.html">Wireframe & Mockup</a> ). I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website.</p>
+                        <h6>The making of Project : </h6><p>This Web Design Project started by creating wireframe and mockups (<a href="./Wireframe&Mockup/newsWebsite.html">Wireframe & Mockup</a> ). I had used an open source software for creating wireframes/mockups called Pencil Project. My tutor guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the wireframe and mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as my Tutor ensured that the website looked modern and user friendly. He had high expectations from me for the website. This project is not responsive and is only visible on laptop (viewport size >1200px)</p>
 
                         <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly.</p>
 
@@ -135,7 +135,7 @@ ini_set('display_errors', 0);
                         </h6><p>This project was based on the second module of Web Designing Career Programme by Training Dragon. It covered Javascript & JQuery. It was a 2 days course which covered topics like undefined variables, Constants, Operators and Statements, Basic Operators, Conditional Statements, Conditional Operators, Logical Operators, Loops: while, do, for in Javascript. In JQuery, topics like jQuery Selectors, Properties and Attributes, jQuery Events, Animations and Effects, jQuery UI Library etc were covered. I had never formally learnt Javascript & JQuery, therefore this was my first time learning.</p>
 
                         <h6>The making of Project :
-                        </h6><p>This Javascript & JQuery Project started by creating mockups( <a href="./Wireframe&Mockup/javascript_jquery.html">Mockup</a> ). I had used an open source software for creating mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website. This project is not responsive and is only visible on laptop(viewport size >1200px)</p>
+                        </h6><p>This Javascript & JQuery Project started by creating mockups( <a href="./Wireframe&Mockup/javascript_jquery.html">Mockup</a> ). I had used an open source software for creating mockups called Pencil Project. My tutor guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as my Tutor ensured that the website looked modern and user friendly. He had high expectations from me for the website. This project is not responsive and is only visible on laptop(viewport size >1200px)</p>
 
                         <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly. I also edited images using Adobe Photoshop. I learnt problem solving skills and an eye for details. </p>
 
@@ -158,12 +158,12 @@ ini_set('display_errors', 0);
                         </button>
                     </div><!--modal-header-->
                     <div class="modal-body">
-                        <h6>Skills used:</h6>WordPress<hr>
+                        <h6>Skills used:</h6>WordPress, Responsive Web Design,Domain configuration, Website Hosting<hr>
                         <h6>The making of Project :</h6>
                         <p>I started volunteering as a Website Administrator for Cambourne Timebank since Nov. 2019. I am part of the Cambourne Timebank Management Committee. It consists of 9 members. The Management Committee meets almost every month to discuss the progress of the website and other issues.  </p>
-                        <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.php#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. This website is still on the Staging Server.</p>
+                        <p>My responsibility includes to take care of all aspects of the websites, starting from deciding on the Web hosting service, setup the website from scratch on WordPress, making ( <a href="index.php#myProjects" data-toggle="popover2" title="Cambourne Timebank Logo">Logo</a> ) for Cambourne Timebank, good look and feel of the website and keeping it up to date with all the latest and relevant information. </p>
                         <h6>What I learnt : </h6>
-                        <p>This project became a very good learning experience for me as I am learning how to communicate with the team and being a team player. I also am working with templates and Elementor in WordPress for the first time.</p>
+                        <p>This project gave me an experience of a real world project. I gathered requirements, hosted website, provided domain configuration, maintain good communication with the team, provide maintenance, configured SSL etc. I also used WordPress templates and Elementor for the first time. I received a very positive feedback. </p>
                     </div><!--modal-body-->
                     <div class="modal-footer">
                         <button type="button" class="myJourney" data-dismiss="modal">Close</button>
@@ -189,7 +189,7 @@ ini_set('display_errors', 0);
                         <p>I started with making the <a href="./Wireframe&Mockup/portfolioMockup.html">Mockup</a> using Adobe Photoshop. While making this project,
                             I have learnt a lot. I have used Image optimization, CSS Sprites, played with GZip Compression to improve the performance of the website.</p>
                         <h6>What I learnt : </h6>
-                        <p>I learnt a lot  while making this project. I tried different things and challenged my imagination.</p>
+                        <p>I learnt a lot  while making this project. I wanted to give a Wow Factor to my Portfolio Page. I tried different things and challenged my imagination.</p>
                     </div><!--modal-body-->
                     <div class="modal-footer">
                         <button type="button" class="myJourney" data-dismiss="modal">Close</button>
@@ -229,7 +229,7 @@ ini_set('display_errors', 0);
 
                         <p><b>WP Google Maps</b> - The easiest to use Google Maps plugin</p>
 
-                        My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the proposal, I started building the website by constantly updating my code in GITHUB.I had created an external CSS - child theme and had named it bard-child. Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website.
+                        <p>My tutor guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the proposal, I started building the website by constantly updating my code in GITHUB.I had created an external CSS - child theme and had named it bard-child. My Tutor ensured that the website looked modern and user friendly. He had high expectations from me for the website. This project is not responsive and is only visible on laptop (viewport size >1200px)</p>
 
                         <h6>What I learnt : </h6>
                         <p>I learnt a lot during the building of this project. I researched in the different plugins and visited various websites for understanding how to make an ECommerce website. I also edited images using Adobe Photoshop. </p>
@@ -253,11 +253,11 @@ ini_set('display_errors', 0);
                         </button>
                     </div><!--modal-header-->
                     <div class="modal-body">
-                        <h6>Skills used:</h6>WordPress, External CSS<hr>
+                        <h6>Skills used:</h6>WordPress, External CSS, Domain configuration, Website Hosting<hr>
 
                         <h6>The making of Project :</h6>
                         <p>I started working on this Project since May 2020. A friend of mine in India needed help in setting up his Company Website. I am involved at an Expert level. </p>
-                        <p>I am involved in providing guidance in making this website and provide consultation from time to time. I provided help with deciding on the Web hosting service, setting up the website from scratch on WordPress, taking care good look and feel of the website, deciding on the theme and plugins, setting up the Staging Server, editing images using Adobe PhotoShop, setting up WooCommerce for Payment Gateway and researching on how to setup Taxes. </p>
+                        <p>I am involved in providing guidance in making this website and provide consultation from time to time. I provided help with deciding on the Web hosting service, setting up the website from scratch on WordPress, taking care good look and feel of the website, deciding on the theme and plugins, setting up the Staging Server, editing images using Adobe PhotoShop, setting up WooCommerce for Payment Gateway and researching on how to setup Taxes. This project is not responsive and is only visible on laptop (viewport size >1200px) </p>
                         <h6>What I learnt : </h6>
                         <p>I learnt how to supervise making a website and not completely get involved in its making. </p>
                     </div><!--modal-body-->
@@ -279,7 +279,7 @@ ini_set('display_errors', 0);
                         </button>
                     </div><!--modal-header-->
                     <div class="modal-body">
-                        <h6>Skills used:</h6>WordPress, External CSS<hr>
+                        <h6>Skills used:</h6>WordPress, External CSS, Domain configuration, Website Hosting<hr>
 
                         <h6>The making of Project :</h6>
                         <p>I started working on the project in the summer of 2018. This was my first project for a charity. </p>
@@ -305,11 +305,11 @@ ini_set('display_errors', 0);
                         </button>
                     </div><!--modal-header-->
                     <div class="modal-body">
-                        <h6>Skills used:</h6>WordPress, External CSS<hr>
+                        <h6>Skills used:</h6>WordPress, External CSS,  Domain configuration, Website Hosting<hr>
 
                         <h6>The making of Project :</h6>
-                        <p>I started working on the project in the summer of 2018. This was few of my first projects for a charity. </p>
-                        <p>I was involved from the scratch. I set up the website from scratch on WordPress, deciding on the theme and plugins and the content. I was maintaining good communication with the Founder & Chair of the CamCareUK. The initial website of CamCareUK was made by me. It was later changed. </p>
+                        <p>The initial website of CamCareUK was made by me. It was later changed. I started working on it in the summer of 2018. This was few of my first projects for a charity. </p>
+                        <p>I was involved from the scratch. I set up the website from scratch on WordPress, deciding on the theme and plugins and the content. I was maintaining good communication with the Founder & Chair of the CamCareUK.  </p>
                         <h6>What I learnt : </h6>
                         <p>I learnt a lot during the making of this website as this was my first few public websites. I was a beginner that time and still learning.   </p>
                     </div><!--modal-body-->
@@ -386,7 +386,7 @@ ini_set('display_errors', 0);
                         <h6>The making of Project :</h6>
                         <p>I have made few posters for local charities. This was all voluntary work.</p>
                         <h6>What I learnt : </h6>
-                        <p>I learnt a lot of Graphic Designing while making these projects. I tried different things and challenged my imagination.</p>
+                        <p>I learnt a lot of Graphic Designing while making these posters. I played with different colour schemes, fonts, styles and challenged my imagination.</p>
                     </div><!--modal-body-->
                     <div class="modal-footer">
                         <button type="button" class="myJourney" data-dismiss="modal">Close</button>
@@ -409,9 +409,9 @@ ini_set('display_errors', 0);
                         <h6>Skills used:</h6>Graphic Design, Adobe Illustrator<hr>
 
                         <h6>The making of Project :</h6>
-                        <p>I have made few logos for local charities and also for my own projects. I made a lot of logos for Cambourne Timebank as the Management Committee had to take a decision. The logo was then decided after a poll.</p>
+                        <p>I have made few logos for local charities and also for my own projects. I made a lot of logos for Cambourne Timebank as the Management Committee had to take a decision. The logo was then decided after a poll. Please find the document in the logos gallery. Feel free to download it to view it.</p>
                         <h6>What I learnt : </h6>
-                        <p>I learnt a lot of Graphic Designing while making these projects. I tried different things and challenged my imagination.</p>
+                        <p>I learnt a lot of Graphic Designing while making these logos. I played with different colour schemes, fonts, styles and challenged my imagination.</p>
                     </div><!--modal-body-->
                     <div class="modal-footer">
                         <button type="button" class="myJourney" data-dismiss="modal">Close</button>
@@ -489,7 +489,7 @@ ini_set('display_errors', 0);
                             <div class="flexWidth">
                                 <p class="hi">Hi, </p>
                                 <p class="intro">
-                                    My name is Payal Priyadarshini. I am a Web, Graphic Designer and Full Stack(PHP) Web Developer looking for opportunities. Keen on part time/work from home work environment. I am eligible to work in the U.K.
+                                    My name is Payal Priyadarshini. I am a Web, Graphic Designer and Full Stack PHP, WordPress Developer looking for opportunities. Keen on part time/remote/project basis/work from home jobs. I am eligible to work in the U.K.
                                 </p>
                             </div><!--flexWidth-->
                             <div class="aboutMeSection">
