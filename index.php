@@ -932,9 +932,9 @@ ini_set('display_errors', 0);
                         </div><!--lowerStars-->
                     </div><!--contactForm-->
                 </div><!--Contact Form-->
-                <div class="margins">
+<!--                <div class="margins">
                     <button id="getUserAgentString" class="btnUserAgent">Get User Agent Strings</button>
-                </div><!--margins-->
+                </div>margins-->
             </main>
             <footer class="wrapper" id="footer">
                 <div class="rowSiteMapSocial">
