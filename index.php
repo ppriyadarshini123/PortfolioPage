@@ -494,7 +494,7 @@ ini_set('display_errors', 0);
                             </div><!--flexWidth-->
                             <div class="aboutMeSection">
                                 <img class="sprite-mypic-361x458" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAHKAQMAAAD7PShNAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACxJREFUeNrtwTEBAAAAwqD1T20LL6AAAAAAAAAAAAAAAAAAAAAAAAAAAICvAVQWAAHuIazQAAAAAElFTkSuQmCC">
-                                <a href="dist/docs/UK%20CV%20-%20web%20designer.pdf" download>
+                                <a href="dist/docs/Payal-CV.pdf" download>
                                     <span class="downloadBtn">Download My CV</span>
                                 </a>
                                 <div class="icons">
