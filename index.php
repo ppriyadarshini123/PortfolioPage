@@ -135,11 +135,8 @@ ini_set('display_errors', 0);
                         </h6><p>This project was based on the second module of Web Designing Career Programme by Training Dragon. It covered Javascript & JQuery. It was a 2 days course which covered topics like undefined variables, Constants, Operators and Statements, Basic Operators, Conditional Statements, Conditional Operators, Logical Operators, Loops: while, do, for in Javascript. In JQuery, topics like jQuery Selectors, Properties and Attributes, jQuery Events, Animations and Effects, jQuery UI Library etc were covered. I had never formally learnt Javascript & JQuery, therefore this was my first time learning.</p>
 
                         <h6>The making of Project :
-<<<<<<< HEAD
-                        </h6><p>This Javascript & JQuery Project started by creating mockups( <a href="./Wireframe&Mockup/javascript_jquery.html">Mockup</a> ). I had used an open source software for creating mockups called Pencil Project. My tutor, Emiliano guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as Emiliano ensured that the website looked modern and user friendly. He had high expectations from me for the website. This project is not responsive and is only visible on laptop(viewport size >1200px)</p>
-=======
+
                         </h6><p>This Javascript & JQuery Project started by creating mockups( <a href="./Wireframe&Mockup/javascript_jquery.html">Mockup</a> ). I had used an open source software for creating mockups called Pencil Project. My tutor guided me very well during the Project.  He suggested best practices, advised to research, suggested to improve the look and feel of website etc . After getting a GREEN light to the mockup, I started building the website by constantly updating my code in GITHUB. The journey in building the project involved a lot of changes in look and feel of the website as my Tutor ensured that the website looked modern and user friendly. He had high expectations from me for the website. This project is not responsive and is only visible on laptop(viewport size >1200px)</p>
->>>>>>> 0f726f635052ce7b711a5f4f446614942212dfe6
 
                         <h6>What I learnt : </h6><p>I learnt a lot during the building of this project. I researched in the colour scheme and visited various websites for understanding how to make it more eye catching and user friendly. I also edited images using Adobe Photoshop. I learnt problem solving skills and an eye for details. </p>
 
@@ -493,16 +490,14 @@ ini_set('display_errors', 0);
                             <div class="flexWidth">
                                 <p class="hi">Hi, </p>
                                 <p class="intro">
-<<<<<<< HEAD
-                                    My name is Payal Priyadarshini. I am a Web, Graphic Designer and Full Stack(PHP), WordPress Developer/Freelancer looking for opportunities. Keen on part time (max 32hrs) office based/remote work environment. I am eligible to work in the U.K.
-=======
-                                    My name is Payal Priyadarshini. I am a Web, Graphic Designer and Full Stack PHP, WordPress Developer looking for opportunities. Keen on part time/remote/project basis/work from home jobs. I am eligible to work in the U.K.
->>>>>>> 0f726f635052ce7b711a5f4f446614942212dfe6
+                                    My name is Payal Priyadarshini. I am a founder and owner of Spark Web Solutions (https://sparkwebsolutions.co.uk). I am a Full Stack PHP WordPress Web Developer/Web Designer/Graphic Designer.
+
+
                                 </p>
                             </div><!--flexWidth-->
                             <div class="aboutMeSection">
                                 <img class="sprite-mypic-361x458" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAHKAQMAAAD7PShNAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACxJREFUeNrtwTEBAAAAwqD1T20LL6AAAAAAAAAAAAAAAAAAAAAAAAAAAICvAVQWAAHuIazQAAAAAElFTkSuQmCC">
-                                <a href="dist/docs/Payal-CV.pdf" download>
+                                <a href="dist/docs/Payal-Spark.pdf" download>
                                     <span class="downloadBtn">Download My CV</span>
                                 </a>
                                 <div class="icons">
@@ -518,9 +513,9 @@ ini_set('display_errors', 0);
                             </div><!--aboutMeSection-->
                             <div class="flexWidth">
                                 <p class="intro">
-                                    You can have a look at my projects, skills, CV and get in touch with me on my email:
-                                </p>
-                                <p class="email">payal . priyadarshini @ gmail . com</p>
+                                    I have always been passionate about programming since childhood and this passion led me to choose it as my career. I have worked in various IT Companies in the Netherlands.
+ I am eligible to work in the U.K. You can have a look at my projects, skills, CV and get in touch with me via Contact Form below.
+                                </p>                                
                                 <p class="intro">Thanks.</p>
                                 <div class="lowerStars">
                                     <img class="sprite-neon-star-lightblue-50x51" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzAQMAAADvrclXAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjYBgFgxEAAAGYAAGU8d2ZAAAAAElFTkSuQmCC">
@@ -609,9 +604,6 @@ ini_set('display_errors', 0);
                         <div class="projectsGrid">
                             <div class="project">
                                 <img class="sprite-logo-1c-for-website-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-<<<<<<< HEAD
-                                <h1 class="heading">Cambourne Timebank Website - Wordpress project</h1>
-=======
                                 <h1 class="heading">Cambourne Timebank Website - Wordpress Project</h1>
                                 <div class="overlay">
                                     <div class="projectName">
@@ -622,21 +614,8 @@ ini_set('display_errors', 0);
                                     </button>
                                 </div><!--overlay-->
                             </div><!--project timebank website-->
-                            <div class="project">
-                                <img class="sprite-weightcontrol-471x313" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE5AQMAAAD4BPhwAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAMCPAUlcAAGIBFGeAAAAAElFTkSuQmCC">
-                                <h1 class="heading">Nutritionist - Responsive Web Design Project</h1>
->>>>>>> 0f726f635052ce7b711a5f4f446614942212dfe6
-                                <div class="overlay">
-                                    <div class="projectName">
-                                        <a href="http://cambournetimebank.org.uk/" class="removeUnderscore">Project WebPage</a>
-                                    </div><!--projectName-->
-                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#modalTimebank">
-                                        My Journey
-                                    </button>
-                                </div><!--overlay-->
-                            </div><!--project timebank website-->
-                            <div class="project">
-<<<<<<< HEAD
+                          
+                            <div class="project">                              
                                 <img class="sprite-weightcontrol-471x313" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE5AQMAAAD4BPhwAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAClJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAMCPAUlcAAGIBFGeAAAAAElFTkSuQmCC">
                                 <h1 class="heading">Nutritionist - Responsive Web Design project</h1>
                                 <div class="overlay">
@@ -660,21 +639,7 @@ ini_set('display_errors', 0);
                                     </button>
                                 </div><!--overlay-->
                             </div><!--project this portfolio-->
-                            <div class="project">
-                                <img class="sprite-news-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                                <h1 class="heading">News Website - HTML, CSS and Javascript project</h1>
-=======
-                                <img class="sprite-portfolio-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-                                <h1 class="heading">Payal Creations - PHP, HTML, CSS, JQuery, Javascript Project</h1>
-                                <div class="overlay">
-                                    <div class="projectName">
-                                        <a href="#" class="removeUnderscore">This webpage</a>
-                                    </div><!--projectName-->
-                                    <button type="button" class="myJourney" data-toggle="modal" data-target="#modalPortfolio">
-                                        My Journey
-                                    </button>
-                                </div><!--overlay-->
-                            </div><!--project this portfolio-->
+                         
                               <div class="project">
                                   <img class="imghomeSearch" alt="" src="dist/imgs/optimized/HomeSearch_logo_pic-471x314.png">
                                 <h1 class="heading">Home Search - PHP, MySQL Project</h1>
@@ -714,7 +679,7 @@ ini_set('display_errors', 0);
                             <div class="project">
                                 <img class="sprite-news-471x314" alt="" src="dist/imgs/optimized/news-471x314.png">
                                 <h1 class="heading">News Website - HTML, CSS and Javascript Project</h1>
->>>>>>> 0f726f635052ce7b711a5f4f446614942212dfe6
+
                                 <div class="overlay">
                                     <div class="projectName">
                                         <a href="http://www.payalcreations.co.uk/NewsWebsite/index.html" class="removeUnderscore">Project WebPage</a>
@@ -726,11 +691,11 @@ ini_set('display_errors', 0);
                             </div><!--project News website-->                            
                             <div class="project">
                                 <img class="sprite-tours-471x314" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdcAAAE6AQMAAAB+kIreAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAChJREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAA3SZgAAZ+sliUAAAAASUVORK5CYII=">
-<<<<<<< HEAD
-                                <h1 class="heading">Tours & Travels - Javascript & JQuery project</h1>
-=======
+
+                                
                                 <h1 class="heading">Tours & Travels - Javascript & JQuery Project</h1>
->>>>>>> 0f726f635052ce7b711a5f4f446614942212dfe6
+
+                                
                                 <div class="overlay">
                                     <div class="projectName">
                                         <a href="http://www.payalcreations.co.uk/Tours&Travels/index.html" class="removeUnderscore">Project WebPage</a>
@@ -964,9 +929,6 @@ ini_set('display_errors', 0);
                                         }
                                     }
                                         ?>
-
-
-                            
                             </div><!--btn-->
                         </form><!--contact form area-->
 
@@ -1002,7 +964,7 @@ ini_set('display_errors', 0);
         </div><!--Container for Navigation - position:sticky-->
 
         <!-- Start cookieyes banner -->
-        <script src="https://cdn-cookieyes.com/client_data/80e20addf3721bfb3b77f9c9.js"></script>
+        <!--<script src="https://cdn-cookieyes.com/client_data/80e20addf3721bfb3b77f9c9.js"></script>-->
         <!-- End cookieyes banner -->
 
         <script src="node_modules/jquery/dist/jquery.min.js"></script><!--for Bootstrap to run--> 
@@ -1046,12 +1008,9 @@ ini_set('display_errors', 0);
 
         <script src="dist/js/jquery.carousel.js"></script>
         <script src="dist/js/jcarousel.responsive.js"></script>
-<<<<<<< HEAD
-        <script src="node_modules/enquire.js/dist/enquire.js"></script>
-        
-=======
+
         <script src="node_modules/enquire.js/dist/enquire.js"></script>       
->>>>>>> 0f726f635052ce7b711a5f4f446614942212dfe6
+
         
 <!--         <script src="dist/js/script.js"></script>-->
         <script src="dist/js/pixi.js"></script>
