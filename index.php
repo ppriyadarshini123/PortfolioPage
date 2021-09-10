@@ -490,8 +490,7 @@ ini_set('display_errors', 0);
                             <div class="flexWidth">
                                 <p class="hi">Hi, </p>
                                 <p class="intro">
-                                    My name is Payal Priyadarshini. I am a founder and owner of Spark Web Solutions (https://sparkwebsolutions.co.uk). I am a Full Stack PHP WordPress Web Developer/Web Designer/Graphic Designer.
-
+                                    My name is Payal Priyadarshini. I am the Founder and Owner of Spark Web Solutions (www.sparkwebsolutions.co.uk). I am a Full Stack PHP WordPress Web Developer/Web Designer & Graphic Designer.
 
                                 </p>
                             </div><!--flexWidth-->
@@ -514,7 +513,7 @@ ini_set('display_errors', 0);
                             <div class="flexWidth">
                                 <p class="intro">
                                     I have always been passionate about programming since childhood and this passion led me to choose it as my career. I have worked in various IT Companies in the Netherlands.
- I am eligible to work in the U.K. You can have a look at my projects, skills, CV and get in touch with me via Contact Form below.
+ You can have a look at my projects, skills, CV and get in touch with me via Contact Form below.
                                 </p>                                
                                 <p class="intro">Thanks.</p>
                                 <div class="lowerStars">
