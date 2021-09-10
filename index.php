@@ -512,7 +512,7 @@ ini_set('display_errors', 0);
                             </div><!--aboutMeSection-->
                             <div class="flexWidth">
                                 <p class="intro">
-                                    I have always been passionate about programming since childhood and this passion led me to choose it as my career. I have worked in various IT Companies in the Netherlands.
+                                    I have worked in various IT Companies in the Netherlands.
  You can have a look at my projects, skills, CV and get in touch with me via Contact Form below.
                                 </p>                                
                                 <p class="intro">Thanks.</p>
