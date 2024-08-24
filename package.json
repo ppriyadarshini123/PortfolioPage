@@ -27,7 +27,7 @@
     "bootstrap": "^4.5.3",
     "browser-sync": "^2.26.13",
     "enquire.js": "latest",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "jquery": "^3.5.1",
     "php": "^1.0.1",
     "pixi.js": "5.2.0",
